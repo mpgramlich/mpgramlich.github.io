@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mpx_5fsupt_2ec',['mpx_supt.c',['../mpx__supt_8c.html',1,'']]],
-  ['mpx_5fsupt_2eh',['mpx_supt.h',['../mpx__supt_8h.html',1,'']]]
+  ['linked_5flist_2ec',['linked_list.c',['../linked__list_8c.html',1,'']]],
+  ['linked_5flist_2eh',['linked_list.h',['../linked__list_8h.html',1,'']]]
 ];

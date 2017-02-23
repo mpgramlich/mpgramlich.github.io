@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['data',['data',['../structs__ll__node.html#a79ffbe9722e36b171fefc1bada4f2721',1,'s_ll_node']]],
+  ['datasize',['dataSize',['../structs__pcb__stuct.html#abaaa46716f0f2187620b0042c04e6958',1,'s_pcb_stuct']]],
+  ['datastart',['dataStart',['../structs__pcb__stuct.html#a8df76551e88a09dd66b98deb0f9ecbc4',1,'s_pcb_stuct']]],
+  ['date',['date',['../comm__list_8c.html#a2b5b0b260a749c7a0371b96f079b9d69',1,'date(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#a2b5b0b260a749c7a0371b96f079b9d69',1,'date(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
   ['date_5ftime',['date_time',['../structdate__time.html',1,'']]],
   ['day_5fm',['day_m',['../structdate__time.html#a72ee4f3a6a9970e58861c868bc676ba2',1,'date_time']]],
   ['day_5fof_5fmonth_5findex',['DAY_OF_MONTH_INDEX',['../rtc_8h.html#a3524da1819943d5a94067c1c9e8aa5cc',1,'rtc.h']]],
@@ -7,6 +11,7 @@ var searchData=
   ['day_5fy',['day_y',['../structdate__time.html#ad89b6054376708a35bc1c0a186c808ca',1,'date_time']]],
   ['debug',['debug',['../interrupts_8c.html#a0d0105433f9c65c14928027b3f0966b7',1,'interrupts.c']]],
   ['delete',['DELETE',['../input_8h.html#abbbe5949f3c1f72e439924f8cf503509',1,'input.h']]],
+  ['deletepcb',['deletePCB',['../comm__list_8c.html#a3602fa2889ad77ef2f323f6db3dd967e',1,'deletePCB(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#a3602fa2889ad77ef2f323f6db3dd967e',1,'deletePCB(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
   ['device_5fid',['device_id',['../structparam.html#a44a7285b02749114186a9f9971941bcb',1,'param']]],
   ['device_5fnot_5favailable',['device_not_available',['../interrupts_8c.html#abe88cd1dcc26cb58ee785c714e016f72',1,'interrupts.c']]],
   ['dirty',['dirty',['../structpage__entry.html#ab3b5e22c6146f227a26bdec64e63f4b0',1,'page_entry']]],

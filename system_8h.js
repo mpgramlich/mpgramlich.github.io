@@ -16,6 +16,9 @@ var system_8h =
     [ "u16int", "system_8h.html#a863d9497073aad2b991aeab2211d87af", null ],
     [ "u32int", "system_8h.html#a757de76cafbcddaac0d1632902fe4cb8", null ],
     [ "u8int", "system_8h.html#a1026e682ffdadc1701c42cd44ce9efcf", null ],
+    [ "uint16_t", "system_8h.html#a273cf69d639a59973b6019625df33e30", null ],
+    [ "uint32_t", "system_8h.html#a06896e8c53f721507066c079052171f8", null ],
+    [ "uint8_t", "system_8h.html#aba7bc1797add20fe3efdf37ced1182c5", null ],
     [ "klogv", "system_8h.html#abdb09834267dd4a2a0d07d43ca4d230d", null ],
     [ "kpanic", "system_8h.html#aff8473f901d828d76d3548130731c41d", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['size_5ft',['size_t',['../system_8h.html#a7c94ea6f8948649f8d181ae55911eeaf',1,'system.h']]]
+  ['cmd_5fstruct_5ft',['cmd_struct_t',['../comm__list_8h.html#a99317249ae7aceea39e3c447270bc2b6',1,'comm_list.h']]]
 ];
