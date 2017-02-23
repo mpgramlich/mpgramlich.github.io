@@ -1,8 +1,8 @@
 var pcb_8c =
 [
     [ "allocatePCB", "pcb_8c.html#a5c2a9f7bca10a6d45287ce6834b7167c", null ],
-    [ "changeProcessState", "group___r2.html#ga2ce7b2bcbb97cac7790e6897eff6540c", null ],
-    [ "classToString", "group___r2.html#gaa8a827de7db029b791a58fd963a8f6eb", null ],
+    [ "changeProcessState", "group___r2.html#ga83a5983d76f08725aadc23bf47930436", null ],
+    [ "classToString", "group___r2.html#gac38459f8731293f12b7fb0170c923471", null ],
     [ "errorToString", "group___r2.html#ga834927e89e94c123a0ec5322b11b0161", null ],
     [ "fifoInsertFunc", "pcb_8c.html#a30717aca6066b99d5d73c6fda5b438e6", null ],
     [ "findPCB", "pcb_8c.html#a3ddbd6b7d5425cfb586dabc05862e9b1", null ],
@@ -13,13 +13,15 @@ var pcb_8c =
     [ "isSuspended", "group___r2.html#ga1e42e70128de8086a07dbcd97e000942", null ],
     [ "pcbSearchFunc", "pcb_8c.html#a8c657cc0a82e51f22c2b601cc961169e", null ],
     [ "pcbTest", "pcb_8c.html#adc4d10af06448eb7a046bacfc2918ea2", null ],
-    [ "printPCBFunc", "pcb_8c.html#a819c31d0b376ca33ed371253585f9f80", null ],
+    [ "printPCBFunc", "group___r2.html#ga819c31d0b376ca33ed371253585f9f80", null ],
     [ "priorityInsertFunc", "pcb_8c.html#ac5785e5f577e5f50d2de01aa0683c275", null ],
     [ "removePCB", "pcb_8c.html#aa7ccac95996427cc60aaee4eec35caf4", null ],
     [ "setupPCB", "pcb_8c.html#a9928a07bb6f59213464656fdab142e70", null ],
     [ "stateToString", "group___r2.html#ga8667e4228a987f7d43e598f9855e9a52", null ],
+    [ "stringToClass", "pcb_8c.html#ae81b3dd13059be0733193c53681ca440", null ],
     [ "blockedQueue", "pcb_8c.html#aa3eb63b40a5cf1eb03b494f7ddd1af2a", null ],
     [ "readyQueue", "pcb_8c.html#a7b1bca867586a0a58222b805dbe3be28", null ],
     [ "suspendedBlockedQueue", "pcb_8c.html#ae83c9a71ab217215db8dfe3eb9c94e8e", null ],
-    [ "suspendedReadyQueue", "pcb_8c.html#a95c66b02e576aabe04df3fdc9e981fc3", null ]
+    [ "suspendedReadyQueue", "pcb_8c.html#a95c66b02e576aabe04df3fdc9e981fc3", null ],
+    [ "totalProcessList", "pcb_8c.html#a6d936c9220673197cf184738a19b64c9", null ]
 ];
