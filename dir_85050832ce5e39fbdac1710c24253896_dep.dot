@@ -1,0 +1,11 @@
+digraph "/home/loudish/mpx-spring2017-modestus/mpx_core/lib" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c7d74c6d2b184af75c765a147f90e5a0 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="mpx_core" fontname="Helvetica", fontsize="10", URL="dir_c7d74c6d2b184af75c765a147f90e5a0.html"]
+  dir_85050832ce5e39fbdac1710c24253896 [shape=box, label="lib", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_85050832ce5e39fbdac1710c24253896.html"];
+  }
+  dir_2b2cfc5bbf2f7ab54aab1325e138d170 [shape=box label="include" fillcolor="white" style="filled" color="red" URL="dir_2b2cfc5bbf2f7ab54aab1325e138d170.html"];
+  dir_85050832ce5e39fbdac1710c24253896->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="2", labeldistance=1.5 headhref="dir_000007_000001.html"];
+}
