@@ -1,10 +1,10 @@
 var structs__ll =
 [
-    [ "freeNodeFunc", "structs__ll.html#a6919b06690819c763c63053568542925", null ],
-    [ "head", "structs__ll.html#a4ceb08c280f2494dd51a6edebf99fbfa", null ],
-    [ "insertCompFunc", "structs__ll.html#a9b8851ea462ad99d6ca28138914b4301", null ],
-    [ "length", "structs__ll.html#ac8dd12a2074d1f022cdbb0ccb1f08566", null ],
-    [ "printNodeFunc", "structs__ll.html#ada363cfffd6df4acfcb05a5d175923eb", null ],
-    [ "searchCompFunc", "structs__ll.html#adba6e6a1b395433564b38b58712fba2a", null ],
-    [ "tail", "structs__ll.html#aa67db65bfe5ef66c7dbf31f84f4b56f9", null ]
+    [ "freeNodeFunc", "structs__ll.html#a3cf5521a73fc3474e83aef51c777bb7f", null ],
+    [ "head", "structs__ll.html#a0056de8ffd1d9af11ed1a8bb771ae227", null ],
+    [ "insertCompFunc", "structs__ll.html#accf6a1a7fe14f0693107a00a47b86d0d", null ],
+    [ "length", "structs__ll.html#abeb40a7e7b4c71ba09151cde4005c201", null ],
+    [ "printNodeFunc", "structs__ll.html#ad3b310fea19fca7898583a8c0eb87449", null ],
+    [ "searchCompFunc", "structs__ll.html#ac22c97ea79a7ec45eb27584f2f91295c", null ],
+    [ "tail", "structs__ll.html#a3253fe5f72d8914dd8331e74aba9982e", null ]
 ];

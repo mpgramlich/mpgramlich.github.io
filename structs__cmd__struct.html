@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Modestus Moon OS: s_cmd_struct Struct Reference</title>
+<title>Modestus Moon OS: cmd_struct_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -109,7 +110,7 @@ $(document).ready(function(){initNavTree('structs__cmd__struct.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">s_cmd_struct Struct Reference</div>  </div>
+<div class="title">cmd_struct_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -117,44 +118,40 @@ $(document).ready(function(){initNavTree('structs__cmd__struct.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a05785ef37725660426f6881972e22de0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__cmd__struct.html#a05785ef37725660426f6881972e22de0">cmdName</a></td></tr>
-<tr class="separator:a05785ef37725660426f6881972e22de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12f0e24fc635611fb6dea941a5415014"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__cmd__struct.html#a12f0e24fc635611fb6dea941a5415014">cmdFunc</a> )(char[][<a class="el" href="input_8h.html#a7a9a231e30b47bc0345749c8bd1e5077">MAX_LENGTH</a>])</td></tr>
-<tr class="separator:a12f0e24fc635611fb6dea941a5415014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c669ee8a2f89742a5b4e4e88123865"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__cmd__struct.html#ad0c669ee8a2f89742a5b4e4e88123865">cmdName</a></td></tr>
+<tr class="separator:ad0c669ee8a2f89742a5b4e4e88123865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9655d586925d40c94a0d11befa1a5b76"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__cmd__struct.html#a9655d586925d40c94a0d11befa1a5b76">cmdFunc</a> )(char[][<a class="el" href="input_8h.html#a7a9a231e30b47bc0345749c8bd1e5077">MAX_LENGTH</a>])</td></tr>
+<tr class="separator:a9655d586925d40c94a0d11befa1a5b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="comm__list_8h_source.html#l00010">10</a> of file <a class="el" href="comm__list_8h_source.html">comm_list.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a12f0e24fc635611fb6dea941a5415014"></a>
+<a class="anchor" id="a9655d586925d40c94a0d11befa1a5b76"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* s_cmd_struct::cmdFunc) (char[][<a class="el" href="input_8h.html#a7a9a231e30b47bc0345749c8bd1e5077">MAX_LENGTH</a>])</td>
+          <td class="memname">int(* cmd_struct_t::cmdFunc) (char[][<a class="el" href="input_8h.html#a7a9a231e30b47bc0345749c8bd1e5077">MAX_LENGTH</a>])</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="comm__list_8h_source.html#l00013">13</a> of file <a class="el" href="comm__list_8h_source.html">comm_list.h</a>.</p>
 
-<p>Referenced by <a class="el" href="commhand_8c_source.html#l00035">exec_comm()</a>, and <a class="el" href="commhand_8c_source.html#l00167">initCmdArray()</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a05785ef37725660426f6881972e22de0"></a>
+<a class="anchor" id="ad0c669ee8a2f89742a5b4e4e88123865"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* s_cmd_struct::cmdName</td>
+          <td class="memname">const char* cmd_struct_t::cmdName</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="comm__list_8h_source.html#l00012">12</a> of file <a class="el" href="comm__list_8h_source.html">comm_list.h</a>.</p>
-
-<p>Referenced by <a class="el" href="commhand_8c_source.html#l00167">initCmdArray()</a>.</p>
 
 </div>
 </div>

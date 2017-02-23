@@ -1,11 +1,10 @@
 var pcb_8h =
 [
-    [ "s_pcb_stuct", "structs__pcb__stuct.html", "structs__pcb__stuct" ],
+    [ "pcb_t", "structs__pcb__stuct.html", "structs__pcb__stuct" ],
     [ "PCB_QUEUE_MAX_SIZE", "pcb_8h.html#afeaa4736820787d9a22e121d670b9243", null ],
     [ "PROCESS_CONTEXT_SIZE", "pcb_8h.html#abb5f1eb47c3ac477582ecc49dc8990ee", null ],
     [ "PROCESS_MAX_NAME_LENGTH", "pcb_8h.html#acd2dea966e4e5b760451b4fcc66f6cce", null ],
     [ "PROCESS_STACK_SIZE", "pcb_8h.html#a2dbc13416ed2817701a94e30698cdee3", null ],
-    [ "pcb_t", "pcb_8h.html#ad4bc8adcc1ef1caadee5ba952d0473a0", null ],
     [ "pcbQueue_t", "pcb_8h.html#a58ab885c30f079e61039b7480a7dbfed", null ],
     [ "PID_t", "pcb_8h.html#a679b474107b599ed5e2597c8863176dc", null ],
     [ "processPriority_t", "pcb_8h.html#aade1badcda6beffd30258586dcad6550", null ],
@@ -40,9 +39,8 @@ var pcb_8h =
       [ "STATE_UNKNOWN", "pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a786a8e9401b8091f65b2afbd342c90f5", null ]
     ] ],
     [ "allocatePCB", "pcb_8h.html#a5c2a9f7bca10a6d45287ce6834b7167c", null ],
-    [ "changeProcessState", "group___r2.html#ga2ce7b2bcbb97cac7790e6897eff6540c", null ],
-    [ "changeState", "group___r2.html#gaff6f38731835eff274488ff8e1fc925a", null ],
-    [ "classToString", "group___r2.html#gaa8a827de7db029b791a58fd963a8f6eb", null ],
+    [ "changeProcessState", "group___r2.html#ga83a5983d76f08725aadc23bf47930436", null ],
+    [ "classToString", "group___r2.html#gac38459f8731293f12b7fb0170c923471", null ],
     [ "errorToString", "group___r2.html#ga834927e89e94c123a0ec5322b11b0161", null ],
     [ "fifoInsertFunc", "pcb_8h.html#a30717aca6066b99d5d73c6fda5b438e6", null ],
     [ "findPCB", "pcb_8h.html#a3ddbd6b7d5425cfb586dabc05862e9b1", null ],
@@ -53,12 +51,15 @@ var pcb_8h =
     [ "isSuspended", "group___r2.html#ga1e42e70128de8086a07dbcd97e000942", null ],
     [ "pcbSearchFunc", "pcb_8h.html#a8c657cc0a82e51f22c2b601cc961169e", null ],
     [ "pcbTest", "pcb_8h.html#adc4d10af06448eb7a046bacfc2918ea2", null ],
+    [ "printPCBFunc", "group___r2.html#ga819c31d0b376ca33ed371253585f9f80", null ],
     [ "priorityInsertFunc", "pcb_8h.html#ac5785e5f577e5f50d2de01aa0683c275", null ],
     [ "removePCB", "pcb_8h.html#aa7ccac95996427cc60aaee4eec35caf4", null ],
     [ "setupPCB", "pcb_8h.html#a9928a07bb6f59213464656fdab142e70", null ],
     [ "stateToString", "group___r2.html#ga8667e4228a987f7d43e598f9855e9a52", null ],
+    [ "stringToClass", "pcb_8h.html#ae81b3dd13059be0733193c53681ca440", null ],
     [ "blockedQueue", "pcb_8h.html#aa3eb63b40a5cf1eb03b494f7ddd1af2a", null ],
     [ "readyQueue", "pcb_8h.html#a7b1bca867586a0a58222b805dbe3be28", null ],
     [ "suspendedBlockedQueue", "pcb_8h.html#ae83c9a71ab217215db8dfe3eb9c94e8e", null ],
-    [ "suspendedReadyQueue", "pcb_8h.html#a95c66b02e576aabe04df3fdc9e981fc3", null ]
+    [ "suspendedReadyQueue", "pcb_8h.html#a95c66b02e576aabe04df3fdc9e981fc3", null ],
+    [ "totalProcessList", "pcb_8h.html#a6d936c9220673197cf184738a19b64c9", null ]
 ];

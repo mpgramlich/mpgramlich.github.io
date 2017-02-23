@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "cmd_struct_t", "structs__cmd__struct.html", "structs__cmd__struct" ],
     [ "date_time", "structdate__time.html", "structdate__time" ],
     [ "footer", "structfooter.html", "structfooter" ],
     [ "gdt_descriptor_struct", "structgdt__descriptor__struct.html", "structgdt__descriptor__struct" ],
@@ -11,15 +12,14 @@ var annotated_dup =
     [ "index_entry", "structindex__entry.html", "structindex__entry" ],
     [ "index_table", "structindex__table.html", "structindex__table" ],
     [ "linkedList_t", "structlinked_list__t.html", null ],
+    [ "linkedList_t", "structs__ll.html", "structs__ll" ],
     [ "node_t", "structnode__t.html", null ],
+    [ "node_t", "structs__ll__node.html", "structs__ll__node" ],
     [ "page_dir", "structpage__dir.html", "structpage__dir" ],
     [ "page_entry", "structpage__entry.html", "structpage__entry" ],
     [ "page_table", "structpage__table.html", "structpage__table" ],
     [ "param", "structparam.html", "structparam" ],
     [ "pcb_t", "structpcb__t.html", null ],
-    [ "pcbQueue_t", "structpcb_queue__t.html", null ],
-    [ "s_cmd_struct", "structs__cmd__struct.html", "structs__cmd__struct" ],
-    [ "s_ll", "structs__ll.html", "structs__ll" ],
-    [ "s_ll_node", "structs__ll__node.html", "structs__ll__node" ],
-    [ "s_pcb_stuct", "structs__pcb__stuct.html", "structs__pcb__stuct" ]
+    [ "pcb_t", "structs__pcb__stuct.html", "structs__pcb__stuct" ],
+    [ "pcbQueue_t", "structpcb_queue__t.html", null ]
 ];

@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "Modestus Moon OS", "index.html", [
+    [ "Todo List", "todo.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -29,7 +30,8 @@ var NAVTREEINDEX =
 [
 "anim_8c.html",
 "heap_8h.html#aee52619f74498ad224eb8e4354b89e40",
-"pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a786a8e9401b8091f65b2afbd342c90f5"
+"pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a786a8e9401b8091f65b2afbd342c90f5",
+"todo.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

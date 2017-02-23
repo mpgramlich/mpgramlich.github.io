@@ -1,8 +1,7 @@
 var comm__list_8h =
 [
-    [ "s_cmd_struct", "structs__cmd__struct.html", "structs__cmd__struct" ],
+    [ "cmd_struct_t", "structs__cmd__struct.html", "structs__cmd__struct" ],
     [ "MAX_CMD_LIST_LENGTH", "comm__list_8h.html#a13a1c44288a1d29092e5a6fb152b4861", null ],
-    [ "cmd_struct_t", "comm__list_8h.html#a99317249ae7aceea39e3c447270bc2b6", null ],
     [ "blockPCB", "comm__list_8h.html#af8c8690ef4431e1629f9ab7c5539eeae", null ],
     [ "createPCB", "comm__list_8h.html#ae147f79757d354c727a87836c71f1b05", null ],
     [ "date", "comm__list_8h.html#a2b5b0b260a749c7a0371b96f079b9d69", null ],
