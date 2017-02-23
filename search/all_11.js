@@ -53,7 +53,7 @@ var searchData=
   ['strcpy',['strcpy',['../string_8h.html#a1eb9cae61e6a6282c28dbc298ef7297e',1,'strcpy(char *s1, const char *s2):&#160;string.c'],['../string_8c.html#a1eb9cae61e6a6282c28dbc298ef7297e',1,'strcpy(char *s1, const char *s2):&#160;string.c']]],
   ['string_2ec',['string.c',['../string_8c.html',1,'']]],
   ['string_2eh',['string.h',['../string_8h.html',1,'']]],
-  ['stringtoclass',['stringToClass',['../pcb_8h.html#ae81b3dd13059be0733193c53681ca440',1,'stringToClass(const char *stringifiedClass):&#160;pcb.c'],['../pcb_8c.html#ae81b3dd13059be0733193c53681ca440',1,'stringToClass(const char *stringifiedClass):&#160;pcb.c']]],
+  ['stringtoclass',['stringToClass',['../group___r2.html#gae81b3dd13059be0733193c53681ca440',1,'stringToClass(const char *stringifiedClass):&#160;pcb.c'],['../group___r2.html#gae81b3dd13059be0733193c53681ca440',1,'stringToClass(const char *stringifiedClass):&#160;pcb.c']]],
   ['strlen',['strlen',['../string_8h.html#a2dee044e4e667b5b789b493abd21cfa4',1,'strlen(const char *s):&#160;string.c'],['../string_8c.html#a2dee044e4e667b5b789b493abd21cfa4',1,'strlen(const char *s):&#160;string.c']]],
   ['strtok',['strtok',['../string_8h.html#af1a867dcea42fc1215d0eddf19283ef3',1,'strtok(char *s1, const char *s2):&#160;string.c'],['../string_8c.html#af1a867dcea42fc1215d0eddf19283ef3',1,'strtok(char *s1, const char *s2):&#160;string.c']]],
   ['student_5ffree',['student_free',['../kernel_2core_2mpx__supt_8c.html#a19c47c02b0338bc13716d98305bb8a34',1,'student_free():&#160;mpx_supt.c'],['../modules_2mpx__supt_8c.html#a19c47c02b0338bc13716d98305bb8a34',1,'student_free():&#160;mpx_supt.c']]],

@@ -18,7 +18,7 @@ var pcb_8c =
     [ "removePCB", "pcb_8c.html#aa7ccac95996427cc60aaee4eec35caf4", null ],
     [ "setupPCB", "pcb_8c.html#a9928a07bb6f59213464656fdab142e70", null ],
     [ "stateToString", "group___r2.html#ga8667e4228a987f7d43e598f9855e9a52", null ],
-    [ "stringToClass", "pcb_8c.html#ae81b3dd13059be0733193c53681ca440", null ],
+    [ "stringToClass", "group___r2.html#gae81b3dd13059be0733193c53681ca440", null ],
     [ "blockedQueue", "pcb_8c.html#aa3eb63b40a5cf1eb03b494f7ddd1af2a", null ],
     [ "readyQueue", "pcb_8c.html#a7b1bca867586a0a58222b805dbe3be28", null ],
     [ "suspendedBlockedQueue", "pcb_8c.html#ae83c9a71ab217215db8dfe3eb9c94e8e", null ],
