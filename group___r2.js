@@ -9,5 +9,6 @@ var group___r2 =
     [ "isSuspended", "group___r2.html#ga1e42e70128de8086a07dbcd97e000942", null ],
     [ "printPCBFunc", "group___r2.html#ga819c31d0b376ca33ed371253585f9f80", null ],
     [ "setPrintFunction", "group___r2.html#gafc8969d7969f61c928a01f4c302e669b", null ],
-    [ "stateToString", "group___r2.html#ga8667e4228a987f7d43e598f9855e9a52", null ]
+    [ "stateToString", "group___r2.html#ga8667e4228a987f7d43e598f9855e9a52", null ],
+    [ "stringToClass", "group___r2.html#gae81b3dd13059be0733193c53681ca440", null ]
 ];
