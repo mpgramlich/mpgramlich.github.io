@@ -14,6 +14,5 @@ var heap_8h =
     [ "init_kheap", "heap_8h.html#a755a69ff831b6e23a808dcf4b9944854", null ],
     [ "kfree", "heap_8h.html#aa2a6fb2aa05727dc1e7d72cbc108e63c", null ],
     [ "kmalloc", "heap_8h.html#a15d6a52c5c080c8c7ffc73e336d8e574", null ],
-    [ "make_heap", "heap_8h.html#a686135c02695aef4208f93d4549a15d0", null ],
-    [ "__attribute__", "heap_8h.html#aaa4b117a86b9205e66f2cde318c1f01e", null ]
+    [ "make_heap", "heap_8h.html#a686135c02695aef4208f93d4549a15d0", null ]
 ];

@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Modestus Moon OS
-   &#160;<span id="projectnumber">R1</span>
+   &#160;<span id="projectnumber">R2</span>
    </div>
    <div id="projectbrief">CS 450 project</div>
   </td>
@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -115,6 +116,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="commhand_8h__dep__incl.png" border="0" usemap="#_2home_2loudish_2mpx-spring2017-modestus_2mpx__core_2include_2core_2commhand_8hdep" alt=""/></div>
 <map name="_2home_2loudish_2mpx-spring2017-modestus_2mpx__core_2include_2core_2commhand_8hdep" id="_2home_2loudish_2mpx-spring2017-modestus_2mpx__core_2include_2core_2commhand_8hdep">
+<area shape="rect" id="node2" href="kmain_8c.html" title="/home/loudish/mpx&#45;spring2017\l&#45;modestus/mpx_core/kernel\l/core/kmain.c" alt="" coords="5,109,204,165"/>
+<area shape="rect" id="node3" href="serial_8c.html" title="/home/loudish/mpx&#45;spring2017\l&#45;modestus/mpx_core/kernel\l/core/serial.c" alt="" coords="228,109,427,165"/>
 </map>
 </div>
 </div>
@@ -143,8 +146,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="commhand_8c_source.html#l00187">187</a> of file <a class="el" href="commhand_8c_source.html">commhand.c</a>.</p>
+<p>Definition at line <a class="el" href="commhand_8c_source.html#l00162">162</a> of file <a class="el" href="commhand_8c_source.html">commhand.c</a>.</p>
 
+<p>References <a class="el" href="commhand_8c_source.html#l00007">comm_hist</a>, and <a class="el" href="commhand_8c_source.html#l00008">hist_i</a>.</p>
+<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    {</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="commhand_8c.html#addd367ad6cf3ffe96855b76b451d02d5">hist_i</a>--;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="commhand_8c.html#a3d3b206df340b640d0fca3a5c7436dfe">comm_hist</a>[<a class="code" href="commhand_8c.html#addd367ad6cf3ffe96855b76b451d02d5">hist_i</a>];</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div><div class="ttc" id="commhand_8c_html_a3d3b206df340b640d0fca3a5c7436dfe"><div class="ttname"><a href="commhand_8c.html#a3d3b206df340b640d0fca3a5c7436dfe">comm_hist</a></div><div class="ttdeci">char * comm_hist[128]</div><div class="ttdef"><b>Definition:</b> <a href="commhand_8c_source.html#l00007">commhand.c:7</a></div></div>
+<div class="ttc" id="commhand_8c_html_addd367ad6cf3ffe96855b76b451d02d5"><div class="ttname"><a href="commhand_8c.html#addd367ad6cf3ffe96855b76b451d02d5">hist_i</a></div><div class="ttdeci">int hist_i</div><div class="ttdef"><b>Definition:</b> <a href="commhand_8c_source.html#l00008">commhand.c:8</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a5f6c259a5d805f1a24d35f36cb9207d3"></a>
@@ -163,8 +170,22 @@ Functions</h2></td></tr>
 
 <p>init_commhand Starts input loop and waits for shutdown code </p>
 
-<p>Definition at line <a class="el" href="commhand_8c_source.html#l00196">196</a> of file <a class="el" href="commhand_8c_source.html">commhand.c</a>.</p>
+<p>Definition at line <a class="el" href="commhand_8c_source.html#l00193">193</a> of file <a class="el" href="commhand_8c_source.html">commhand.c</a>.</p>
 
+<p>References <a class="el" href="commhand_8c_source.html#l00035">exec_comm()</a>, <a class="el" href="commhand_8c_source.html#l00006">in_string</a>, <a class="el" href="commhand_8c_source.html#l00167">initCmdArray()</a>, <a class="el" href="input_8h_source.html#l00006">MAX_LENGTH</a>, <a class="el" href="input_8h_source.html#l00007">PROMPT</a>, <a class="el" href="serial_8c_source.html#l00114">serial_poll()</a>, <a class="el" href="serial_8c_source.html#l00059">serial_print()</a>, <a class="el" href="commhand_8c_source.html#l00009">shutdown</a>, and <a class="el" href="string_8c_source.html#l00026">strcpy()</a>.</p>
+
+<p>Referenced by <a class="el" href="kmain_8c_source.html#l00029">kmain()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                         {</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="commhand_8c.html#a95b7dfd9ea5945e05a5e443355de389e">initCmdArray</a>(<a class="code" href="commhand_8c.html#a5582c68677f88e6cacb6b1a2086f34c1">cmdArray</a>);</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">while</span>(!<a class="code" href="commhand_8c.html#a5161d377a61befc3f8103e794d5cb582">shutdown</a>) {</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="code" href="serial_8h.html#a995827efcd4dcfb780c9fbb9645410a4">serial_print</a>(<a class="code" href="input_8h.html#accdbea14ea06c15e271784368bd993e8">PROMPT</a>);</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordtype">char</span> <a class="code" href="commhand_8c.html#a304f731e770f19e932c39d189c8cb56f">in_string</a>[<a class="code" href="input_8h.html#a7a9a231e30b47bc0345749c8bd1e5077">MAX_LENGTH</a>];</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <a class="code" href="string_8h.html#a1eb9cae61e6a6282c28dbc298ef7297e">strcpy</a>(in_string, <a class="code" href="serial_8h.html#a4b7cdfe478986c0d41a54f2c4a683136">serial_poll</a>(in_string));</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <a class="code" href="commhand_8c.html#aeac60d828269ea566f8d5481017467ba">exec_comm</a>(in_string);</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div><div class="ttc" id="commhand_8c_html_a5582c68677f88e6cacb6b1a2086f34c1"><div class="ttname"><a href="commhand_8c.html#a5582c68677f88e6cacb6b1a2086f34c1">cmdArray</a></div><div class="ttdeci">cmd_struct_t cmdArray[MAX_CMD_LIST_LENGTH]</div><div class="ttdef"><b>Definition:</b> <a href="commhand_8c_source.html#l00012">commhand.c:12</a></div></div>
+<div class="ttc" id="input_8h_html_accdbea14ea06c15e271784368bd993e8"><div class="ttname"><a href="input_8h.html#accdbea14ea06c15e271784368bd993e8">PROMPT</a></div><div class="ttdeci">#define PROMPT</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00007">input.h:7</a></div></div>
+<div class="ttc" id="input_8h_html_a7a9a231e30b47bc0345749c8bd1e5077"><div class="ttname"><a href="input_8h.html#a7a9a231e30b47bc0345749c8bd1e5077">MAX_LENGTH</a></div><div class="ttdeci">#define MAX_LENGTH</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00006">input.h:6</a></div></div>
+<div class="ttc" id="commhand_8c_html_a95b7dfd9ea5945e05a5e443355de389e"><div class="ttname"><a href="commhand_8c.html#a95b7dfd9ea5945e05a5e443355de389e">initCmdArray</a></div><div class="ttdeci">void initCmdArray(cmd_struct_t *arr)</div><div class="ttdef"><b>Definition:</b> <a href="commhand_8c_source.html#l00167">commhand.c:167</a></div></div>
+<div class="ttc" id="serial_8h_html_a995827efcd4dcfb780c9fbb9645410a4"><div class="ttname"><a href="serial_8h.html#a995827efcd4dcfb780c9fbb9645410a4">serial_print</a></div><div class="ttdeci">int serial_print(const char *msg)</div><div class="ttdef"><b>Definition:</b> <a href="serial_8c_source.html#l00059">serial.c:59</a></div></div>
+<div class="ttc" id="commhand_8c_html_aeac60d828269ea566f8d5481017467ba"><div class="ttname"><a href="commhand_8c.html#aeac60d828269ea566f8d5481017467ba">exec_comm</a></div><div class="ttdeci">void exec_comm(char in_string[MAX_LENGTH])</div><div class="ttdoc">exec_comm Takes parsed input and calls the proper command </div><div class="ttdef"><b>Definition:</b> <a href="commhand_8c_source.html#l00035">commhand.c:35</a></div></div>
+<div class="ttc" id="string_8h_html_a1eb9cae61e6a6282c28dbc298ef7297e"><div class="ttname"><a href="string_8h.html#a1eb9cae61e6a6282c28dbc298ef7297e">strcpy</a></div><div class="ttdeci">char * strcpy(char *s1, const char *s2)</div><div class="ttdoc">strcpy copies one string to another string </div><div class="ttdef"><b>Definition:</b> <a href="string_8c_source.html#l00026">string.c:26</a></div></div>
+<div class="ttc" id="commhand_8c_html_a304f731e770f19e932c39d189c8cb56f"><div class="ttname"><a href="commhand_8c.html#a304f731e770f19e932c39d189c8cb56f">in_string</a></div><div class="ttdeci">char in_string[MAX_LENGTH]</div><div class="ttdef"><b>Definition:</b> <a href="commhand_8c_source.html#l00006">commhand.c:6</a></div></div>
+<div class="ttc" id="serial_8h_html_a4b7cdfe478986c0d41a54f2c4a683136"><div class="ttname"><a href="serial_8h.html#a4b7cdfe478986c0d41a54f2c4a683136">serial_poll</a></div><div class="ttdeci">char * serial_poll(char in_string[MAX_LENGTH])</div><div class="ttdef"><b>Definition:</b> <a href="serial_8c_source.html#l00114">serial.c:114</a></div></div>
+<div class="ttc" id="commhand_8c_html_a5161d377a61befc3f8103e794d5cb582"><div class="ttname"><a href="commhand_8c.html#a5161d377a61befc3f8103e794d5cb582">shutdown</a></div><div class="ttdeci">int shutdown</div><div class="ttdef"><b>Definition:</b> <a href="commhand_8c_source.html#l00009">commhand.c:9</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

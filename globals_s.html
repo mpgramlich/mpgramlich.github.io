@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Modestus Moon OS
-   &#160;<span id="projectnumber">R1</span>
+   &#160;<span id="projectnumber">R2</span>
    </div>
    <div id="projectbrief">CS 450 project</div>
   </td>
@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -80,6 +81,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
       <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -144,6 +147,13 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>searchcompFunction()
+: <a class="el" href="linked__list_8c.html#aec835b94f0f2d661880b5e2f75cefada">linked_list.c</a>
+</li>
+<li>searchList()
+: <a class="el" href="linked__list_8h.html#a75ff37d4b2282fa64cb59415e17f8ee5">linked_list.h</a>
+, <a class="el" href="linked__list_8c.html#a75ff37d4b2282fa64cb59415e17f8ee5">linked_list.c</a>
+</li>
 <li>SECONDS_INDEX
 : <a class="el" href="rtc_8h.html#ad5172920660b0cc3a01124769f769da8">rtc.h</a>
 </li>
@@ -151,8 +161,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="interrupts_8c.html#af1748d9ea65ba652bc92074ab6570d8e">interrupts.c</a>
 </li>
 <li>serial_poll()
-: <a class="el" href="serial_8c.html#a4b7cdfe478986c0d41a54f2c4a683136">serial.c</a>
-, <a class="el" href="serial_8h.html#a4b7cdfe478986c0d41a54f2c4a683136">serial.h</a>
+: <a class="el" href="serial_8h.html#a4b7cdfe478986c0d41a54f2c4a683136">serial.h</a>
+, <a class="el" href="serial_8c.html#a4b7cdfe478986c0d41a54f2c4a683136">serial.c</a>
 </li>
 <li>serial_port_in
 : <a class="el" href="serial_8c.html#a1a756238531fc5bf1096f89dc18e835e">serial.c</a>
@@ -161,8 +171,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="serial_8c.html#adbb2c18b0aaab5c1927a6f674768a710">serial.c</a>
 </li>
 <li>serial_print()
-: <a class="el" href="serial_8c.html#a995827efcd4dcfb780c9fbb9645410a4">serial.c</a>
-, <a class="el" href="serial_8h.html#a995827efcd4dcfb780c9fbb9645410a4">serial.h</a>
+: <a class="el" href="serial_8h.html#a995827efcd4dcfb780c9fbb9645410a4">serial.h</a>
+, <a class="el" href="serial_8c.html#a995827efcd4dcfb780c9fbb9645410a4">serial.c</a>
 </li>
 <li>serial_println()
 : <a class="el" href="serial_8h.html#a3514f7abff236a4e00a6c46021ce5e22">serial.h</a>
@@ -177,8 +187,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="rtc_8c.html#a7903b907981d739e3d156a964255d45e">rtc.c</a>
 </li>
 <li>set_serial_in()
-: <a class="el" href="serial_8c.html#a3f4008da5feabfb7e086f6673a81104b">serial.c</a>
-, <a class="el" href="serial_8h.html#a3f4008da5feabfb7e086f6673a81104b">serial.h</a>
+: <a class="el" href="serial_8h.html#a3f4008da5feabfb7e086f6673a81104b">serial.h</a>
+, <a class="el" href="serial_8c.html#a3f4008da5feabfb7e086f6673a81104b">serial.c</a>
 </li>
 <li>set_serial_out()
 : <a class="el" href="serial_8h.html#ae97b87ee1f57c687e7fca6f9958e03ef">serial.h</a>
@@ -190,12 +200,58 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>setDate()
 : <a class="el" href="comm__list_8c.html#abcb304e34ec42b6fa3df07249ce8c1b7">comm_list.c</a>
+, <a class="el" href="comm__list_8h.html#abcb304e34ec42b6fa3df07249ce8c1b7">comm_list.h</a>
+</li>
+<li>setFreeFunction()
+: <a class="el" href="linked__list_8h.html#a3b6f817f74d12d2cf4a35405f447c73d">linked_list.h</a>
+, <a class="el" href="linked__list_8c.html#a3b6f817f74d12d2cf4a35405f447c73d">linked_list.c</a>
+</li>
+<li>setInsertComparisonFunction()
+: <a class="el" href="linked__list_8h.html#a45d030386936adffa3eb5586ce93d131">linked_list.h</a>
+, <a class="el" href="linked__list_8c.html#a45d030386936adffa3eb5586ce93d131">linked_list.c</a>
+</li>
+<li>setPrintFunction()
+: <a class="el" href="group___r2.html#gafc8969d7969f61c928a01f4c302e669b">linked_list.h</a>
+, <a class="el" href="group___r2.html#gafc8969d7969f61c928a01f4c302e669b">linked_list.c</a>
+</li>
+<li>setPriority()
+: <a class="el" href="comm__list_8c.html#aa7026f77bd1a562f1feaea1d3a6fdeb9">comm_list.c</a>
+, <a class="el" href="comm__list_8h.html#aa7026f77bd1a562f1feaea1d3a6fdeb9">comm_list.h</a>
+</li>
+<li>setSearchComparisonFunction()
+: <a class="el" href="linked__list_8h.html#a12e5138ac02af0f6b42ff2f1b29c610a">linked_list.h</a>
+, <a class="el" href="linked__list_8c.html#a12e5138ac02af0f6b42ff2f1b29c610a">linked_list.c</a>
 </li>
 <li>setTime()
 : <a class="el" href="comm__list_8c.html#a684ac3c738428c05031f6b5c5b121d85">comm_list.c</a>
+, <a class="el" href="comm__list_8h.html#a684ac3c738428c05031f6b5c5b121d85">comm_list.h</a>
+</li>
+<li>setupPCB()
+: <a class="el" href="pcb_8h.html#a9928a07bb6f59213464656fdab142e70">pcb.h</a>
+, <a class="el" href="pcb_8c.html#a9928a07bb6f59213464656fdab142e70">pcb.c</a>
+</li>
+<li>showAllProcesses()
+: <a class="el" href="comm__list_8c.html#a15a1fce149a24a3c2925b6ca44cb79c7">comm_list.c</a>
+, <a class="el" href="comm__list_8h.html#a15a1fce149a24a3c2925b6ca44cb79c7">comm_list.h</a>
+</li>
+<li>showBlockedProcesses()
+: <a class="el" href="comm__list_8c.html#aea06cb173ad17f9139253574d010d678">comm_list.c</a>
+, <a class="el" href="comm__list_8h.html#aea06cb173ad17f9139253574d010d678">comm_list.h</a>
+</li>
+<li>showPCB()
+: <a class="el" href="comm__list_8c.html#a9b84e5992ebbf428fc68351c9453e52e">comm_list.c</a>
+, <a class="el" href="comm__list_8h.html#a9b84e5992ebbf428fc68351c9453e52e">comm_list.h</a>
+</li>
+<li>showReadyProcesses()
+: <a class="el" href="comm__list_8c.html#abc0ff5bef60dfc962f4455492297a191">comm_list.c</a>
+, <a class="el" href="comm__list_8h.html#abc0ff5bef60dfc962f4455492297a191">comm_list.h</a>
 </li>
 <li>shutdown
 : <a class="el" href="commhand_8c.html#a5161d377a61befc3f8103e794d5cb582">commhand.c</a>
+</li>
+<li>shutdownFunc()
+: <a class="el" href="comm__list_8c.html#a514416c2792fdc8614585266d618fbf8">comm_list.c</a>
+, <a class="el" href="comm__list_8h.html#a514416c2792fdc8614585266d618fbf8">comm_list.h</a>
 </li>
 <li>size_t
 : <a class="el" href="system_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">system.h</a>
@@ -212,6 +268,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>start_up_anim()
 : <a class="el" href="anim_8h.html#a5bf31d96ce4c2c86dfab5440a835c457">anim.h</a>
 , <a class="el" href="anim_8c.html#a07c0f5d662e90e4f24eda36ba3e46b16">anim.c</a>
+</li>
+<li>STATE_UNKNOWN
+: <a class="el" href="pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a786a8e9401b8091f65b2afbd342c90f5">pcb.h</a>
 </li>
 <li>sti
 : <a class="el" href="system_8h.html#ac5d15f274bc9b1e96230f3d3c60fd1f8">system.h</a>
@@ -242,17 +301,38 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>student_malloc
 : <a class="el" href="mpx__supt_8c.html#a421e2b48efb5facc71d16979252710e2">mpx_supt.c</a>
 </li>
+<li>SUCCESS
+: <a class="el" href="pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8eac7f69f7c9e5aea9b8f54cf02870e2bf8">pcb.h</a>
+</li>
+<li>SUSPENDED_BLOCKED
+: <a class="el" href="pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902aa4d91165aaa967e74157a23c02725bc7">pcb.h</a>
+</li>
+<li>SUSPENDED_READY
+: <a class="el" href="pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a81cc2296827c731236176fea80701294">pcb.h</a>
+</li>
+<li>suspendedBlockedQueue
+: <a class="el" href="pcb_8c.html#ae83c9a71ab217215db8dfe3eb9c94e8e">pcb.c</a>
+, <a class="el" href="pcb_8h.html#ae83c9a71ab217215db8dfe3eb9c94e8e">pcb.h</a>
+</li>
+<li>suspendedReadyQueue
+: <a class="el" href="pcb_8h.html#a95c66b02e576aabe04df3fdc9e981fc3">pcb.h</a>
+, <a class="el" href="pcb_8c.html#a95c66b02e576aabe04df3fdc9e981fc3">pcb.c</a>
+</li>
+<li>suspendPCB()
+: <a class="el" href="comm__list_8h.html#adb12aae9347bfdc11c97b2c89c448ce2">comm_list.h</a>
+, <a class="el" href="comm__list_8c.html#adb12aae9347bfdc11c97b2c89c448ce2">comm_list.c</a>
+</li>
 <li>sys_alloc_mem()
 : <a class="el" href="mpx__supt_8c.html#a61adad2abba0a3a225c2290b3de1fe93">mpx_supt.c</a>
 , <a class="el" href="mpx__supt_8h.html#a61adad2abba0a3a225c2290b3de1fe93">mpx_supt.h</a>
 </li>
 <li>sys_free_mem()
-: <a class="el" href="mpx__supt_8c.html#a950663d39dbb073c9dff9cf3b5d3392c">mpx_supt.c</a>
-, <a class="el" href="mpx__supt_8h.html#a950663d39dbb073c9dff9cf3b5d3392c">mpx_supt.h</a>
+: <a class="el" href="mpx__supt_8h.html#a950663d39dbb073c9dff9cf3b5d3392c">mpx_supt.h</a>
+, <a class="el" href="mpx__supt_8c.html#a950663d39dbb073c9dff9cf3b5d3392c">mpx_supt.c</a>
 </li>
 <li>sys_req()
-: <a class="el" href="mpx__supt_8c.html#afb6ff5e2e9bdde9d8971a497b6fe38ae">mpx_supt.c</a>
-, <a class="el" href="mpx__supt_8h.html#afb6ff5e2e9bdde9d8971a497b6fe38ae">mpx_supt.h</a>
+: <a class="el" href="mpx__supt_8h.html#afb6ff5e2e9bdde9d8971a497b6fe38ae">mpx_supt.h</a>
+, <a class="el" href="mpx__supt_8c.html#afb6ff5e2e9bdde9d8971a497b6fe38ae">mpx_supt.c</a>
 </li>
 <li>sys_set_free()
 : <a class="el" href="mpx__supt_8c.html#a2463d934fa39601c275a3ade8afd18bc">mpx_supt.c</a>
@@ -261,6 +341,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>sys_set_malloc()
 : <a class="el" href="mpx__supt_8h.html#a4a28bb188c9fed51228c46980b20e605">mpx_supt.h</a>
 , <a class="el" href="mpx__supt_8c.html#a4a28bb188c9fed51228c46980b20e605">mpx_supt.c</a>
+</li>
+<li>SYSTEM
+: <a class="el" href="pcb_8h.html#ab3268ce0bdfc94e5757917d42c73d9f1a57cc238145ec1361c72c327674c0d754">pcb.h</a>
 </li>
 </ul>
 </div><!-- contents -->

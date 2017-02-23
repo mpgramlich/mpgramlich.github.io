@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Modestus Moon OS
-   &#160;<span id="projectnumber">R1</span>
+   &#160;<span id="projectnumber">R2</span>
    </div>
    <div id="projectbrief">CS 450 project</div>
   </td>
@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -118,6 +119,7 @@ Include dependency graph for tables.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="tables_8h__incl.png" border="0" usemap="#_2home_2loudish_2mpx-spring2017-modestus_2mpx__core_2include_2core_2tables_8h" alt=""/></div>
 <map name="_2home_2loudish_2mpx-spring2017-modestus_2mpx__core_2include_2core_2tables_8h" id="_2home_2loudish_2mpx-spring2017-modestus_2mpx__core_2include_2core_2tables_8h">
+<area shape="rect" id="node2" href="system_8h.html" title="system.h" alt="" coords="67,109,143,136"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -125,6 +127,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="tables_8h__dep__incl.png" border="0" usemap="#_2home_2loudish_2mpx-spring2017-modestus_2mpx__core_2include_2core_2tables_8hdep" alt=""/></div>
 <map name="_2home_2loudish_2mpx-spring2017-modestus_2mpx__core_2include_2core_2tables_8hdep" id="_2home_2loudish_2mpx-spring2017-modestus_2mpx__core_2include_2core_2tables_8hdep">
+<area shape="rect" id="node2" href="asm_8h.html" title="/home/loudish/mpx&#45;spring2017\l&#45;modestus/mpx_core/include\l/core/asm.h" alt="" coords="5,109,204,165"/>
+<area shape="rect" id="node3" href="interrupts_8c.html" title="/home/loudish/mpx&#45;spring2017\l&#45;modestus/mpx_core/kernel\l/core/interrupts.c" alt="" coords="228,109,427,165"/>
+<area shape="rect" id="node4" href="kmain_8c.html" title="/home/loudish/mpx&#45;spring2017\l&#45;modestus/mpx_core/kernel\l/core/kmain.c" alt="" coords="451,109,649,165"/>
+<area shape="rect" id="node5" href="tables_8c.html" title="/home/loudish/mpx&#45;spring2017\l&#45;modestus/mpx_core/kernel\l/core/tables.c" alt="" coords="673,109,872,165"/>
 </map>
 </div>
 </div>
@@ -238,6 +244,15 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tables_8c_source.html#l00057">57</a> of file <a class="el" href="tables_8c_source.html">tables.c</a>.</p>
 
+<p>References <a class="el" href="tables_8h_source.html#l00055">access</a>, and <a class="el" href="tables_8c_source.html#l00013">gdt_entries</a>.</p>
+
+<p>Referenced by <a class="el" href="tables_8c_source.html#l00075">init_gdt()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  gdt_entry *new_entry = &amp;<a class="code" href="tables_8c.html#ac64ff6d00454e0b88d43b55536418288">gdt_entries</a>[idx];</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  new_entry-&gt;base_low  = (<a class="code" href="tables_8h.html#ab5763c2b18c825c8b8fba44b2e60ddc1">base</a> &amp; 0xFFFF);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  new_entry-&gt;base_mid  = (<a class="code" href="tables_8h.html#ab5763c2b18c825c8b8fba44b2e60ddc1">base</a> &gt;&gt; 16) &amp; 0xFF;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  new_entry-&gt;base_high = (<a class="code" href="tables_8h.html#ab5763c2b18c825c8b8fba44b2e60ddc1">base</a> &gt;&gt; 24) &amp; 0xFF;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  new_entry-&gt;limit_low = (<a class="code" href="tables_8h.html#a68fd3b4f6c14a331ca9b226cbf122e13">limit</a> &amp; 0xFFFF);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  new_entry-&gt;flags  = (<a class="code" href="tables_8h.html#a68fd3b4f6c14a331ca9b226cbf122e13">limit</a> &gt;&gt; 16) &amp; 0xFF;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  new_entry-&gt;flags |= <a class="code" href="tables_8h.html#a138dda98fcd4738346af61bcca8cf4b4">flags</a> &amp; 0xF0;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  new_entry-&gt;access = <a class="code" href="tables_8h.html#a360a726ac0b61d9e4e1be3ad34f80244">access</a>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div><div class="ttc" id="tables_8h_html_ab5763c2b18c825c8b8fba44b2e60ddc1"><div class="ttname"><a href="tables_8h.html#ab5763c2b18c825c8b8fba44b2e60ddc1">base</a></div><div class="ttdeci">u32int base</div><div class="ttdef"><b>Definition:</b> <a href="tables_8h_source.html#l00053">tables.h:53</a></div></div>
+<div class="ttc" id="tables_8h_html_a68fd3b4f6c14a331ca9b226cbf122e13"><div class="ttname"><a href="tables_8h.html#a68fd3b4f6c14a331ca9b226cbf122e13">limit</a></div><div class="ttdeci">u16int limit</div><div class="ttdef"><b>Definition:</b> <a href="tables_8h_source.html#l00052">tables.h:52</a></div></div>
+<div class="ttc" id="tables_8h_html_a360a726ac0b61d9e4e1be3ad34f80244"><div class="ttname"><a href="tables_8h.html#a360a726ac0b61d9e4e1be3ad34f80244">access</a></div><div class="ttdeci">u8int access</div><div class="ttdef"><b>Definition:</b> <a href="tables_8h_source.html#l00055">tables.h:55</a></div></div>
+<div class="ttc" id="tables_8h_html_a138dda98fcd4738346af61bcca8cf4b4"><div class="ttname"><a href="tables_8h.html#a138dda98fcd4738346af61bcca8cf4b4">flags</a></div><div class="ttdeci">u8int flags</div><div class="ttdef"><b>Definition:</b> <a href="tables_8h_source.html#l00055">tables.h:55</a></div></div>
+<div class="ttc" id="tables_8c_html_ac64ff6d00454e0b88d43b55536418288"><div class="ttname"><a href="tables_8c.html#ac64ff6d00454e0b88d43b55536418288">gdt_entries</a></div><div class="ttdeci">gdt_entry gdt_entries[5]</div><div class="ttdef"><b>Definition:</b> <a href="tables_8c_source.html#l00013">tables.c:13</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a9eca3fe1465f8d7d383551d804853139"></a>
@@ -278,6 +293,13 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tables_8c_source.html#l00027">27</a> of file <a class="el" href="tables_8c_source.html">tables.c</a>.</p>
 
+<p>References <a class="el" href="tables_8h_source.html#l00055">flags</a>, and <a class="el" href="tables_8c_source.html#l00017">idt_entries</a>.</p>
+
+<p>Referenced by <a class="el" href="interrupts_8c_source.html#l00066">init_irq()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  idt_entry *new_entry = &amp;<a class="code" href="tables_8c.html#a3c386c59636822ce451be20cc1433a55">idt_entries</a>[idx];</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  new_entry-&gt;base_low  = (<a class="code" href="tables_8h.html#ab5763c2b18c825c8b8fba44b2e60ddc1">base</a> &amp;  0xFFFF);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  new_entry-&gt;base_high = (<a class="code" href="tables_8h.html#ab5763c2b18c825c8b8fba44b2e60ddc1">base</a> &gt;&gt; 16) &amp; 0xFFFF;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  new_entry-&gt;sselect   = sel;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  new_entry-&gt;zero = 0;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  new_entry-&gt;flags = <a class="code" href="tables_8h.html#a138dda98fcd4738346af61bcca8cf4b4">flags</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div><div class="ttc" id="tables_8h_html_ab5763c2b18c825c8b8fba44b2e60ddc1"><div class="ttname"><a href="tables_8h.html#ab5763c2b18c825c8b8fba44b2e60ddc1">base</a></div><div class="ttdeci">u32int base</div><div class="ttdef"><b>Definition:</b> <a href="tables_8h_source.html#l00053">tables.h:53</a></div></div>
+<div class="ttc" id="tables_8c_html_a3c386c59636822ce451be20cc1433a55"><div class="ttname"><a href="tables_8c.html#a3c386c59636822ce451be20cc1433a55">idt_entries</a></div><div class="ttdeci">idt_entry idt_entries[256]</div><div class="ttdef"><b>Definition:</b> <a href="tables_8c_source.html#l00017">tables.c:17</a></div></div>
+<div class="ttc" id="tables_8h_html_a138dda98fcd4738346af61bcca8cf4b4"><div class="ttname"><a href="tables_8h.html#a138dda98fcd4738346af61bcca8cf4b4">flags</a></div><div class="ttdeci">u8int flags</div><div class="ttdef"><b>Definition:</b> <a href="tables_8h_source.html#l00055">tables.h:55</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a86bb50044169930202cc403376ef40c3"></a>
@@ -295,6 +317,16 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tables_8c_source.html#l00075">75</a> of file <a class="el" href="tables_8c_source.html">tables.c</a>.</p>
 
+<p>References <a class="el" href="tables_8c_source.html#l00013">gdt_entries</a>, <a class="el" href="tables_8c_source.html#l00057">gdt_init_entry()</a>, <a class="el" href="tables_8c_source.html#l00012">gdt_ptr</a>, <a class="el" href="tables_8h_source.html#l00052">limit</a>, and <a class="el" href="tables_8c.html#ab603373c64fb0a6d51482121d0800be4">write_gdt_ptr()</a>.</p>
+
+<p>Referenced by <a class="el" href="kmain_8c_source.html#l00029">kmain()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="tables_8c.html#aedb4641b02b4a269294e53be7c9b280e">gdt_ptr</a>.limit = 5 * <span class="keyword">sizeof</span>(gdt_entry) - 1;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="tables_8c.html#aedb4641b02b4a269294e53be7c9b280e">gdt_ptr</a>.base  = (<a class="code" href="system_8h.html#a757de76cafbcddaac0d1632902fe4cb8">u32int</a>) <a class="code" href="tables_8c.html#ac64ff6d00454e0b88d43b55536418288">gdt_entries</a>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="system_8h.html#a757de76cafbcddaac0d1632902fe4cb8">u32int</a> <a class="code" href="tables_8h.html#a68fd3b4f6c14a331ca9b226cbf122e13">limit</a> = 0xFFFFFFFF;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="tables_8c.html#a0b5aee548c88c40ecb07741be1be2e27">gdt_init_entry</a>(0, 0, 0, 0, 0);           <span class="comment">//required null segment</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="tables_8c.html#a0b5aee548c88c40ecb07741be1be2e27">gdt_init_entry</a>(1, 0, limit, 0x9A, 0xCF); <span class="comment">//code segment</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="tables_8c.html#a0b5aee548c88c40ecb07741be1be2e27">gdt_init_entry</a>(2, 0, limit, 0x92, 0xCF); <span class="comment">//data segment</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="tables_8c.html#a0b5aee548c88c40ecb07741be1be2e27">gdt_init_entry</a>(3, 0, limit, 0xFA, 0xCF); <span class="comment">//user mode code segment</span></div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="tables_8c.html#a0b5aee548c88c40ecb07741be1be2e27">gdt_init_entry</a>(4, 0, limit, 0xF2, 0xCF); <span class="comment">//user mode data segment</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="tables_8c.html#ab603373c64fb0a6d51482121d0800be4">write_gdt_ptr</a>((<a class="code" href="system_8h.html#a757de76cafbcddaac0d1632902fe4cb8">u32int</a>) &amp;<a class="code" href="tables_8c.html#aedb4641b02b4a269294e53be7c9b280e">gdt_ptr</a>, <span class="keyword">sizeof</span>(gdt_ptr));</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div><div class="ttc" id="tables_8h_html_a68fd3b4f6c14a331ca9b226cbf122e13"><div class="ttname"><a href="tables_8h.html#a68fd3b4f6c14a331ca9b226cbf122e13">limit</a></div><div class="ttdeci">u16int limit</div><div class="ttdef"><b>Definition:</b> <a href="tables_8h_source.html#l00052">tables.h:52</a></div></div>
+<div class="ttc" id="system_8h_html_a757de76cafbcddaac0d1632902fe4cb8"><div class="ttname"><a href="system_8h.html#a757de76cafbcddaac0d1632902fe4cb8">u32int</a></div><div class="ttdeci">unsigned long u32int</div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00027">system.h:27</a></div></div>
+<div class="ttc" id="tables_8c_html_ab603373c64fb0a6d51482121d0800be4"><div class="ttname"><a href="tables_8c.html#ab603373c64fb0a6d51482121d0800be4">write_gdt_ptr</a></div><div class="ttdeci">void write_gdt_ptr(u32int, size_t)</div></div>
+<div class="ttc" id="tables_8c_html_a0b5aee548c88c40ecb07741be1be2e27"><div class="ttname"><a href="tables_8c.html#a0b5aee548c88c40ecb07741be1be2e27">gdt_init_entry</a></div><div class="ttdeci">void gdt_init_entry(int idx, u32int base, u32int limit, u8int access, u8int flags)</div><div class="ttdef"><b>Definition:</b> <a href="tables_8c_source.html#l00057">tables.c:57</a></div></div>
+<div class="ttc" id="tables_8c_html_aedb4641b02b4a269294e53be7c9b280e"><div class="ttname"><a href="tables_8c.html#aedb4641b02b4a269294e53be7c9b280e">gdt_ptr</a></div><div class="ttdeci">gdt_descriptor gdt_ptr</div><div class="ttdef"><b>Definition:</b> <a href="tables_8c_source.html#l00012">tables.c:12</a></div></div>
+<div class="ttc" id="tables_8c_html_ac64ff6d00454e0b88d43b55536418288"><div class="ttname"><a href="tables_8c.html#ac64ff6d00454e0b88d43b55536418288">gdt_entries</a></div><div class="ttdeci">gdt_entry gdt_entries[5]</div><div class="ttdef"><b>Definition:</b> <a href="tables_8c_source.html#l00013">tables.c:13</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a35fe413107af682030ab7a4b6dff19b8"></a>
@@ -312,6 +344,15 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tables_8c_source.html#l00043">43</a> of file <a class="el" href="tables_8c_source.html">tables.c</a>.</p>
 
+<p>References <a class="el" href="tables_8c_source.html#l00017">idt_entries</a>, <a class="el" href="tables_8c_source.html#l00016">idt_ptr</a>, <a class="el" href="string_8c_source.html#l00135">memset()</a>, and <a class="el" href="tables_8c.html#a77fec66a455d3275b67be5c3d7868555">write_idt_ptr()</a>.</p>
+
+<p>Referenced by <a class="el" href="kmain_8c_source.html#l00029">kmain()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="tables_8c.html#a76f617adbc46449bbc39e7b46504b7c4">idt_ptr</a>.limit = 256*<span class="keyword">sizeof</span>(idt_descriptor) - 1;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="tables_8c.html#a76f617adbc46449bbc39e7b46504b7c4">idt_ptr</a>.base  = (<a class="code" href="system_8h.html#a757de76cafbcddaac0d1632902fe4cb8">u32int</a>)<a class="code" href="tables_8c.html#a3c386c59636822ce451be20cc1433a55">idt_entries</a>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="string_8h.html#ace6ee45c30e71865e6eb635200379db9">memset</a>(<a class="code" href="tables_8c.html#a3c386c59636822ce451be20cc1433a55">idt_entries</a>, 0, 256*<span class="keyword">sizeof</span>(idt_descriptor));</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  </div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="tables_8c.html#a77fec66a455d3275b67be5c3d7868555">write_idt_ptr</a>((<a class="code" href="system_8h.html#a757de76cafbcddaac0d1632902fe4cb8">u32int</a>)&amp;<a class="code" href="tables_8c.html#a76f617adbc46449bbc39e7b46504b7c4">idt_ptr</a>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div><div class="ttc" id="tables_8c_html_a3c386c59636822ce451be20cc1433a55"><div class="ttname"><a href="tables_8c.html#a3c386c59636822ce451be20cc1433a55">idt_entries</a></div><div class="ttdeci">idt_entry idt_entries[256]</div><div class="ttdef"><b>Definition:</b> <a href="tables_8c_source.html#l00017">tables.c:17</a></div></div>
+<div class="ttc" id="tables_8c_html_a77fec66a455d3275b67be5c3d7868555"><div class="ttname"><a href="tables_8c.html#a77fec66a455d3275b67be5c3d7868555">write_idt_ptr</a></div><div class="ttdeci">void write_idt_ptr(u32int)</div></div>
+<div class="ttc" id="tables_8c_html_a76f617adbc46449bbc39e7b46504b7c4"><div class="ttname"><a href="tables_8c.html#a76f617adbc46449bbc39e7b46504b7c4">idt_ptr</a></div><div class="ttdeci">idt_descriptor idt_ptr</div><div class="ttdef"><b>Definition:</b> <a href="tables_8c_source.html#l00016">tables.c:16</a></div></div>
+<div class="ttc" id="system_8h_html_a757de76cafbcddaac0d1632902fe4cb8"><div class="ttname"><a href="system_8h.html#a757de76cafbcddaac0d1632902fe4cb8">u32int</a></div><div class="ttdeci">unsigned long u32int</div><div class="ttdef"><b>Definition:</b> <a href="system_8h_source.html#l00027">system.h:27</a></div></div>
+<div class="ttc" id="string_8h_html_ace6ee45c30e71865e6eb635200379db9"><div class="ttname"><a href="string_8h.html#ace6ee45c30e71865e6eb635200379db9">memset</a></div><div class="ttdeci">void * memset(void *s, int c, size_t n)</div><div class="ttdoc">memset Set a region of memory. </div><div class="ttdef"><b>Definition:</b> <a href="string_8c_source.html#l00135">string.c:135</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -327,6 +368,8 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tables_8h_source.html#l00055">55</a> of file <a class="el" href="tables_8h_source.html">tables.h</a>.</p>
 
+<p>Referenced by <a class="el" href="tables_8c_source.html#l00057">gdt_init_entry()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab5763c2b18c825c8b8fba44b2e60ddc1"></a>
@@ -340,6 +383,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="tables_8h_source.html#l00053">53</a> of file <a class="el" href="tables_8h_source.html">tables.h</a>.</p>
+
+<p>Referenced by <a class="el" href="heap_8c_source.html#l00057">alloc()</a>.</p>
 
 </div>
 </div>
@@ -397,6 +442,8 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tables_8h_source.html#l00055">55</a> of file <a class="el" href="tables_8h_source.html">tables.h</a>.</p>
 
+<p>Referenced by <a class="el" href="tables_8c_source.html#l00027">idt_set_gate()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a68fd3b4f6c14a331ca9b226cbf122e13"></a>
@@ -410,6 +457,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="tables_8h_source.html#l00052">52</a> of file <a class="el" href="tables_8h_source.html">tables.h</a>.</p>
+
+<p>Referenced by <a class="el" href="tables_8c_source.html#l00075">init_gdt()</a>.</p>
 
 </div>
 </div>

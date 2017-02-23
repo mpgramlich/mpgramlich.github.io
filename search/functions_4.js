@@ -1,6 +1,8 @@
 var searchData=
 [
+  ['date',['date',['../comm__list_8c.html#a2b5b0b260a749c7a0371b96f079b9d69',1,'date(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#a2b5b0b260a749c7a0371b96f079b9d69',1,'date(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
   ['debug',['debug',['../interrupts_8c.html#a0d0105433f9c65c14928027b3f0966b7',1,'interrupts.c']]],
+  ['deletepcb',['deletePCB',['../comm__list_8c.html#a3602fa2889ad77ef2f323f6db3dd967e',1,'deletePCB(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#a3602fa2889ad77ef2f323f6db3dd967e',1,'deletePCB(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
   ['device_5fnot_5favailable',['device_not_available',['../interrupts_8c.html#abe88cd1dcc26cb58ee785c714e016f72',1,'interrupts.c']]],
   ['divide_5ferror',['divide_error',['../interrupts_8c.html#a779cbe32e1a5f1dc8fa9b7191f116b28',1,'interrupts.c']]],
   ['do_5fbounds',['do_bounds',['../interrupts_8c.html#a27f47460ebcce0c6a6af781bd6f9fb9f',1,'interrupts.c']]],

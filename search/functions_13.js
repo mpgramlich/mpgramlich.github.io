@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['write_5fgdt_5fptr',['write_gdt_ptr',['../tables_8c.html#ab603373c64fb0a6d51482121d0800be4',1,'tables.c']]],
-  ['write_5fidt_5fptr',['write_idt_ptr',['../tables_8c.html#a77fec66a455d3275b67be5c3d7868555',1,'tables.c']]]
+  ['unblockpcb',['unblockPCB',['../comm__list_8c.html#ac26704b8c23bbe0e0fdf8e838915e29d',1,'unblockPCB(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#ac26704b8c23bbe0e0fdf8e838915e29d',1,'unblockPCB(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]]
 ];
