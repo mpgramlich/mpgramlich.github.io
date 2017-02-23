@@ -1,0 +1,23 @@
+digraph "/home/loudish/mpx-spring2017-modestus/mpx_core/kernel/mem/heap.c"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/loudish/mpx-spring2017\l-modestus/mpx_core/kernel\l/mem/heap.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="system.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$system_8h.html"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="string.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html"];
+  Node3 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="arg_list.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arg__list_8h.html"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="core/serial.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$serial_8h.html"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="input.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$input_8h.html"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mem/heap.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$heap_8h.html"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="mem/paging.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$paging_8h.html"];
+  Node8 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
