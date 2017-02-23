@@ -7,5 +7,5 @@ var searchData=
   ['comm_5fhist',['comm_hist',['../commhand_8c.html#a3d3b206df340b640d0fca3a5c7436dfe',1,'commhand.c']]],
   ['context',['context',['../structs__pcb__stuct.html#a6582c8165b3f22bdc8f728620d956fb7',1,'s_pcb_stuct']]],
   ['curr_5fheap',['curr_heap',['../heap_8c.html#afaac4d3fb801ecbd3c6fe3c995d5cf82',1,'heap.c']]],
-  ['current_5fmodule',['current_module',['../mpx__supt_8c.html#a3d19c725b7f9f45e9da97a79ca6a4737',1,'mpx_supt.c']]]
+  ['current_5fmodule',['current_module',['../kernel_2core_2mpx__supt_8c.html#a3d19c725b7f9f45e9da97a79ca6a4737',1,'current_module():&#160;mpx_supt.c'],['../modules_2mpx__supt_8c.html#a3d19c725b7f9f45e9da97a79ca6a4737',1,'current_module():&#160;mpx_supt.c']]]
 ];

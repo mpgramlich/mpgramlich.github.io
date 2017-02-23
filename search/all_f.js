@@ -9,7 +9,7 @@ var searchData=
   ['paging_2ec',['paging.c',['../paging_8c.html',1,'']]],
   ['paging_2eh',['paging.h',['../paging_8h.html',1,'']]],
   ['param',['param',['../structparam.html',1,'']]],
-  ['params',['params',['../mpx__supt_8c.html#a3b4b77494d0fad58939896ddc5290c99',1,'mpx_supt.c']]],
+  ['params',['params',['../kernel_2core_2mpx__supt_8c.html#a3b4b77494d0fad58939896ddc5290c99',1,'params():&#160;mpx_supt.c'],['../modules_2mpx__supt_8c.html#a3b4b77494d0fad58939896ddc5290c99',1,'params():&#160;mpx_supt.c']]],
   ['parse_5fcomm',['parse_comm',['../commhand_8c.html#a54379c88e3cd7f51bce123975078b052',1,'commhand.c']]],
   ['pcb_2ec',['pcb.c',['../pcb_8c.html',1,'']]],
   ['pcb_2eh',['pcb.h',['../pcb_8h.html',1,'']]],

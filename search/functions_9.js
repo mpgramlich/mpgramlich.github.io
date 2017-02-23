@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['idle',['idle',['../mpx__supt_8h.html#a83abbeda22fc5e6c2b35523b64199c1c',1,'idle():&#160;mpx_supt.c'],['../mpx__supt_8c.html#a83abbeda22fc5e6c2b35523b64199c1c',1,'idle():&#160;mpx_supt.c']]],
+  ['idle',['idle',['../include_2core_2mpx__supt_8h.html#a83abbeda22fc5e6c2b35523b64199c1c',1,'idle():&#160;mpx_supt.c'],['../kernel_2core_2mpx__supt_8c.html#a83abbeda22fc5e6c2b35523b64199c1c',1,'idle():&#160;mpx_supt.c'],['../modules_2mpx__supt_8c.html#a83abbeda22fc5e6c2b35523b64199c1c',1,'idle():&#160;mpx_supt.c'],['../modules_2mpx__supt_8h.html#a83abbeda22fc5e6c2b35523b64199c1c',1,'idle():&#160;mpx_supt.c']]],
   ['idt_5fset_5fgate',['idt_set_gate',['../tables_8h.html#a9eca3fe1465f8d7d383551d804853139',1,'idt_set_gate(u8int idx, u32int base, u16int sel, u8int flags):&#160;tables.c'],['../tables_8c.html#a9eca3fe1465f8d7d383551d804853139',1,'idt_set_gate(u8int idx, u32int base, u16int sel, u8int flags):&#160;tables.c']]],
   ['init_5fcommhand',['init_commhand',['../commhand_8h.html#a5f6c259a5d805f1a24d35f36cb9207d3',1,'init_commhand(void):&#160;commhand.c'],['../commhand_8c.html#a5f6c259a5d805f1a24d35f36cb9207d3',1,'init_commhand(void):&#160;commhand.c']]],
   ['init_5fgdt',['init_gdt',['../tables_8h.html#a86bb50044169930202cc403376ef40c3',1,'init_gdt():&#160;tables.c'],['../tables_8c.html#a86bb50044169930202cc403376ef40c3',1,'init_gdt():&#160;tables.c']]],
@@ -24,5 +24,6 @@ var searchData=
   ['isempty',['isEmpty',['../comm__list_8c.html#a123c1c0d25a5a737a49a812d4bfd5d8d',1,'isEmpty(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#a123c1c0d25a5a737a49a812d4bfd5d8d',1,'isEmpty(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
   ['isnum',['isnum',['../string_8h.html#a1153bdbe1c0758a66d46bdefa2eb755d',1,'isnum(const char c):&#160;string.c'],['../string_8c.html#a1153bdbe1c0758a66d46bdefa2eb755d',1,'isnum(const char c):&#160;string.c']]],
   ['isr0',['isr0',['../interrupts_8c.html#af88eb8e98d943aa0461c01de3cb53493',1,'interrupts.c']]],
-  ['isspace',['isspace',['../string_8h.html#a0f3d37d605e9e6d4fc1853ff9d4b91bf',1,'isspace(const char *c):&#160;string.c'],['../string_8c.html#a0f3d37d605e9e6d4fc1853ff9d4b91bf',1,'isspace(const char *c):&#160;string.c']]]
+  ['isspace',['isspace',['../string_8h.html#a0f3d37d605e9e6d4fc1853ff9d4b91bf',1,'isspace(const char *c):&#160;string.c'],['../string_8c.html#a0f3d37d605e9e6d4fc1853ff9d4b91bf',1,'isspace(const char *c):&#160;string.c']]],
+  ['issuspended',['isSuspended',['../group___r2.html#ga1e42e70128de8086a07dbcd97e000942',1,'isSuspended(e_PROCESS_STATE_t state):&#160;pcb.c'],['../group___r2.html#ga1e42e70128de8086a07dbcd97e000942',1,'isSuspended(e_PROCESS_STATE_t state):&#160;pcb.c']]]
 ];

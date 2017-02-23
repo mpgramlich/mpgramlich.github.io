@@ -9,5 +9,6 @@ var searchData=
   ['get_5ftime',['get_time',['../rtc_8h.html#a35fa24488cb7eb077e8dc995729202cf',1,'get_time(int *hours, int *minutes, int *seconds):&#160;rtc.c'],['../rtc_8c.html#a35fa24488cb7eb077e8dc995729202cf',1,'get_time(int *hours, int *minutes, int *seconds):&#160;rtc.c']]],
   ['getdate',['getDate',['../comm__list_8c.html#affb6f9c7b2c1d585677a5bba1da35c06',1,'getDate():&#160;comm_list.c'],['../comm__list_8h.html#affb6f9c7b2c1d585677a5bba1da35c06',1,'getDate():&#160;comm_list.c']]],
   ['getnumdaysinmonth',['getNumDaysInMonth',['../comm__list_8c.html#a63e5b5d633e0beec232fe5765124ad7e',1,'getNumDaysInMonth(int month, int year):&#160;comm_list.c'],['../comm__list_8h.html#a63e5b5d633e0beec232fe5765124ad7e',1,'getNumDaysInMonth(int month, int year):&#160;comm_list.c']]],
+  ['getstate',['getState',['../group___r2.html#gae34a580c5336a0d5f2a0589f41f25fa2',1,'getState(const char *name):&#160;pcb.c'],['../group___r2.html#gae34a580c5336a0d5f2a0589f41f25fa2',1,'getState(const char *name):&#160;pcb.c']]],
   ['gettime',['getTime',['../comm__list_8c.html#a1c7c164fd3c7dea7004ece3c6251fc94',1,'getTime():&#160;comm_list.c'],['../comm__list_8h.html#a1c7c164fd3c7dea7004ece3c6251fc94',1,'getTime():&#160;comm_list.c']]]
 ];

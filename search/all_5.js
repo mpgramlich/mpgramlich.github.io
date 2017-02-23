@@ -14,8 +14,9 @@ var searchData=
   ['error_5fpriority_5finvalid',['ERROR_PRIORITY_INVALID',['../pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea5a16825b1ce3ee2cb0190cc641921707',1,'pcb.h']]],
   ['error_5fremoving_5fpcb',['ERROR_REMOVING_PCB',['../pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea2df915668ce49c55a81cd75b8aaa4564',1,'pcb.h']]],
   ['error_5fstate_5finvalid',['ERROR_STATE_INVALID',['../pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea5f917cfb598da5d3c968757ba14a8ad4',1,'pcb.h']]],
+  ['errortostring',['errorToString',['../group___r2.html#ga834927e89e94c123a0ec5322b11b0161',1,'errorToString(e_PCB_ERROR_CODE_t error):&#160;pcb.c'],['../group___r2.html#ga834927e89e94c123a0ec5322b11b0161',1,'errorToString(e_PCB_ERROR_CODE_t error):&#160;pcb.c']]],
   ['esc',['ESC',['../input_8h.html#a4af1b6159e447ba72652bb7fcdfa726e',1,'input.h']]],
   ['exec_5fcomm',['exec_comm',['../commhand_8c.html#aeac60d828269ea566f8d5481017467ba',1,'commhand.c']]],
-  ['exit',['EXIT',['../mpx__supt_8h.html#ad111e603bbebe5d87f6bc39264ce4733',1,'mpx_supt.h']]],
+  ['exit',['EXIT',['../include_2core_2mpx__supt_8h.html#ad111e603bbebe5d87f6bc39264ce4733',1,'EXIT():&#160;mpx_supt.h'],['../modules_2mpx__supt_8h.html#ad111e603bbebe5d87f6bc39264ce4733',1,'EXIT():&#160;mpx_supt.h']]],
   ['extra_5fparameters',['EXTRA_PARAMETERS',['../comm__vars_8h.html#a3d75ee5ce40f6fc7b3182661c2e11fde',1,'comm_vars.h']]]
 ];

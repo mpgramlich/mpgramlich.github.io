@@ -1,7 +1,7 @@
 var searchData=
 [
   ['r2',['R2',['../group___r2.html',1,'']]],
-  ['read',['READ',['../mpx__supt_8h.html#ada74e7db007a68e763f20c17f2985356',1,'mpx_supt.h']]],
+  ['read',['READ',['../include_2core_2mpx__supt_8h.html#ada74e7db007a68e763f20c17f2985356',1,'READ():&#160;mpx_supt.h'],['../modules_2mpx__supt_8h.html#ada74e7db007a68e763f20c17f2985356',1,'READ():&#160;mpx_supt.h']]],
   ['ready',['READY',['../pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a6564f2f3e15be06b670547bbcaaf0798',1,'pcb.h']]],
   ['readyqueue',['readyQueue',['../pcb_8h.html#a7b1bca867586a0a58222b805dbe3be28',1,'readyQueue():&#160;pcb.c'],['../pcb_8c.html#a7b1bca867586a0a58222b805dbe3be28',1,'readyQueue():&#160;pcb.c']]],
   ['removenode',['removeNode',['../linked__list_8h.html#ad225d0f3d9e1b59a58117ba0bc491189',1,'removeNode(node_t *nodeToRemove):&#160;linked_list.c'],['../linked__list_8c.html#ad225d0f3d9e1b59a58117ba0bc491189',1,'removeNode(node_t *nodeToRemove):&#160;linked_list.c']]],
