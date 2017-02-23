@@ -33,7 +33,7 @@ var comm__list_8c =
     [ "pcbFunc", "comm__list_8c.html#ac903af80a2e0afe97b30f5ca88a1505a", null ],
     [ "resumePCB", "comm__list_8c.html#a672eae99ab4e3da15306bc6df644bb50", null ],
     [ "setDate", "comm__list_8c.html#abcb304e34ec42b6fa3df07249ce8c1b7", null ],
-    [ "setPriority", "comm__list_8c.html#aa7026f77bd1a562f1feaea1d3a6fdeb9", null ],
+    [ "setPriority", "comm__list_8c.html#a3c30cca674e48a10a60180721d65cee0", null ],
     [ "setTime", "comm__list_8c.html#a684ac3c738428c05031f6b5c5b121d85", null ],
     [ "showAllProcesses", "comm__list_8c.html#a15a1fce149a24a3c2925b6ca44cb79c7", null ],
     [ "showBlockedProcesses", "comm__list_8c.html#aea06cb173ad17f9139253574d010d678", null ],
