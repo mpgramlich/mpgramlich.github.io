@@ -47,6 +47,5 @@ var searchData=
   ['isempty',['isEmpty',['../comm__list_8c.html#a123c1c0d25a5a737a49a812d4bfd5d8d',1,'isEmpty(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#a123c1c0d25a5a737a49a812d4bfd5d8d',1,'isEmpty(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
   ['isnum',['isnum',['../string_8h.html#a1153bdbe1c0758a66d46bdefa2eb755d',1,'isnum(const char c):&#160;string.c'],['../string_8c.html#a1153bdbe1c0758a66d46bdefa2eb755d',1,'isnum(const char c):&#160;string.c']]],
   ['isr0',['isr0',['../interrupts_8c.html#af88eb8e98d943aa0461c01de3cb53493',1,'interrupts.c']]],
-  ['isspace',['isspace',['../string_8h.html#a0f3d37d605e9e6d4fc1853ff9d4b91bf',1,'isspace(const char *c):&#160;string.c'],['../string_8c.html#a0f3d37d605e9e6d4fc1853ff9d4b91bf',1,'isspace(const char *c):&#160;string.c']]],
-  ['issuspended',['isSuspended',['../group___r2.html#ga1e42e70128de8086a07dbcd97e000942',1,'isSuspended(e_PROCESS_STATE_t state):&#160;pcb.c'],['../group___r2.html#ga1e42e70128de8086a07dbcd97e000942',1,'isSuspended(e_PROCESS_STATE_t state):&#160;pcb.c']]]
+  ['isspace',['isspace',['../string_8h.html#a0f3d37d605e9e6d4fc1853ff9d4b91bf',1,'isspace(const char *c):&#160;string.c'],['../string_8c.html#a0f3d37d605e9e6d4fc1853ff9d4b91bf',1,'isspace(const char *c):&#160;string.c']]]
 ];

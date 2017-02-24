@@ -1,8 +1,10 @@
 var searchData=
 [
+  ['cdecl',['cdecl',['../string_8h.html#a9e78af0dd6b6d82ec72efd4be2fe34f7',1,'string.h']]],
   ['cdir',['cdir',['../paging_8c.html#af7da380833e92d5c7d3c3db41484713b',1,'paging.c']]],
   ['changeprocesspriority',['changeProcessPriority',['../pcb_8h.html#a0f7e7192cbb11b1895d900faefac2472',1,'changeProcessPriority(const char *procName, processPriority_t newPriority):&#160;pcb.c'],['../pcb_8c.html#a0f7e7192cbb11b1895d900faefac2472',1,'changeProcessPriority(const char *procName, processPriority_t newPriority):&#160;pcb.c']]],
-  ['changeprocessstate',['changeProcessState',['../group___r2.html#ga83a5983d76f08725aadc23bf47930436',1,'changeProcessState(const char *name, e_PROCESS_STATE_t state):&#160;pcb.c'],['../group___r2.html#ga83a5983d76f08725aadc23bf47930436',1,'changeProcessState(const char *processName, e_PROCESS_STATE_t newState):&#160;pcb.c']]],
+  ['changeprocessstate',['changeProcessState',['../group___r2.html#ga69ffbf50820bccd94857e1d25b68b2c3',1,'changeProcessState(const char *processName, e_PROCESS_STATE_t state):&#160;pcb.c'],['../group___r2.html#ga69ffbf50820bccd94857e1d25b68b2c3',1,'changeProcessState(const char *processName, e_PROCESS_STATE_t newState):&#160;pcb.c']]],
+  ['changeprocesssuspensionstate',['changeProcessSuspensionState',['../pcb_8h.html#a6ab558a3fdd3e7d3e14064b1a9eee773',1,'changeProcessSuspensionState(const char *processName, e_PROCESS_SUSPENSION_STATE_t suspensionState):&#160;pcb.c'],['../pcb_8c.html#a6ab558a3fdd3e7d3e14064b1a9eee773',1,'changeProcessSuspensionState(const char *processName, e_PROCESS_SUSPENSION_STATE_t suspensionState):&#160;pcb.c']]],
   ['class_5funknown',['CLASS_UNKNOWN',['../pcb_8h.html#ab3268ce0bdfc94e5757917d42c73d9f1a614fd08f9a6cd84e97785eb2c551dafe',1,'pcb.h']]],
   ['classtostring',['classToString',['../group___r2.html#gac38459f8731293f12b7fb0170c923471',1,'classToString(e_PROCESS_CLASS_t processClass):&#160;pcb.c'],['../group___r2.html#gac38459f8731293f12b7fb0170c923471',1,'classToString(e_PROCESS_CLASS_t processClass):&#160;pcb.c']]],
   ['clear_5fbit',['clear_bit',['../paging_8h.html#adcef508c82c20a032508f871e79e1b92',1,'clear_bit(u32int addr):&#160;paging.c'],['../paging_8c.html#adcef508c82c20a032508f871e79e1b92',1,'clear_bit(u32int addr):&#160;paging.c']]],

@@ -12,5 +12,6 @@ var string_8h =
     [ "strcmp", "string_8h.html#a11bd144d7d44914099a3aeddf1c8567d", null ],
     [ "strcpy", "string_8h.html#a1eb9cae61e6a6282c28dbc298ef7297e", null ],
     [ "strlen", "string_8h.html#a2dee044e4e667b5b789b493abd21cfa4", null ],
-    [ "strtok", "string_8h.html#af1a867dcea42fc1215d0eddf19283ef3", null ]
+    [ "strtok", "string_8h.html#af1a867dcea42fc1215d0eddf19283ef3", null ],
+    [ "cdecl", "string_8h.html#a9e78af0dd6b6d82ec72efd4be2fe34f7", null ]
 ];

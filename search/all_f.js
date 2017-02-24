@@ -42,6 +42,7 @@ var searchData=
   ['processpriority_5ft',['processPriority_t',['../pcb_8h.html#aade1badcda6beffd30258586dcad6550',1,'pcb.h']]],
   ['processstack_5ft',['processStack_t',['../pcb_8h.html#a39f696168968032d4df0637fad2ad52c',1,'pcb.h']]],
   ['processstate',['processState',['../structs__pcb__stuct.html#a3414d9e8c0846cb7bc40c1d8b150838d',1,'s_pcb_stuct']]],
+  ['processsuspensionstate',['processSuspensionState',['../structs__pcb__stuct.html#aa00e5f40a5a58c30a8f05930a0e6be48',1,'s_pcb_stuct']]],
   ['programdataptr_5ft',['programDataPtr_t',['../pcb_8h.html#a4f8494f06fbe4ad011320128964be020',1,'pcb.h']]],
   ['programptr_5ft',['programPtr_t',['../pcb_8h.html#aeac19486a8c4d8375298127cee4305b1',1,'pcb.h']]],
   ['programsize',['programSize',['../structs__pcb__stuct.html#a54cc79a0ba481257faae94273acd2c3c',1,'s_pcb_stuct']]],

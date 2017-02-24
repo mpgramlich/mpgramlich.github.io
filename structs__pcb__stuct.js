@@ -8,6 +8,7 @@ var structs__pcb__stuct =
     [ "priority", "structs__pcb__stuct.html#a612f885834f0ac6dd2f928136212d84e", null ],
     [ "processClass", "structs__pcb__stuct.html#ad0d111d2998d9b0c21b8c87df874cbf9", null ],
     [ "processState", "structs__pcb__stuct.html#a3414d9e8c0846cb7bc40c1d8b150838d", null ],
+    [ "processSuspensionState", "structs__pcb__stuct.html#aa00e5f40a5a58c30a8f05930a0e6be48", null ],
     [ "programSize", "structs__pcb__stuct.html#a54cc79a0ba481257faae94273acd2c3c", null ],
     [ "programStart", "structs__pcb__stuct.html#ad1efbb40c3e4e209c82f2e983743ab39", null ],
     [ "representingNode", "structs__pcb__stuct.html#abf7c3f3b733400d1c48509497e34a18f", null ],
