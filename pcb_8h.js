@@ -27,7 +27,8 @@ var pcb_8h =
       [ "ERROR_STATE_INVALID", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea5f917cfb598da5d3c968757ba14a8ad4", null ],
       [ "ERROR_CLASS_INVALID", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea3cdbe51860b8d8ac45c389e3529cab86", null ],
       [ "ERROR_ALLOCATING_NODE", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea99e0ec269cfbfd22ecb2fe4a99feb758", null ],
-      [ "ERROR_NAME_COLLISION", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8eabcb953a00ed17aae6faa79d92f12500e", null ]
+      [ "ERROR_NAME_COLLISION", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8eabcb953a00ed17aae6faa79d92f12500e", null ],
+      [ "ERROR_INSERTING_PCB", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8eaa9f3989231a4cdcf63a6a93b8aa474b2", null ]
     ] ],
     [ "e_PROCESS_CLASS_t", "pcb_8h.html#ab3268ce0bdfc94e5757917d42c73d9f1", [
       [ "SYSTEM", "pcb_8h.html#ab3268ce0bdfc94e5757917d42c73d9f1a57cc238145ec1361c72c327674c0d754", null ],
@@ -39,14 +40,18 @@ var pcb_8h =
       [ "READY", "pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a6564f2f3e15be06b670547bbcaaf0798", null ],
       [ "RUNNING", "pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a1061be6c3fb88d32829cba6f6b2be304", null ],
       [ "BLOCKED", "pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a376c1b6a3f75d283a2efacf737438d61", null ],
-      [ "SUSPENDED_READY", "pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a81cc2296827c731236176fea80701294", null ],
-      [ "SUSPENDED_BLOCKED", "pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902aa4d91165aaa967e74157a23c02725bc7", null ],
       [ "TERMINAL", "pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a9b2989c4ac8a0f9a7f46528384eaa5c7", null ],
       [ "STATE_UNKNOWN", "pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a786a8e9401b8091f65b2afbd342c90f5", null ]
     ] ],
+    [ "e_PROCESS_SUSPENSION_STATE_t", "pcb_8h.html#a62786f54ed7251d1b1de61f23b707fc1", [
+      [ "SUSPENDED", "pcb_8h.html#a62786f54ed7251d1b1de61f23b707fc1a1c2114335a42993ac5cc5dbf65f83d41", null ],
+      [ "NOT_SUSPENDED", "pcb_8h.html#a62786f54ed7251d1b1de61f23b707fc1a13635c2ef4530cf1d8ccbb10a80be35d", null ],
+      [ "SUSPENSION_UNKNOWN", "pcb_8h.html#a62786f54ed7251d1b1de61f23b707fc1afab36cc419b11f64594896f620f09a6f", null ]
+    ] ],
     [ "allocatePCB", "pcb_8h.html#a5c2a9f7bca10a6d45287ce6834b7167c", null ],
     [ "changeProcessPriority", "pcb_8h.html#a0f7e7192cbb11b1895d900faefac2472", null ],
-    [ "changeProcessState", "group___r2.html#ga83a5983d76f08725aadc23bf47930436", null ],
+    [ "changeProcessState", "group___r2.html#ga69ffbf50820bccd94857e1d25b68b2c3", null ],
+    [ "changeProcessSuspensionState", "pcb_8h.html#a6ab558a3fdd3e7d3e14064b1a9eee773", null ],
     [ "classToString", "group___r2.html#gac38459f8731293f12b7fb0170c923471", null ],
     [ "errorToString", "group___r2.html#ga834927e89e94c123a0ec5322b11b0161", null ],
     [ "fifoInsertFunc", "pcb_8h.html#a30717aca6066b99d5d73c6fda5b438e6", null ],
@@ -55,7 +60,6 @@ var pcb_8h =
     [ "getState", "group___r2.html#gae34a580c5336a0d5f2a0589f41f25fa2", null ],
     [ "initPCBQueues", "pcb_8h.html#a8649777d644ec839c0d02d966f068f45", null ],
     [ "insertPCB", "pcb_8h.html#aa1e16d4087c6b2a5acf3aff5a3f339ee", null ],
-    [ "isSuspended", "group___r2.html#ga1e42e70128de8086a07dbcd97e000942", null ],
     [ "pcbSearchFunc", "pcb_8h.html#a8c657cc0a82e51f22c2b601cc961169e", null ],
     [ "pcbTest", "pcb_8h.html#adc4d10af06448eb7a046bacfc2918ea2", null ],
     [ "printPCBFunc", "group___r2.html#ga819c31d0b376ca33ed371253585f9f80", null ],
