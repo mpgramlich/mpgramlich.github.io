@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Modestus Moon OS: linkedList_t Struct Reference</title>
+<title>Modestus Moon OS: s_ll Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('structs__ll.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">linkedList_t Struct Reference</div>  </div>
+<div class="title">s_ll Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -119,30 +119,36 @@ $(document).ready(function(){initNavTree('structs__ll.html','');});
 
 <p><code>#include &lt;<a class="el" href="linked__list_8h_source.html">linked_list</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for linkedList_t:</div>
+Collaboration diagram for s_ll:</div>
 <div class="dyncontent">
-<div class="center"><img src="structs__ll__coll__graph.png" border="0" usemap="#linked_list__t_coll__map" alt="Collaboration graph"/></div>
-<map name="linked_list__t_coll__map" id="linked_list__t_coll__map">
-<area shape="rect" id="node2" href="structnode__t.html" title="typedef of linked list node (see s_ll_node). " alt="" coords="19,5,80,32"/>
+<div class="center"><img src="structs__ll__coll__graph.png" border="0" usemap="#s__ll_coll__map" alt="Collaboration graph"/></div>
+<map name="s__ll_coll__map" id="s__ll_coll__map">
+<area shape="rect" id="node2" href="structs__ll__node.html" title="struct for a node of the linked list " alt="" coords="60,109,137,136"/>
+<area shape="rect" id="node3" href="structlinked_list__t.html" title="typedef of linked list (see s_ll). " alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node4" href="structnode__t.html" title="typedef of linked list node (see s_ll_node). " alt="" coords="117,5,179,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a0056de8ffd1d9af11ed1a8bb771ae227"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnode__t.html">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#a0056de8ffd1d9af11ed1a8bb771ae227">head</a></td></tr>
-<tr class="separator:a0056de8ffd1d9af11ed1a8bb771ae227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3253fe5f72d8914dd8331e74aba9982e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnode__t.html">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#a3253fe5f72d8914dd8331e74aba9982e">tail</a></td></tr>
-<tr class="separator:a3253fe5f72d8914dd8331e74aba9982e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac22c97ea79a7ec45eb27584f2f91295c"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#ac22c97ea79a7ec45eb27584f2f91295c">searchCompFunc</a> )(void *, void *)</td></tr>
-<tr class="separator:ac22c97ea79a7ec45eb27584f2f91295c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accf6a1a7fe14f0693107a00a47b86d0d"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#accf6a1a7fe14f0693107a00a47b86d0d">insertCompFunc</a> )(void *, void *)</td></tr>
-<tr class="separator:accf6a1a7fe14f0693107a00a47b86d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cf5521a73fc3474e83aef51c777bb7f"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#a3cf5521a73fc3474e83aef51c777bb7f">freeNodeFunc</a> )(<a class="el" href="structnode__t.html">node_t</a> *nodeToFree)</td></tr>
-<tr class="separator:a3cf5521a73fc3474e83aef51c777bb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b310fea19fca7898583a8c0eb87449"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#ad3b310fea19fca7898583a8c0eb87449">printNodeFunc</a> )(void *)</td></tr>
-<tr class="separator:ad3b310fea19fca7898583a8c0eb87449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeb40a7e7b4c71ba09151cde4005c201"><td class="memItemLeft" align="right" valign="top"><a class="el" href="system_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#abeb40a7e7b4c71ba09151cde4005c201">length</a></td></tr>
-<tr class="separator:abeb40a7e7b4c71ba09151cde4005c201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ceb08c280f2494dd51a6edebf99fbfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnode__t.html">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#a4ceb08c280f2494dd51a6edebf99fbfa">head</a></td></tr>
+<tr class="separator:a4ceb08c280f2494dd51a6edebf99fbfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67db65bfe5ef66c7dbf31f84f4b56f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnode__t.html">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#aa67db65bfe5ef66c7dbf31f84f4b56f9">tail</a></td></tr>
+<tr class="separator:aa67db65bfe5ef66c7dbf31f84f4b56f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba6e6a1b395433564b38b58712fba2a"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#adba6e6a1b395433564b38b58712fba2a">searchCompFunc</a> )(void *, void *)</td></tr>
+<tr class="separator:adba6e6a1b395433564b38b58712fba2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8851ea462ad99d6ca28138914b4301"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#a9b8851ea462ad99d6ca28138914b4301">insertCompFunc</a> )(void *, void *)</td></tr>
+<tr class="separator:a9b8851ea462ad99d6ca28138914b4301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6919b06690819c763c63053568542925"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#a6919b06690819c763c63053568542925">freeNodeFunc</a> )(<a class="el" href="structnode__t.html">node_t</a> *nodeToFree)</td></tr>
+<tr class="separator:a6919b06690819c763c63053568542925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada363cfffd6df4acfcb05a5d175923eb"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#ada363cfffd6df4acfcb05a5d175923eb">printNodeFunc</a> )(void *)</td></tr>
+<tr class="separator:ada363cfffd6df4acfcb05a5d175923eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8dd12a2074d1f022cdbb0ccb1f08566"><td class="memItemLeft" align="right" valign="top"><a class="el" href="system_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#ac8dd12a2074d1f022cdbb0ccb1f08566">length</a></td></tr>
+<tr class="separator:ac8dd12a2074d1f022cdbb0ccb1f08566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27258fcdaa61aa04a368fd9ede3cc5bb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#a27258fcdaa61aa04a368fd9ede3cc5bb">numNodesInUse</a></td></tr>
+<tr class="separator:a27258fcdaa61aa04a368fd9ede3cc5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7903ee9cc6daa65ec2516273ea54ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnode__t.html">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__ll.html#acf7903ee9cc6daa65ec2516273ea54ac">backingArray</a> [<a class="el" href="linked__list_8h.html#a4bdabb4388c831c1f8c4d31e67801e74">MAX_NUM_OF_LL_NODES</a>]</td></tr>
+<tr class="separator:acf7903ee9cc6daa65ec2516273ea54ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>struct definition for the linked list </p>
@@ -150,12 +156,26 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="linked__list_8h_source.html#l00062">62</a> of file <a class="el" href="linked__list_8h_source.html">linked_list.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a3cf5521a73fc3474e83aef51c777bb7f"></a>
+<a class="anchor" id="acf7903ee9cc6daa65ec2516273ea54ac"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* linkedList_t::freeNodeFunc) (<a class="el" href="structnode__t.html">node_t</a> *nodeToFree)</td>
+          <td class="memname"><a class="el" href="structnode__t.html">node_t</a> s_ll::backingArray[<a class="el" href="linked__list_8h.html#a4bdabb4388c831c1f8c4d31e67801e74">MAX_NUM_OF_LL_NODES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="linked__list_8h_source.html#l00073">73</a> of file <a class="el" href="linked__list_8h_source.html">linked_list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6919b06690819c763c63053568542925"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* s_ll::freeNodeFunc) (<a class="el" href="structnode__t.html">node_t</a> *nodeToFree)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -165,12 +185,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0056de8ffd1d9af11ed1a8bb771ae227"></a>
+<a class="anchor" id="a4ceb08c280f2494dd51a6edebf99fbfa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structnode__t.html">node_t</a> linkedList_t::head</td>
+          <td class="memname"><a class="el" href="structnode__t.html">node_t</a> s_ll::head</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,12 +199,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="accf6a1a7fe14f0693107a00a47b86d0d"></a>
+<a class="anchor" id="a9b8851ea462ad99d6ca28138914b4301"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* linkedList_t::insertCompFunc) (void *, void *)</td>
+          <td class="memname">int(* s_ll::insertCompFunc) (void *, void *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -194,12 +214,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abeb40a7e7b4c71ba09151cde4005c201"></a>
+<a class="anchor" id="ac8dd12a2074d1f022cdbb0ccb1f08566"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="system_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> linkedList_t::length</td>
+          <td class="memname"><a class="el" href="system_8h.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a> s_ll::length</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -209,12 +229,26 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad3b310fea19fca7898583a8c0eb87449"></a>
+<a class="anchor" id="a27258fcdaa61aa04a368fd9ede3cc5bb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* linkedList_t::printNodeFunc) (void *)</td>
+          <td class="memname">unsigned int s_ll::numNodesInUse</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="linked__list_8h_source.html#l00072">72</a> of file <a class="el" href="linked__list_8h_source.html">linked_list.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada363cfffd6df4acfcb05a5d175923eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* s_ll::printNodeFunc) (void *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -224,12 +258,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac22c97ea79a7ec45eb27584f2f91295c"></a>
+<a class="anchor" id="adba6e6a1b395433564b38b58712fba2a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* linkedList_t::searchCompFunc) (void *, void *)</td>
+          <td class="memname">int(* s_ll::searchCompFunc) (void *, void *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -238,12 +272,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3253fe5f72d8914dd8331e74aba9982e"></a>
+<a class="anchor" id="aa67db65bfe5ef66c7dbf31f84f4b56f9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structnode__t.html">node_t</a> linkedList_t::tail</td>
+          <td class="memname"><a class="el" href="structnode__t.html">node_t</a> s_ll::tail</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,17 +1,17 @@
 var structs__pcb__stuct =
 [
-    [ "context", "structs__pcb__stuct.html#a54d339e4c45de597429888e4654c03c8", null ],
-    [ "dataSize", "structs__pcb__stuct.html#aaaf251e1893020160fb154a5e341f604", null ],
-    [ "dataStart", "structs__pcb__stuct.html#ac5d905bfc91bb5364487b48fe06a7fc2", null ],
-    [ "name", "structs__pcb__stuct.html#a35c285b13db8c228686d0f8a6757df55", null ],
-    [ "PID", "structs__pcb__stuct.html#adb2bb17e9c8a673c566b6ca4abae4c3d", null ],
-    [ "priority", "structs__pcb__stuct.html#a55fc1faff03a8b63cf31bb2bfa23bdb3", null ],
-    [ "processClass", "structs__pcb__stuct.html#a3b2308e186f613a782a1da4a798ef73b", null ],
-    [ "processState", "structs__pcb__stuct.html#a55061533a89faf41941be8e04f51166c", null ],
-    [ "programSize", "structs__pcb__stuct.html#a18647991a99249b0a51f30ee6004a81c", null ],
-    [ "programStart", "structs__pcb__stuct.html#aa3a3020774ef77f1de4de8dd23d78743", null ],
-    [ "representingNode", "structs__pcb__stuct.html#a56fe193ec1b8061c850d79247bccb98d", null ],
-    [ "stackBase", "structs__pcb__stuct.html#a3fd35f3889ce588dc9af9b0c74fd2db9", null ],
-    [ "stackBottom", "structs__pcb__stuct.html#aec0fa5de5c09ee7db1da3b953af71321", null ],
-    [ "stackTop", "structs__pcb__stuct.html#a8ea780f48f7f2a4f9e337abaf510896e", null ]
+    [ "context", "structs__pcb__stuct.html#a6582c8165b3f22bdc8f728620d956fb7", null ],
+    [ "dataSize", "structs__pcb__stuct.html#abaaa46716f0f2187620b0042c04e6958", null ],
+    [ "dataStart", "structs__pcb__stuct.html#a8df76551e88a09dd66b98deb0f9ecbc4", null ],
+    [ "name", "structs__pcb__stuct.html#adcb08963ff03878f5dd24129c9f99be7", null ],
+    [ "PID", "structs__pcb__stuct.html#abb43cfbd0e96ecf02dad2ba433f56886", null ],
+    [ "priority", "structs__pcb__stuct.html#a612f885834f0ac6dd2f928136212d84e", null ],
+    [ "processClass", "structs__pcb__stuct.html#ad0d111d2998d9b0c21b8c87df874cbf9", null ],
+    [ "processState", "structs__pcb__stuct.html#a3414d9e8c0846cb7bc40c1d8b150838d", null ],
+    [ "programSize", "structs__pcb__stuct.html#a54cc79a0ba481257faae94273acd2c3c", null ],
+    [ "programStart", "structs__pcb__stuct.html#ad1efbb40c3e4e209c82f2e983743ab39", null ],
+    [ "representingNode", "structs__pcb__stuct.html#abf7c3f3b733400d1c48509497e34a18f", null ],
+    [ "stackBase", "structs__pcb__stuct.html#ae0f0e7da704e3de9b8bde295b04c522b", null ],
+    [ "stackBottom", "structs__pcb__stuct.html#a7c72d81670001859cef99130b6478fa8", null ],
+    [ "stackTop", "structs__pcb__stuct.html#ab19f23bae6d9f5103a1856aeec1575e7", null ]
 ];
