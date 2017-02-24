@@ -1,6 +1,7 @@
 var searchData=
 [
   ['cdir',['cdir',['../paging_8c.html#af7da380833e92d5c7d3c3db41484713b',1,'paging.c']]],
+  ['changeprocesspriority',['changeProcessPriority',['../pcb_8h.html#a0f7e7192cbb11b1895d900faefac2472',1,'changeProcessPriority(const char *procName, processPriority_t newPriority):&#160;pcb.c'],['../pcb_8c.html#a0f7e7192cbb11b1895d900faefac2472',1,'changeProcessPriority(const char *procName, processPriority_t newPriority):&#160;pcb.c']]],
   ['changeprocessstate',['changeProcessState',['../group___r2.html#ga83a5983d76f08725aadc23bf47930436',1,'changeProcessState(const char *name, e_PROCESS_STATE_t state):&#160;pcb.c'],['../group___r2.html#ga83a5983d76f08725aadc23bf47930436',1,'changeProcessState(const char *processName, e_PROCESS_STATE_t newState):&#160;pcb.c']]],
   ['class_5funknown',['CLASS_UNKNOWN',['../pcb_8h.html#ab3268ce0bdfc94e5757917d42c73d9f1a614fd08f9a6cd84e97785eb2c551dafe',1,'pcb.h']]],
   ['classtostring',['classToString',['../group___r2.html#gac38459f8731293f12b7fb0170c923471',1,'classToString(e_PROCESS_CLASS_t processClass):&#160;pcb.c'],['../group___r2.html#gac38459f8731293f12b7fb0170c923471',1,'classToString(e_PROCESS_CLASS_t processClass):&#160;pcb.c']]],
@@ -8,9 +9,10 @@ var searchData=
   ['clear_5fbuff',['clear_buff',['../serial_8c.html#a337da5154672f3b359cf70d7b78f0c0d',1,'serial.c']]],
   ['clear_5fscreen',['clear_screen',['../anim_8h.html#abc40cd622f423abf44084c8f8595f57f',1,'clear_screen(void):&#160;anim.c'],['../anim_8c.html#a4953d1edcbbfc7e420c423ded1d5621a',1,'clear_screen():&#160;anim.c']]],
   ['cli',['cli',['../system_8h.html#a68c330e94fe121eba993e5a5973c3162',1,'system.h']]],
+  ['cmd_5fstruct_5ft',['cmd_struct_t',['../comm__list_8h.html#a99317249ae7aceea39e3c447270bc2b6',1,'comm_list.h']]],
   ['cmdarray',['cmdArray',['../commhand_8c.html#a5582c68677f88e6cacb6b1a2086f34c1',1,'cmdArray():&#160;commhand.c'],['../comm__list_8h.html#a5582c68677f88e6cacb6b1a2086f34c1',1,'cmdArray():&#160;commhand.c']]],
-  ['cmdfunc',['cmdFunc',['../structs__cmd__struct.html#a9655d586925d40c94a0d11befa1a5b76',1,'s_cmd_struct']]],
-  ['cmdname',['cmdName',['../structs__cmd__struct.html#ad0c669ee8a2f89742a5b4e4e88123865',1,'s_cmd_struct']]],
+  ['cmdfunc',['cmdFunc',['../structs__cmd__struct.html#a12f0e24fc635611fb6dea941a5415014',1,'s_cmd_struct']]],
+  ['cmdname',['cmdName',['../structs__cmd__struct.html#a05785ef37725660426f6881972e22de0',1,'s_cmd_struct']]],
   ['com1',['COM1',['../serial_8h.html#a00dbb3ab1c59e14699be9393693e2248',1,'serial.h']]],
   ['com2',['COM2',['../serial_8h.html#a435e02f194c24c9b0e00d7cd27a1704e',1,'serial.h']]],
   ['com3',['COM3',['../serial_8h.html#abbed02672431595364c5dd35809303a6',1,'serial.h']]],
@@ -22,10 +24,10 @@ var searchData=
   ['commhand_2ec',['commhand.c',['../commhand_8c.html',1,'']]],
   ['commhand_2eh',['commhand.h',['../commhand_8h.html',1,'']]],
   ['compfunction',['compFunction',['../linked__list_8c.html#aa034eb9ccc5e7790304204b1cb0ed60f',1,'linked_list.c']]],
-  ['context',['context',['../structs__pcb__stuct.html#a54d339e4c45de597429888e4654c03c8',1,'s_pcb_stuct']]],
+  ['context',['context',['../structs__pcb__stuct.html#a6582c8165b3f22bdc8f728620d956fb7',1,'s_pcb_stuct']]],
   ['coprocessor',['coprocessor',['../interrupts_8c.html#a5c538c7b7a55e3c981780b599fcb1de7',1,'interrupts.c']]],
   ['coprocessor_5fsegment',['coprocessor_segment',['../interrupts_8c.html#a1d688a0a370977c03fa98884a6e771e9',1,'interrupts.c']]],
-  ['createpcb',['createPCB',['../comm__list_8c.html#ae147f79757d354c727a87836c71f1b05',1,'createPCB(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#ae147f79757d354c727a87836c71f1b05',1,'createPCB(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
+  ['createpcb',['createPCB',['../comm__list_8c.html#af036a4bf4166ff125a281e01f6d2e84f',1,'createPCB(const char *pcbName, const char *pcbPriority, const char *pcbClass):&#160;comm_list.c'],['../comm__list_8h.html#af036a4bf4166ff125a281e01f6d2e84f',1,'createPCB(const char *pcbName, const char *pcbPriority, const char *pcbClass):&#160;comm_list.c']]],
   ['curr_5fheap',['curr_heap',['../heap_8c.html#afaac4d3fb801ecbd3c6fe3c995d5cf82',1,'heap.c']]],
   ['current_5fmodule',['current_module',['../kernel_2core_2mpx__supt_8c.html#a3d19c725b7f9f45e9da97a79ca6a4737',1,'current_module():&#160;mpx_supt.c'],['../modules_2mpx__supt_8c.html#a3d19c725b7f9f45e9da97a79ca6a4737',1,'current_module():&#160;mpx_supt.c']]]
 ];

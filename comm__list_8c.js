@@ -1,7 +1,7 @@
 var comm__list_8c =
 [
     [ "blockPCB", "comm__list_8c.html#af8c8690ef4431e1629f9ab7c5539eeae", null ],
-    [ "createPCB", "comm__list_8c.html#ae147f79757d354c727a87836c71f1b05", null ],
+    [ "createPCB", "comm__list_8c.html#af036a4bf4166ff125a281e01f6d2e84f", null ],
     [ "date", "comm__list_8c.html#a2b5b0b260a749c7a0371b96f079b9d69", null ],
     [ "deletePCB", "comm__list_8c.html#a3602fa2889ad77ef2f323f6db3dd967e", null ],
     [ "getDate", "comm__list_8c.html#affb6f9c7b2c1d585677a5bba1da35c06", null ],
@@ -33,7 +33,7 @@ var comm__list_8c =
     [ "pcbFunc", "comm__list_8c.html#ac903af80a2e0afe97b30f5ca88a1505a", null ],
     [ "resumePCB", "comm__list_8c.html#a672eae99ab4e3da15306bc6df644bb50", null ],
     [ "setDate", "comm__list_8c.html#abcb304e34ec42b6fa3df07249ce8c1b7", null ],
-    [ "setPriority", "comm__list_8c.html#a3c30cca674e48a10a60180721d65cee0", null ],
+    [ "setPriority", "comm__list_8c.html#ab805f90ac929c70cff3798e6de1f1381", null ],
     [ "setTime", "comm__list_8c.html#a684ac3c738428c05031f6b5c5b121d85", null ],
     [ "showAllProcesses", "comm__list_8c.html#a15a1fce149a24a3c2925b6ca44cb79c7", null ],
     [ "showBlockedProcesses", "comm__list_8c.html#aea06cb173ad17f9139253574d010d678", null ],

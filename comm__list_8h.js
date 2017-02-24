@@ -1,9 +1,10 @@
 var comm__list_8h =
 [
-    [ "cmd_struct_t", "structs__cmd__struct.html", "structs__cmd__struct" ],
+    [ "s_cmd_struct", "structs__cmd__struct.html", "structs__cmd__struct" ],
     [ "MAX_CMD_LIST_LENGTH", "comm__list_8h.html#a13a1c44288a1d29092e5a6fb152b4861", null ],
+    [ "cmd_struct_t", "comm__list_8h.html#a99317249ae7aceea39e3c447270bc2b6", null ],
     [ "blockPCB", "comm__list_8h.html#af8c8690ef4431e1629f9ab7c5539eeae", null ],
-    [ "createPCB", "comm__list_8h.html#ae147f79757d354c727a87836c71f1b05", null ],
+    [ "createPCB", "comm__list_8h.html#af036a4bf4166ff125a281e01f6d2e84f", null ],
     [ "date", "comm__list_8h.html#a2b5b0b260a749c7a0371b96f079b9d69", null ],
     [ "deletePCB", "comm__list_8h.html#a3602fa2889ad77ef2f323f6db3dd967e", null ],
     [ "getDate", "comm__list_8h.html#affb6f9c7b2c1d585677a5bba1da35c06", null ],
@@ -36,7 +37,7 @@ var comm__list_8h =
     [ "pcbFunc", "comm__list_8h.html#ac903af80a2e0afe97b30f5ca88a1505a", null ],
     [ "resumePCB", "comm__list_8h.html#a672eae99ab4e3da15306bc6df644bb50", null ],
     [ "setDate", "comm__list_8h.html#abcb304e34ec42b6fa3df07249ce8c1b7", null ],
-    [ "setPriority", "comm__list_8h.html#a3c30cca674e48a10a60180721d65cee0", null ],
+    [ "setPriority", "comm__list_8h.html#ab805f90ac929c70cff3798e6de1f1381", null ],
     [ "setTime", "comm__list_8h.html#a684ac3c738428c05031f6b5c5b121d85", null ],
     [ "showAllProcesses", "comm__list_8h.html#a15a1fce149a24a3c2925b6ca44cb79c7", null ],
     [ "showBlockedProcesses", "comm__list_8h.html#aea06cb173ad17f9139253574d010d678", null ],

@@ -1,10 +1,13 @@
 var pcb_8h =
 [
-    [ "pcb_t", "structs__pcb__stuct.html", "structs__pcb__stuct" ],
+    [ "s_pcb_stuct", "structs__pcb__stuct.html", "structs__pcb__stuct" ],
     [ "PCB_QUEUE_MAX_SIZE", "pcb_8h.html#afeaa4736820787d9a22e121d670b9243", null ],
     [ "PROCESS_CONTEXT_SIZE", "pcb_8h.html#abb5f1eb47c3ac477582ecc49dc8990ee", null ],
+    [ "PROCESS_HIGHEST_PRIORITY", "pcb_8h.html#a12d557bfd2b8463834fd1542647de0f1", null ],
+    [ "PROCESS_LOWEST_PRIORITY", "pcb_8h.html#a9ae4b3bfaf4a94bf2280be6fa09519be", null ],
     [ "PROCESS_MAX_NAME_LENGTH", "pcb_8h.html#acd2dea966e4e5b760451b4fcc66f6cce", null ],
     [ "PROCESS_STACK_SIZE", "pcb_8h.html#a2dbc13416ed2817701a94e30698cdee3", null ],
+    [ "pcb_t", "pcb_8h.html#ad4bc8adcc1ef1caadee5ba952d0473a0", null ],
     [ "pcbQueue_t", "pcb_8h.html#a58ab885c30f079e61039b7480a7dbfed", null ],
     [ "PID_t", "pcb_8h.html#a679b474107b599ed5e2597c8863176dc", null ],
     [ "processPriority_t", "pcb_8h.html#aade1badcda6beffd30258586dcad6550", null ],
@@ -21,7 +24,10 @@ var pcb_8h =
       [ "ERROR_FREEING_STACK", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8eae6a47d920115451b70673d54b9d9c164", null ],
       [ "ERROR_FREEING_PCB", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea65a2fd434138761a45062d90d7381f64", null ],
       [ "ERROR_REMOVING_PCB", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea2df915668ce49c55a81cd75b8aaa4564", null ],
-      [ "ERROR_STATE_INVALID", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea5f917cfb598da5d3c968757ba14a8ad4", null ]
+      [ "ERROR_STATE_INVALID", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea5f917cfb598da5d3c968757ba14a8ad4", null ],
+      [ "ERROR_CLASS_INVALID", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea3cdbe51860b8d8ac45c389e3529cab86", null ],
+      [ "ERROR_ALLOCATING_NODE", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea99e0ec269cfbfd22ecb2fe4a99feb758", null ],
+      [ "ERROR_NAME_COLLISION", "pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8eabcb953a00ed17aae6faa79d92f12500e", null ]
     ] ],
     [ "e_PROCESS_CLASS_t", "pcb_8h.html#ab3268ce0bdfc94e5757917d42c73d9f1", [
       [ "SYSTEM", "pcb_8h.html#ab3268ce0bdfc94e5757917d42c73d9f1a57cc238145ec1361c72c327674c0d754", null ],
@@ -39,6 +45,7 @@ var pcb_8h =
       [ "STATE_UNKNOWN", "pcb_8h.html#a8461d6c03c00b03bad59b5a29d27b902a786a8e9401b8091f65b2afbd342c90f5", null ]
     ] ],
     [ "allocatePCB", "pcb_8h.html#a5c2a9f7bca10a6d45287ce6834b7167c", null ],
+    [ "changeProcessPriority", "pcb_8h.html#a0f7e7192cbb11b1895d900faefac2472", null ],
     [ "changeProcessState", "group___r2.html#ga83a5983d76f08725aadc23bf47930436", null ],
     [ "classToString", "group___r2.html#gac38459f8731293f12b7fb0170c923471", null ],
     [ "errorToString", "group___r2.html#ga834927e89e94c123a0ec5322b11b0161", null ],
@@ -58,8 +65,8 @@ var pcb_8h =
     [ "stateToString", "group___r2.html#ga8667e4228a987f7d43e598f9855e9a52", null ],
     [ "stringToClass", "group___r2.html#gae81b3dd13059be0733193c53681ca440", null ],
     [ "blockedQueue", "pcb_8h.html#aa3eb63b40a5cf1eb03b494f7ddd1af2a", null ],
+    [ "prevPCBError", "pcb_8h.html#a8e319ed5099e8558e03c1bdd25c9559a", null ],
     [ "readyQueue", "pcb_8h.html#a7b1bca867586a0a58222b805dbe3be28", null ],
     [ "suspendedBlockedQueue", "pcb_8h.html#ae83c9a71ab217215db8dfe3eb9c94e8e", null ],
-    [ "suspendedReadyQueue", "pcb_8h.html#a95c66b02e576aabe04df3fdc9e981fc3", null ],
-    [ "totalProcessList", "pcb_8h.html#a6d936c9220673197cf184738a19b64c9", null ]
+    [ "suspendedReadyQueue", "pcb_8h.html#a95c66b02e576aabe04df3fdc9e981fc3", null ]
 ];
