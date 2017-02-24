@@ -2,7 +2,6 @@ var linked__list_8h =
 [
     [ "s_ll_node", "structs__ll__node.html", "structs__ll__node" ],
     [ "s_ll", "structs__ll.html", "structs__ll" ],
-    [ "LL_IS_ARRAY_BACKED", "linked__list_8h.html#a584585d7250f61d8228e8591d1d27b00", null ],
     [ "MAX_NUM_OF_LL_NODES", "linked__list_8h.html#a4bdabb4388c831c1f8c4d31e67801e74", null ],
     [ "VARIABLE_LL_LENGTH", "linked__list_8h.html#a33fa4884df656ed557638b8bd9585a7e", null ],
     [ "linkedList_t", "linked__list_8h.html#a82d0a4fbb83fdef7235674426e7a9b26", null ],
