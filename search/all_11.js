@@ -38,7 +38,7 @@ var searchData=
   ['shutdownfunc',['shutdownFunc',['../comm__list_8c.html#a514416c2792fdc8614585266d618fbf8',1,'shutdownFunc(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#a514416c2792fdc8614585266d618fbf8',1,'shutdownFunc(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
   ['size',['size',['../structheader.html#af8cc659f702446226bc2ebabba437d5d',1,'header::size()'],['../structindex__entry.html#a2b0247aae5c7f9884f8eef1ee121adb0',1,'index_entry::size()']]],
   ['size_5ft',['size_t',['../system_8h.html#a7c94ea6f8948649f8d181ae55911eeaf',1,'system.h']]],
-  ['sprintf',['sprintf',['../string_8h.html#ae9cac82f3293a00d8ec8705a3fc5cf64',1,'string.h']]],
+  ['sprintf',['sprintf',['../string_8h.html#ae9cac82f3293a00d8ec8705a3fc5cf64',1,'sprintf(char *str, int bufLength, const char *format,...) __attribute__((format(printf:&#160;string.h'],['../string_8c.html#ab9309bf0926dae39da7b2062058b669d',1,'sprintf(char *str, int bufLength, const char *format,...):&#160;string.c']]],
   ['sselect',['sselect',['../structidt__entry__struct.html#a85254c7df6a612f4a4b3bb470ff3370c',1,'idt_entry_struct::sselect()'],['../tables_8h.html#ab3f34507900160b4a9b309b4ed039e07',1,'sselect():&#160;tables.h']]],
   ['stack_5fsegment',['stack_segment',['../interrupts_8c.html#a1ccc3198890318741629a03bb88bee6f',1,'interrupts.c']]],
   ['stackbase',['stackBase',['../structs__pcb__stuct.html#ae0f0e7da704e3de9b8bde295b04c522b',1,'s_pcb_stuct']]],
