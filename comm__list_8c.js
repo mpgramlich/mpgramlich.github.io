@@ -16,6 +16,8 @@ var comm__list_8c =
     [ "helpGetDate", "comm__list_8c.html#a0f223b2f9d2c4887ab9d4943a565a20f", null ],
     [ "helpGetTime", "comm__list_8c.html#ab023cd64db7b635c8e4048430fdd51c9", null ],
     [ "helpGetVersion", "comm__list_8c.html#aa0721512217377ef46085ce000a6daf4", null ],
+    [ "helpPcb", "comm__list_8c.html#a1f65434c6dfc1eb5b97d4dba4f923dc4", null ],
+    [ "helpPcbPrint", "comm__list_8c.html#ad5bf868baaa12963086a0aa11c632159", null ],
     [ "helpResumePCB", "comm__list_8c.html#aba83fcaebd5841ba00582be3913d012d", null ],
     [ "helpSetDate", "comm__list_8c.html#a315b74fd1af8e5c10ae8fea09a7f1343", null ],
     [ "helpSetPriority", "comm__list_8c.html#ace39d9c4df8b991ae1db257969f511f3", null ],

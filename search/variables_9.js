@@ -6,6 +6,5 @@ var searchData=
   ['in_5fstring',['in_string',['../commhand_8c.html#a304f731e770f19e932c39d189c8cb56f',1,'commhand.c']]],
   ['index',['index',['../structheap.html#a8fe6ce2a8b45088990071e9b1d35add2',1,'heap']]],
   ['index_5fid',['index_id',['../structheader.html#aec42bcd6139d12f84d54b5e6a149b276',1,'header']]],
-  ['insertcompfunc',['insertCompFunc',['../structs__ll.html#a9b8851ea462ad99d6ca28138914b4301',1,'s_ll']]],
-  ['inuse',['inUse',['../structs__ll__node.html#ab89bfcb1396eb8b36c99473da6bd3a54',1,'s_ll_node']]]
+  ['insertcompfunc',['insertCompFunc',['../structs__ll.html#a9b8851ea462ad99d6ca28138914b4301',1,'s_ll']]]
 ];
