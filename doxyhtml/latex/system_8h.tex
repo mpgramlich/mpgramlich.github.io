@@ -1,0 +1,300 @@
+\hypertarget{system_8h}{}\section{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/system.h File Reference}
+\label{system_8h}\index{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/system.\+h@{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/system.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{system_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structdate__time}{date\+\_\+time}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{system_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}~0
+\item 
+\#define \hyperlink{system_8h_ab3bb695e7817363c7bdb781f214e83a2}{no\+\_\+warn}(p)~if (p) while (1) break
+\item 
+\#define \hyperlink{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}{asm}~\+\_\+\+\_\+asm\+\_\+\+\_\+
+\item 
+\#define \hyperlink{system_8h_af55a5e48555be7d32ad73e76cf5d4db0}{volatile}~\+\_\+\+\_\+volatile\+\_\+\+\_\+
+\item 
+\#define \hyperlink{system_8h_ac5d15f274bc9b1e96230f3d3c60fd1f8}{sti}()~\hyperlink{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}{asm} \hyperlink{system_8h_af55a5e48555be7d32ad73e76cf5d4db0}{volatile} (\char`\"{}sti\char`\"{}\+::)
+\item 
+\#define \hyperlink{system_8h_a68c330e94fe121eba993e5a5973c3162}{cli}()~\hyperlink{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}{asm} \hyperlink{system_8h_af55a5e48555be7d32ad73e76cf5d4db0}{volatile} (\char`\"{}cli\char`\"{}\+::)
+\item 
+\#define \hyperlink{system_8h_a6c92c29fa8e83ab85e05543010e10d7c}{nop}()~\hyperlink{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}{asm} \hyperlink{system_8h_af55a5e48555be7d32ad73e76cf5d4db0}{volatile} (\char`\"{}nop\char`\"{}\+::)
+\item 
+\#define \hyperlink{system_8h_a954b0134ce21d80f0efb22c77e821da3}{hlt}()~\hyperlink{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}{asm} \hyperlink{system_8h_af55a5e48555be7d32ad73e76cf5d4db0}{volatile} (\char`\"{}hlt\char`\"{}\+::)
+\item 
+\#define \hyperlink{system_8h_a6eab829c77f5e1d2786863e18547b81b}{iret}()~\hyperlink{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}{asm} \hyperlink{system_8h_af55a5e48555be7d32ad73e76cf5d4db0}{volatile} (\char`\"{}iret\char`\"{}\+::)
+\item 
+\#define \hyperlink{system_8h_aeb3dcf3cb65fb9b31c3d6b9ddb576071}{G\+D\+T\+\_\+\+C\+S\+\_\+\+ID}~0x01
+\item 
+\#define \hyperlink{system_8h_a90303dd4b4639f2e4106ced8d18fb4a1}{G\+D\+T\+\_\+\+D\+S\+\_\+\+ID}~0x02
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \hyperlink{system_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\+\_\+t}
+\item 
+typedef unsigned char \hyperlink{system_8h_a1026e682ffdadc1701c42cd44ce9efcf}{u8int}
+\item 
+typedef unsigned short \hyperlink{system_8h_a863d9497073aad2b991aeab2211d87af}{u16int}
+\item 
+typedef unsigned long \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int}
+\item 
+typedef unsigned char \hyperlink{system_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}
+\item 
+typedef unsigned short \hyperlink{system_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}
+\item 
+typedef unsigned long \hyperlink{system_8h_a06896e8c53f721507066c079052171f8}{uint32\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{system_8h_abdb09834267dd4a2a0d07d43ca4d230d}{klogv} (const char $\ast$msg)
+\item 
+void \hyperlink{system_8h_aff8473f901d828d76d3548130731c41d}{kpanic} (const char $\ast$msg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{system.\+h@{system.\+h}!asm@{asm}}
+\index{asm@{asm}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{asm}{asm}}]{\setlength{\rightskip}{0pt plus 5cm}\#define asm~\+\_\+\+\_\+asm\+\_\+\+\_\+}\hypertarget{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}{}\label{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}
+
+
+Definition at line 11 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!cli@{cli}}
+\index{cli@{cli}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{cli}{cli}}]{\setlength{\rightskip}{0pt plus 5cm}\#define cli(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf asm} {\bf volatile} (\char`\"{}cli\char`\"{}\+::)}\hypertarget{system_8h_a68c330e94fe121eba993e5a5973c3162}{}\label{system_8h_a68c330e94fe121eba993e5a5973c3162}
+
+
+Definition at line 15 of file system.\+h.
+
+
+
+Referenced by kmain(), kpanic(), set\+\_\+date(), and set\+\_\+time().
+
+\index{system.\+h@{system.\+h}!G\+D\+T\+\_\+\+C\+S\+\_\+\+ID@{G\+D\+T\+\_\+\+C\+S\+\_\+\+ID}}
+\index{G\+D\+T\+\_\+\+C\+S\+\_\+\+ID@{G\+D\+T\+\_\+\+C\+S\+\_\+\+ID}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{G\+D\+T\+\_\+\+C\+S\+\_\+\+ID}{GDT_CS_ID}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+D\+T\+\_\+\+C\+S\+\_\+\+ID~0x01}\hypertarget{system_8h_aeb3dcf3cb65fb9b31c3d6b9ddb576071}{}\label{system_8h_aeb3dcf3cb65fb9b31c3d6b9ddb576071}
+
+
+Definition at line 20 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!G\+D\+T\+\_\+\+D\+S\+\_\+\+ID@{G\+D\+T\+\_\+\+D\+S\+\_\+\+ID}}
+\index{G\+D\+T\+\_\+\+D\+S\+\_\+\+ID@{G\+D\+T\+\_\+\+D\+S\+\_\+\+ID}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{G\+D\+T\+\_\+\+D\+S\+\_\+\+ID}{GDT_DS_ID}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+D\+T\+\_\+\+D\+S\+\_\+\+ID~0x02}\hypertarget{system_8h_a90303dd4b4639f2e4106ced8d18fb4a1}{}\label{system_8h_a90303dd4b4639f2e4106ced8d18fb4a1}
+
+
+Definition at line 21 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!hlt@{hlt}}
+\index{hlt@{hlt}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{hlt}{hlt}}]{\setlength{\rightskip}{0pt plus 5cm}\#define hlt(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf asm} {\bf volatile} (\char`\"{}hlt\char`\"{}\+::)}\hypertarget{system_8h_a954b0134ce21d80f0efb22c77e821da3}{}\label{system_8h_a954b0134ce21d80f0efb22c77e821da3}
+
+
+Definition at line 17 of file system.\+h.
+
+
+
+Referenced by kmain(), and kpanic().
+
+\index{system.\+h@{system.\+h}!iret@{iret}}
+\index{iret@{iret}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{iret}{iret}}]{\setlength{\rightskip}{0pt plus 5cm}\#define iret(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf asm} {\bf volatile} (\char`\"{}iret\char`\"{}\+::)}\hypertarget{system_8h_a6eab829c77f5e1d2786863e18547b81b}{}\label{system_8h_a6eab829c77f5e1d2786863e18547b81b}
+
+
+Definition at line 18 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!no\+\_\+warn@{no\+\_\+warn}}
+\index{no\+\_\+warn@{no\+\_\+warn}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{no\+\_\+warn}{no_warn}}]{\setlength{\rightskip}{0pt plus 5cm}\#define no\+\_\+warn(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)~if (p) while (1) break}\hypertarget{system_8h_ab3bb695e7817363c7bdb781f214e83a2}{}\label{system_8h_ab3bb695e7817363c7bdb781f214e83a2}
+
+
+Definition at line 7 of file system.\+h.
+
+
+
+Referenced by alloc(), and make\+\_\+heap().
+
+\index{system.\+h@{system.\+h}!nop@{nop}}
+\index{nop@{nop}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{nop}{nop}}]{\setlength{\rightskip}{0pt plus 5cm}\#define nop(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf asm} {\bf volatile} (\char`\"{}nop\char`\"{}\+::)}\hypertarget{system_8h_a6c92c29fa8e83ab85e05543010e10d7c}{}\label{system_8h_a6c92c29fa8e83ab85e05543010e10d7c}
+
+
+Definition at line 16 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!N\+U\+LL@{N\+U\+LL}}
+\index{N\+U\+LL@{N\+U\+LL}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{N\+U\+LL}{NULL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+U\+LL~0}\hypertarget{system_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{}\label{system_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}
+
+
+Definition at line 4 of file system.\+h.
+
+
+
+Referenced by parse\+\_\+comm(), and strtok().
+
+\index{system.\+h@{system.\+h}!sti@{sti}}
+\index{sti@{sti}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{sti}{sti}}]{\setlength{\rightskip}{0pt plus 5cm}\#define sti(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~{\bf asm} {\bf volatile} (\char`\"{}sti\char`\"{}\+::)}\hypertarget{system_8h_ac5d15f274bc9b1e96230f3d3c60fd1f8}{}\label{system_8h_ac5d15f274bc9b1e96230f3d3c60fd1f8}
+
+
+Definition at line 14 of file system.\+h.
+
+
+
+Referenced by set\+\_\+date(), and set\+\_\+time().
+
+\index{system.\+h@{system.\+h}!volatile@{volatile}}
+\index{volatile@{volatile}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{volatile}{volatile}}]{\setlength{\rightskip}{0pt plus 5cm}\#define volatile~\+\_\+\+\_\+volatile\+\_\+\+\_\+}\hypertarget{system_8h_af55a5e48555be7d32ad73e76cf5d4db0}{}\label{system_8h_af55a5e48555be7d32ad73e76cf5d4db0}
+
+
+Definition at line 12 of file system.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\index{system.\+h@{system.\+h}!size\+\_\+t@{size\+\_\+t}}
+\index{size\+\_\+t@{size\+\_\+t}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{size\+\_\+t}{size_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf size\+\_\+t}}\hypertarget{system_8h_a7c94ea6f8948649f8d181ae55911eeaf}{}\label{system_8h_a7c94ea6f8948649f8d181ae55911eeaf}
+
+
+Definition at line 24 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!u16int@{u16int}}
+\index{u16int@{u16int}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{u16int}{u16int}}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf u16int}}\hypertarget{system_8h_a863d9497073aad2b991aeab2211d87af}{}\label{system_8h_a863d9497073aad2b991aeab2211d87af}
+
+
+Definition at line 26 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!u32int@{u32int}}
+\index{u32int@{u32int}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{u32int}{u32int}}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf u32int}}\hypertarget{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{}\label{system_8h_a757de76cafbcddaac0d1632902fe4cb8}
+
+
+Definition at line 27 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!u8int@{u8int}}
+\index{u8int@{u8int}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{u8int}{u8int}}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf u8int}}\hypertarget{system_8h_a1026e682ffdadc1701c42cd44ce9efcf}{}\label{system_8h_a1026e682ffdadc1701c42cd44ce9efcf}
+
+
+Definition at line 25 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!uint16\+\_\+t@{uint16\+\_\+t}}
+\index{uint16\+\_\+t@{uint16\+\_\+t}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{uint16\+\_\+t}{uint16_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf uint16\+\_\+t}}\hypertarget{system_8h_a273cf69d639a59973b6019625df33e30}{}\label{system_8h_a273cf69d639a59973b6019625df33e30}
+
+
+Definition at line 30 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!uint32\+\_\+t@{uint32\+\_\+t}}
+\index{uint32\+\_\+t@{uint32\+\_\+t}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{uint32\+\_\+t}{uint32_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf uint32\+\_\+t}}\hypertarget{system_8h_a06896e8c53f721507066c079052171f8}{}\label{system_8h_a06896e8c53f721507066c079052171f8}
+
+
+Definition at line 31 of file system.\+h.
+
+\index{system.\+h@{system.\+h}!uint8\+\_\+t@{uint8\+\_\+t}}
+\index{uint8\+\_\+t@{uint8\+\_\+t}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{uint8\+\_\+t}{uint8_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf uint8\+\_\+t}}\hypertarget{system_8h_aba7bc1797add20fe3efdf37ced1182c5}{}\label{system_8h_aba7bc1797add20fe3efdf37ced1182c5}
+
+
+Definition at line 29 of file system.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{system.\+h@{system.\+h}!klogv@{klogv}}
+\index{klogv@{klogv}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{klogv(const char $\ast$msg)}{klogv(const char *msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void klogv (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{system_8h_abdb09834267dd4a2a0d07d43ca4d230d}{}\label{system_8h_abdb09834267dd4a2a0d07d43ca4d230d}
+
+
+Definition at line 11 of file system.\+c.
+
+
+
+References serial\+\_\+println(), and strcat().
+
+
+
+Referenced by kmain(), and kpanic().
+
+
+\begin{DoxyCode}
+12 \{
+13   \textcolor{keywordtype}{char} logmsg[64] = \{\textcolor{charliteral}{'\(\backslash\)0'}\}, prefix[] = \textcolor{stringliteral}{"klogv: "};
+14   \hyperlink{string_8h_a8908188ae9fc2f05d993257ef001d553}{strcat}(logmsg, prefix);
+15   \hyperlink{string_8h_a8908188ae9fc2f05d993257ef001d553}{strcat}(logmsg, msg);
+16   \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(logmsg);
+17 \}
+\end{DoxyCode}
+\index{system.\+h@{system.\+h}!kpanic@{kpanic}}
+\index{kpanic@{kpanic}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{kpanic(const char $\ast$msg)}{kpanic(const char *msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void kpanic (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{system_8h_aff8473f901d828d76d3548130731c41d}{}\label{system_8h_aff8473f901d828d76d3548130731c41d}
+
+
+Definition at line 24 of file system.\+c.
+
+
+
+References cli, hlt, klogv(), and strcat().
+
+
+
+Referenced by do\+\_\+bounds(), do\+\_\+breakpoint(), do\+\_\+coprocessor(), do\+\_\+coprocessor\+\_\+segment(), do\+\_\+debug(), do\+\_\+device\+\_\+not\+\_\+available(), do\+\_\+divide\+\_\+error(), do\+\_\+double\+\_\+fault(), do\+\_\+general\+\_\+protection(), do\+\_\+invalid\+\_\+op(), do\+\_\+invalid\+\_\+tss(), do\+\_\+nmi(), do\+\_\+overflow(), do\+\_\+page\+\_\+fault(), do\+\_\+segment\+\_\+not\+\_\+present(), do\+\_\+stack\+\_\+segment(), and new\+\_\+frame().
+
+
+\begin{DoxyCode}
+25 \{
+26   \hyperlink{system_8h_a68c330e94fe121eba993e5a5973c3162}{cli}(); \textcolor{comment}{//disable interrupts}
+27   \textcolor{keywordtype}{char} logmsg[64] = \{\textcolor{charliteral}{'\(\backslash\)0'}\}, prefix[] = \textcolor{stringliteral}{"Panic: "};
+28   \hyperlink{string_8h_a8908188ae9fc2f05d993257ef001d553}{strcat}(logmsg, prefix);
+29   \hyperlink{string_8h_a8908188ae9fc2f05d993257ef001d553}{strcat}(logmsg, msg);
+30   \hyperlink{system_8c_abdb09834267dd4a2a0d07d43ca4d230d}{klogv}(logmsg);
+31   \hyperlink{system_8h_a954b0134ce21d80f0efb22c77e821da3}{hlt}(); \textcolor{comment}{//halt}
+32 \}
+\end{DoxyCode}

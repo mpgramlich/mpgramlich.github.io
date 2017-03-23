@@ -1,0 +1,400 @@
+\hypertarget{group___r2}{}\section{R2}
+\label{group___r2}\index{R2@{R2}}
+\subsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \hyperlink{pcb_8h}{pcb.\+h}
+\item 
+file \hyperlink{linked__list_8h}{linked\+\_\+list.\+h}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902}{e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t} \hyperlink{group___r2_gae34a580c5336a0d5f2a0589f41f25fa2}{get\+State} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em get\+State gets the current state of the process \end{DoxyCompactList}\item 
+\hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8e}{e\+\_\+\+P\+C\+B\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+t} \hyperlink{group___r2_ga83a5983d76f08725aadc23bf47930436}{change\+Process\+State} (const char $\ast$name, \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902}{e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t} state)
+\begin{DoxyCompactList}\small\item\em change\+Process\+State changes the state of the process being called \end{DoxyCompactList}\item 
+int \hyperlink{group___r2_ga1e42e70128de8086a07dbcd97e000942}{is\+Suspended} (\hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902}{e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t} state)
+\begin{DoxyCompactList}\small\item\em is\+Suspended gets the suspension status of the process \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{group___r2_ga834927e89e94c123a0ec5322b11b0161}{error\+To\+String} (\hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8e}{e\+\_\+\+P\+C\+B\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+t} error)
+\begin{DoxyCompactList}\small\item\em error\+To\+String creates a string form of the error passed in \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{group___r2_gac38459f8731293f12b7fb0170c923471}{class\+To\+String} (\hyperlink{pcb_8h_ab3268ce0bdfc94e5757917d42c73d9f1}{e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+C\+L\+A\+S\+S\+\_\+t} process\+Class)
+\begin{DoxyCompactList}\small\item\em class\+To\+String creates a string form of the class passed in \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{group___r2_ga8667e4228a987f7d43e598f9855e9a52}{state\+To\+String} (\hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902}{e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t} state)
+\begin{DoxyCompactList}\small\item\em state\+To\+String creates a string form of the state passed in \end{DoxyCompactList}\item 
+\hyperlink{pcb_8h_ab3268ce0bdfc94e5757917d42c73d9f1}{e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+C\+L\+A\+S\+S\+\_\+t} \hyperlink{group___r2_gae81b3dd13059be0733193c53681ca440}{string\+To\+Class} (const char $\ast$stringified\+Class)
+\begin{DoxyCompactList}\small\item\em string\+To\+Class returns the enum representation of a string \end{DoxyCompactList}\item 
+void \hyperlink{group___r2_ga819c31d0b376ca33ed371253585f9f80}{print\+P\+C\+B\+Func} (void $\ast$pcb)
+\begin{DoxyCompactList}\small\item\em print\+P\+C\+B\+Func prints the status of a process \end{DoxyCompactList}\item 
+void \hyperlink{group___r2_gafc8969d7969f61c928a01f4c302e669b}{set\+Print\+Function} (\hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$list, void($\ast$new\+Print\+Func)(void $\ast$))
+\begin{DoxyCompactList}\small\item\em sets the function whose job it is to print the list to the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This grouping provides a quick access to all development that occured during module R2. Each function or file that was added during this module can be found here. 
+
+\subsection{Function Documentation}
+\index{R2@{R2}!change\+Process\+State@{change\+Process\+State}}
+\index{change\+Process\+State@{change\+Process\+State}!R2@{R2}}
+\subsubsection[{\texorpdfstring{change\+Process\+State(const char $\ast$name, e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t state)}{changeProcessState(const char *name, e_PROCESS_STATE_t state)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf e\+\_\+\+P\+C\+B\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+t} change\+Process\+State (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t}}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r2_ga83a5983d76f08725aadc23bf47930436}{}\label{group___r2_ga83a5983d76f08725aadc23bf47930436}
+
+
+change\+Process\+State changes the state of the process being called 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the process to change the state of \\
+\hline
+{\em state} & the state to change the process to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e\+\_\+\+P\+C\+B\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+t value that describes the result 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file pcb.\+c.
+
+
+
+References B\+L\+O\+C\+K\+ED, E\+R\+R\+O\+R\+\_\+\+P\+C\+B\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND, E\+R\+R\+O\+R\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+N\+V\+A\+L\+ID, find\+P\+C\+B(), I\+N\+I\+T\+I\+AL, insert\+P\+C\+B(), R\+E\+A\+DY, remove\+P\+C\+B(), R\+U\+N\+N\+I\+NG, S\+U\+C\+C\+E\+SS, S\+U\+S\+P\+E\+N\+D\+E\+D\+\_\+\+B\+L\+O\+C\+K\+ED, S\+U\+S\+P\+E\+N\+D\+E\+D\+\_\+\+R\+E\+A\+DY, and T\+E\+R\+M\+I\+N\+AL.
+
+
+
+Referenced by block\+P\+C\+B(), and resume\+P\+C\+B().
+
+
+\begin{DoxyCode}
+148 \{
+149     \hyperlink{structpcb__t}{pcb\_t}* process = \hyperlink{pcb_8c_a3ddbd6b7d5425cfb586dabc05862e9b1}{findPCB}(processName);
+150     \textcolor{keywordflow}{if} (!process) \textcolor{keywordflow}{return} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea5284a4c6f172bebecf5482934910df8c}{ERROR\_PCB\_NOT\_FOUND};
+151     \textcolor{keywordflow}{if} (newState != \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a7116db6906963fd0720c4a85be250cf4}{INITIAL} && newState != \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a6564f2f3e15be06b670547bbcaaf0798}{READY} && newState != 
+      \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a1061be6c3fb88d32829cba6f6b2be304}{RUNNING} 
+152      && newState != \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a376c1b6a3f75d283a2efacf737438d61}{BLOCKED} && newState != \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a81cc2296827c731236176fea80701294}{SUSPENDED\_READY} && newState != 
+      \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902aa4d91165aaa967e74157a23c02725bc7}{SUSPENDED\_BLOCKED} 
+153      && newState != \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a9b2989c4ac8a0f9a7f46528384eaa5c7}{TERMINAL}) \textcolor{keywordflow}{return} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea5f917cfb598da5d3c968757ba14a8ad4}{ERROR\_STATE\_INVALID};
+154     process->processState = newState;
+155     \hyperlink{pcb_8c_aa7ccac95996427cc60aaee4eec35caf4}{removePCB}(process);
+156     \hyperlink{pcb_8c_aa1e16d4087c6b2a5acf3aff5a3f339ee}{insertPCB}(process); 
+157     \textcolor{keywordflow}{return} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8eac7f69f7c9e5aea9b8f54cf02870e2bf8}{SUCCESS};
+158 \}
+\end{DoxyCode}
+\index{R2@{R2}!class\+To\+String@{class\+To\+String}}
+\index{class\+To\+String@{class\+To\+String}!R2@{R2}}
+\subsubsection[{\texorpdfstring{class\+To\+String(e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+C\+L\+A\+S\+S\+\_\+t process\+Class)}{classToString(e_PROCESS_CLASS_t processClass)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ class\+To\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+C\+L\+A\+S\+S\+\_\+t}}]{process\+Class}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r2_gac38459f8731293f12b7fb0170c923471}{}\label{group___r2_gac38459f8731293f12b7fb0170c923471}
+
+
+class\+To\+String creates a string form of the class passed in 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class} & the class to parse to a string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the const char$\ast$ of the class 
+\end{DoxyReturn}
+
+
+Definition at line 242 of file pcb.\+c.
+
+
+
+References C\+L\+A\+S\+S\+\_\+\+U\+N\+K\+N\+O\+WN, S\+Y\+S\+T\+EM, and U\+S\+E\+R\+\_\+\+A\+PP.
+
+
+
+Referenced by print\+P\+C\+B\+Func(), and show\+P\+C\+B().
+
+
+\begin{DoxyCode}
+243 \{
+244     \textcolor{keywordflow}{switch}(processClass)
+245     \{
+246         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_ab3268ce0bdfc94e5757917d42c73d9f1a57cc238145ec1361c72c327674c0d754}{SYSTEM}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"System"};
+247         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_ab3268ce0bdfc94e5757917d42c73d9f1a0c6b23d6f956b23100dec45357ff8dc0}{USER\_APP}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"User\_App"};
+248         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_ab3268ce0bdfc94e5757917d42c73d9f1a614fd08f9a6cd84e97785eb2c551dafe}{CLASS\_UNKNOWN}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Class Unknown"};
+249         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error parsing class code"};
+250     \}
+251     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error parsing class code"};
+252 \}
+\end{DoxyCode}
+\index{R2@{R2}!error\+To\+String@{error\+To\+String}}
+\index{error\+To\+String@{error\+To\+String}!R2@{R2}}
+\subsubsection[{\texorpdfstring{error\+To\+String(e\+\_\+\+P\+C\+B\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+t error)}{errorToString(e_PCB_ERROR_CODE_t error)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ error\+To\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf e\+\_\+\+P\+C\+B\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+t}}]{error}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r2_ga834927e89e94c123a0ec5322b11b0161}{}\label{group___r2_ga834927e89e94c123a0ec5322b11b0161}
+
+
+error\+To\+String creates a string form of the error passed in 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & the error to parse to a string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the const char$\ast$ of the error 
+\end{DoxyReturn}
+
+
+Definition at line 225 of file pcb.\+c.
+
+
+
+References E\+R\+R\+OR, E\+R\+R\+O\+R\+\_\+\+F\+R\+E\+E\+I\+N\+G\+\_\+\+N\+O\+DE, E\+R\+R\+O\+R\+\_\+\+F\+R\+E\+E\+I\+N\+G\+\_\+\+P\+CB, E\+R\+R\+O\+R\+\_\+\+F\+R\+E\+E\+I\+N\+G\+\_\+\+S\+T\+A\+CK, E\+R\+R\+O\+R\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+V\+A\+L\+ID, E\+R\+R\+O\+R\+\_\+\+P\+C\+B\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND, E\+R\+R\+O\+R\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID, E\+R\+R\+O\+R\+\_\+\+R\+E\+M\+O\+V\+I\+N\+G\+\_\+\+P\+CB, and S\+U\+C\+C\+E\+SS.
+
+
+\begin{DoxyCode}
+226 \{
+227     \textcolor{keywordflow}{switch}(error)
+228     \{
+229         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8eac7f69f7c9e5aea9b8f54cf02870e2bf8}{SUCCESS}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Success"};
+230         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea2fd6f336d08340583bd620a7f5694c90}{ERROR}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error"};
+231         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea5284a4c6f172bebecf5482934910df8c}{ERROR\_PCB\_NOT\_FOUND}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error: PCB not found"};
+232         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ead49c8157f91ba1ece3849d6d865882a4}{ERROR\_NAME\_INVALID}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error: name invalid"};
+233         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea5a16825b1ce3ee2cb0190cc641921707}{ERROR\_PRIORITY\_INVALID}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error: priority invalid"};
+234         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea4190d07ec89ae80f99bfa6b6ffeb692b}{ERROR\_FREEING\_NODE}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error freeing node"};
+235         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8eae6a47d920115451b70673d54b9d9c164}{ERROR\_FREEING\_STACK}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error freeing stack"};
+236         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea65a2fd434138761a45062d90d7381f64}{ERROR\_FREEING\_PCB}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error freeing PCB"};
+237         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a7e8c3ee6ff86c6b9d8fd0d2418cc2f8ea2df915668ce49c55a81cd75b8aaa4564}{ERROR\_REMOVING\_PCB}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error removing PCB"};
+238         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error parsing error code"};
+239     \}    
+240 \}
+\end{DoxyCode}
+\index{R2@{R2}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!R2@{R2}}
+\subsubsection[{\texorpdfstring{get\+State(const char $\ast$name)}{getState(const char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t} get\+State (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r2_gae34a580c5336a0d5f2a0589f41f25fa2}{}\label{group___r2_gae34a580c5336a0d5f2a0589f41f25fa2}
+
+
+get\+State gets the current state of the process 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t the state of the process 
+\end{DoxyReturn}
+
+
+Definition at line 160 of file pcb.\+c.
+
+
+
+References find\+P\+C\+B().
+
+
+\begin{DoxyCode}
+161 \{
+162     \hyperlink{structpcb__t}{pcb\_t}* process = \hyperlink{pcb_8c_a3ddbd6b7d5425cfb586dabc05862e9b1}{findPCB}(name);
+163     \textcolor{keywordflow}{return} process->processState;
+164 \}
+\end{DoxyCode}
+\index{R2@{R2}!is\+Suspended@{is\+Suspended}}
+\index{is\+Suspended@{is\+Suspended}!R2@{R2}}
+\subsubsection[{\texorpdfstring{is\+Suspended(e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t state)}{isSuspended(e_PROCESS_STATE_t state)}}]{\setlength{\rightskip}{0pt plus 5cm}int is\+Suspended (
+\begin{DoxyParamCaption}
+\item[{{\bf e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t}}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r2_ga1e42e70128de8086a07dbcd97e000942}{}\label{group___r2_ga1e42e70128de8086a07dbcd97e000942}
+
+
+is\+Suspended gets the suspension status of the process 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the current state of the process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 if the process is not suspended and 1 if the process is suspended 
+\end{DoxyReturn}
+
+
+Definition at line 182 of file pcb.\+c.
+
+
+
+References S\+U\+S\+P\+E\+N\+D\+E\+D\+\_\+\+B\+L\+O\+C\+K\+ED, and S\+U\+S\+P\+E\+N\+D\+E\+D\+\_\+\+R\+E\+A\+DY.
+
+
+
+Referenced by print\+P\+C\+B\+Func(), and show\+P\+C\+B().
+
+
+\begin{DoxyCode}
+183 \{
+184     \textcolor{keywordflow}{if} (state != \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a81cc2296827c731236176fea80701294}{SUSPENDED\_READY} && state != \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902aa4d91165aaa967e74157a23c02725bc7}{SUSPENDED\_BLOCKED}) \textcolor{keywordflow}{return} 0;
+185     \textcolor{keywordflow}{return} 1;
+186 \}
+\end{DoxyCode}
+\index{R2@{R2}!print\+P\+C\+B\+Func@{print\+P\+C\+B\+Func}}
+\index{print\+P\+C\+B\+Func@{print\+P\+C\+B\+Func}!R2@{R2}}
+\subsubsection[{\texorpdfstring{print\+P\+C\+B\+Func(void $\ast$pcb)}{printPCBFunc(void *pcb)}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+P\+C\+B\+Func (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pcb}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r2_ga819c31d0b376ca33ed371253585f9f80}{}\label{group___r2_ga819c31d0b376ca33ed371253585f9f80}
+
+
+print\+P\+C\+B\+Func prints the status of a process 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pcb} & void pointer to a process \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 277 of file pcb.\+c.
+
+
+
+References class\+To\+String(), is\+Suspended(), printf, and state\+To\+String().
+
+
+
+Referenced by init\+P\+C\+B\+Queues().
+
+
+\begin{DoxyCode}
+278 \{
+279     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"PCB: %s, Priority: %d, Process Class: %s, Process State: %s, Suspension Status: %s\(\backslash\)r\(\backslash\)n"}, 
+280           ((\hyperlink{structpcb__t}{pcb\_t}*)pcb)->name, ((\hyperlink{structpcb__t}{pcb\_t}*)pcb)->priority, \hyperlink{group___r2_gac38459f8731293f12b7fb0170c923471}{classToString}(((
+      \hyperlink{structpcb__t}{pcb\_t}*)pcb)->processClass), \hyperlink{group___r2_ga8667e4228a987f7d43e598f9855e9a52}{stateToString}(((\hyperlink{structpcb__t}{pcb\_t}*)pcb)->processState), 
+      \hyperlink{group___r2_ga1e42e70128de8086a07dbcd97e000942}{isSuspended}(((\hyperlink{structpcb__t}{pcb\_t}*)pcb)->processState) ? \textcolor{stringliteral}{"true"} : \textcolor{stringliteral}{"false"});
+281 \}
+\end{DoxyCode}
+\index{R2@{R2}!set\+Print\+Function@{set\+Print\+Function}}
+\index{set\+Print\+Function@{set\+Print\+Function}!R2@{R2}}
+\subsubsection[{\texorpdfstring{set\+Print\+Function(linked\+List\+\_\+t $\ast$list, void($\ast$new\+Print\+Func)(void $\ast$))}{setPrintFunction(linkedList_t *list, void(*newPrintFunc)(void *))}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Print\+Function (
+\begin{DoxyParamCaption}
+\item[{{\bf linked\+List\+\_\+t} $\ast$}]{list, }
+\item[{void($\ast$)(void $\ast$)}]{new\+Print\+Func}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r2_gafc8969d7969f61c928a01f4c302e669b}{}\label{group___r2_gafc8969d7969f61c928a01f4c302e669b}
+
+
+sets the function whose job it is to print the list to the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & to set the search funtion for \\
+\hline
+{\em new\+Print\+Func} & pointer to function whose job is to print the data contained in the node. The argument of this function is the data conatined in the node. Traversal of the list starts one after the head and goes to the node before the tail. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 206 of file linked\+\_\+list.\+c.
+
+
+
+Referenced by init\+P\+C\+B\+Queues(), and list\+Test().
+
+
+\begin{DoxyCode}
+207 \{
+208     list->printNodeFunc = newPrintFunc;
+209 \}
+\end{DoxyCode}
+\index{R2@{R2}!state\+To\+String@{state\+To\+String}}
+\index{state\+To\+String@{state\+To\+String}!R2@{R2}}
+\subsubsection[{\texorpdfstring{state\+To\+String(e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t state)}{stateToString(e_PROCESS_STATE_t state)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ state\+To\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t}}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r2_ga8667e4228a987f7d43e598f9855e9a52}{}\label{group___r2_ga8667e4228a987f7d43e598f9855e9a52}
+
+
+state\+To\+String creates a string form of the state passed in 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the state to parse to a string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the const char$\ast$ of the state 
+\end{DoxyReturn}
+
+
+Definition at line 254 of file pcb.\+c.
+
+
+
+References B\+L\+O\+C\+K\+ED, I\+N\+I\+T\+I\+AL, R\+E\+A\+DY, R\+U\+N\+N\+I\+NG, S\+T\+A\+T\+E\+\_\+\+U\+N\+K\+N\+O\+WN, S\+U\+S\+P\+E\+N\+D\+E\+D\+\_\+\+B\+L\+O\+C\+K\+ED, S\+U\+S\+P\+E\+N\+D\+E\+D\+\_\+\+R\+E\+A\+DY, and T\+E\+R\+M\+I\+N\+AL.
+
+
+
+Referenced by print\+P\+C\+B\+Func(), and show\+P\+C\+B().
+
+
+\begin{DoxyCode}
+255 \{
+256     \textcolor{keywordflow}{switch}(state)
+257     \{
+258         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a7116db6906963fd0720c4a85be250cf4}{INITIAL}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Initial"};
+259         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a6564f2f3e15be06b670547bbcaaf0798}{READY}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Ready"};
+260         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a1061be6c3fb88d32829cba6f6b2be304}{RUNNING}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Running"};
+261         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a376c1b6a3f75d283a2efacf737438d61}{BLOCKED}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Blocked"};
+262         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a81cc2296827c731236176fea80701294}{SUSPENDED\_READY}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Suspended-ready"};
+263         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902aa4d91165aaa967e74157a23c02725bc7}{SUSPENDED\_BLOCKED}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Suspened-blocked"};
+264         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a9b2989c4ac8a0f9a7f46528384eaa5c7}{TERMINAL}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Terminal"};
+265         \textcolor{keywordflow}{case} \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a786a8e9401b8091f65b2afbd342c90f5}{STATE\_UNKNOWN}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"State unknown"};
+266         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Error parsing state code"};
+267     \}
+268 \}
+\end{DoxyCode}
+\index{R2@{R2}!string\+To\+Class@{string\+To\+Class}}
+\index{string\+To\+Class@{string\+To\+Class}!R2@{R2}}
+\subsubsection[{\texorpdfstring{string\+To\+Class(const char $\ast$stringified\+Class)}{stringToClass(const char *stringifiedClass)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+C\+L\+A\+S\+S\+\_\+t} string\+To\+Class (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{stringified\+Class}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r2_gae81b3dd13059be0733193c53681ca440}{}\label{group___r2_gae81b3dd13059be0733193c53681ca440}
+
+
+string\+To\+Class returns the enum representation of a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stringified\+Class} & the string that represents a process class enum \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string represenation of the \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902}{e\+\_\+\+P\+R\+O\+C\+E\+S\+S\+\_\+\+S\+T\+A\+T\+E\+\_\+t} enum, returns value C\+L\+A\+S\+S\+\_\+\+U\+N\+K\+N\+O\+WN if error in processing occurs; 
+\end{DoxyReturn}
+
+
+Definition at line 270 of file pcb.\+c.
+
+
+
+References C\+L\+A\+S\+S\+\_\+\+U\+N\+K\+N\+O\+WN, strcmp(), S\+Y\+S\+T\+EM, and U\+S\+E\+R\+\_\+\+A\+PP.
+
+
+\begin{DoxyCode}
+271 \{
+272     \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(\textcolor{stringliteral}{"System"}, stringifiedClass))\{ \textcolor{keywordflow}{return} \hyperlink{pcb_8h_ab3268ce0bdfc94e5757917d42c73d9f1a57cc238145ec1361c72c327674c0d754}{SYSTEM}; \}
+273     \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(\textcolor{stringliteral}{"User\_App"}, stringifiedClass))\{ \textcolor{keywordflow}{return} \hyperlink{pcb_8h_ab3268ce0bdfc94e5757917d42c73d9f1a0c6b23d6f956b23100dec45357ff8dc0}{USER\_APP}; \}
+274     \textcolor{keywordflow}{return} \hyperlink{pcb_8h_ab3268ce0bdfc94e5757917d42c73d9f1a614fd08f9a6cd84e97785eb2c551dafe}{CLASS\_UNKNOWN};
+275 \}
+\end{DoxyCode}

@@ -1,0 +1,1722 @@
+\hypertarget{comm__list_8c}{}\section{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/modules/\+R1/comm\+\_\+list.c File Reference}
+\label{comm__list_8c}\index{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/modules/\+R1/comm\+\_\+list.\+c@{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/modules/\+R1/comm\+\_\+list.\+c}}
+{\ttfamily \#include $<$comm\+\_\+vars.\+h$>$}\\*
+{\ttfamily \#include $<$core/rtc.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$input.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}include/comm\+\_\+list.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$core/pcb.\+h$>$}\\*
+{\ttfamily \#include $<$linked\+\_\+list.\+h$>$}\\*
+Include dependency graph for comm\+\_\+list.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{comm__list_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{comm__list_8c_a63e5b5d633e0beec232fe5765124ad7e}{get\+Num\+Days\+In\+Month} (int month, int year)
+\begin{DoxyCompactList}\small\item\em get\+Num\+Days\+In\+Month is a helper function to allow the easy retrieval of days in a month based on the month input by the user. \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{is\+Empty} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\item 
+int \hyperlink{comm__list_8c_af4729cc64f3f6ec814af70e26c9ab9ca}{help\+Func} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em help\+Func compares the parameters after the \textquotesingle{}help\textquotesingle{} command and determines which function to call. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a97ee70a8770dc30d06c744b24eb2fcfc}{help} ()
+\begin{DoxyCompactList}\small\item\em help prints out a list of all possible commands and a brief description of what they do. \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_aa0721512217377ef46085ce000a6daf4}{help\+Get\+Version} ()
+\begin{DoxyCompactList}\small\item\em help\+Get\+Version prints the help instructions for version. Tells the user what the command and arguments for \textquotesingle{}version\textquotesingle{} are. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a0f223b2f9d2c4887ab9d4943a565a20f}{help\+Get\+Date} ()
+\begin{DoxyCompactList}\small\item\em help\+Get\+Date prints the help instructions for get date. Tells the user what the command and arguments for \textquotesingle{}get date\textquotesingle{} are. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a315b74fd1af8e5c10ae8fea09a7f1343}{help\+Set\+Date} ()
+\begin{DoxyCompactList}\small\item\em help\+Set\+Date prints the help instructions for set date. Tells the user what the command and arguments for \textquotesingle{}set date\textquotesingle{} are. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_ab023cd64db7b635c8e4048430fdd51c9}{help\+Get\+Time} ()
+\begin{DoxyCompactList}\small\item\em help\+Get\+Time prints the help instructions for get time. Tells the user what the commands and arguments for \textquotesingle{}get time\textquotesingle{} are. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a38bedc7695ebaf1fddec31cac15327b0}{help\+Set\+Time} ()
+\begin{DoxyCompactList}\small\item\em help\+Set\+Time prints the help instructions for set time. Tells the user what the command and arguments for \textquotesingle{}set time\textquotesingle{} are. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_af128492f8bc92a7110f7e2de0bf26fa0}{help\+Shutdown} ()
+\begin{DoxyCompactList}\small\item\em help\+Shutdown prints the help instructions for set date. Tells the user what the command and arguments for \textquotesingle{}set date\textquotesingle{} are. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a6b64cff6b85c2b7edb02636de6e9d2ba}{help\+Version} ()
+\begin{DoxyCompactList}\small\item\em help\+Version prints the help instructions for using the version command. No arguments are required. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_ae7390c4786bfe500bab96f1e0439902a}{help\+Date} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\item 
+void \hyperlink{comm__list_8c_a4ade66f75a1cf0af90a2e983c6d4e656}{help\+Time} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\item 
+void \hyperlink{comm__list_8c_a5c4cb1d2574709bc85d25706f5534cf4}{help\+Suspend\+P\+CB} ()
+\begin{DoxyCompactList}\small\item\em help\+Suspend\+P\+CB prints the help instructions for the suspend\+P\+CB command. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_aba83fcaebd5841ba00582be3913d012d}{help\+Resume\+P\+CB} ()
+\item 
+void \hyperlink{comm__list_8c_ace39d9c4df8b991ae1db257969f511f3}{help\+Set\+Priority} ()
+\item 
+void \hyperlink{comm__list_8c_a8f9ff33592233864136430a150026353}{help\+Show\+P\+CB} ()
+\item 
+void \hyperlink{comm__list_8c_a20c49565baaff2aec112f4d99d63058f}{help\+Show\+All\+Processes} ()
+\begin{DoxyCompactList}\small\item\em show\+All\+Processes shows all processes in the system. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_afc0abad04f83d121f3c7d8f4e08eade7}{help\+Show\+Ready\+Processes} ()
+\begin{DoxyCompactList}\small\item\em show\+Ready\+Processes shows all processes that are ready, in the ready queue (linked list). \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a42841eb74573504baa22dd0c76ca83e9}{help\+Show\+Blocked\+Processes} ()
+\begin{DoxyCompactList}\small\item\em show\+Blocked\+Processes shows all processes that are blocked. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a72381b23fce4dc8d86d6ef7fbc440eda}{help\+Create\+P\+CB} ()
+\begin{DoxyCompactList}\small\item\em create\+P\+CB creates a P\+CB \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a603af725d8289ae121f4ba45d55e654f}{help\+Delete\+P\+CB} ()
+\begin{DoxyCompactList}\small\item\em delete\+P\+CB deletes the P\+CB requested by the user. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a35106b0a99fb607930e3caa5f2a88974}{help\+Block\+P\+CB} ()
+\begin{DoxyCompactList}\small\item\em block\+P\+CB blocks the specified P\+CB \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a2f4de74d76cc04ea63e4f253fcdf5aec}{help\+Unblock\+P\+CB} ()
+\begin{DoxyCompactList}\small\item\em unblock\+P\+CB unblocks the specified P\+CB. \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_ab21bb30658e69c3d4906e435384fa5fd}{version} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em version prints out the current version of the operating system. It will print out R1, R2, R3, ... depending on the current module. \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_a2b5b0b260a749c7a0371b96f079b9d69}{date} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\item 
+void \hyperlink{comm__list_8c_affb6f9c7b2c1d585677a5bba1da35c06}{get\+Date} ()
+\begin{DoxyCompactList}\small\item\em get\+Date Get the current date from the system. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_abcb304e34ec42b6fa3df07249ce8c1b7}{set\+Date} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em set\+Date sets the system date using the input from the user. \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_a5dac732108bdce081376535bd2d51221}{time} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\item 
+void \hyperlink{comm__list_8c_a1c7c164fd3c7dea7004ece3c6251fc94}{get\+Time} ()
+\begin{DoxyCompactList}\small\item\em get\+Time this function has the side-\/effect of printing the current time to the terminal. \end{DoxyCompactList}\item 
+void \hyperlink{comm__list_8c_a684ac3c738428c05031f6b5c5b121d85}{set\+Time} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em set\+Time sets the current system time from the users input. \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_a514416c2792fdc8614585266d618fbf8}{shutdown\+Func} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\item 
+int \hyperlink{comm__list_8c_ac903af80a2e0afe97b30f5ca88a1505a}{pcb\+Func} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\item 
+int \hyperlink{comm__list_8c_adb12aae9347bfdc11c97b2c89c448ce2}{suspend\+P\+CB} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em suspend\+P\+CB suspends the pcb passed in by the user \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_a672eae99ab4e3da15306bc6df644bb50}{resume\+P\+CB} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em resume\+P\+CB resumes the P\+CB passed in by the user \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_a3c30cca674e48a10a60180721d65cee0}{set\+Priority} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em set\+Priority sets the priority of a particular process \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_a9b84e5992ebbf428fc68351c9453e52e}{show\+P\+CB} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em show\+P\+CB shows the process information for the process requested by the user \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_a15a1fce149a24a3c2925b6ca44cb79c7}{show\+All\+Processes} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em show\+All\+Processes shows all processes in the system. \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_abc0ff5bef60dfc962f4455492297a191}{show\+Ready\+Processes} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em show\+Ready\+Processes shows all processes that are ready, in the ready queue (linked list). \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_aea06cb173ad17f9139253574d010d678}{show\+Blocked\+Processes} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em show\+Blocked\+Processes shows all processes that are blocked. \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_ae147f79757d354c727a87836c71f1b05}{create\+P\+CB} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em create\+P\+CB creates a P\+CB \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_a3602fa2889ad77ef2f323f6db3dd967e}{delete\+P\+CB} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em delete\+P\+CB deletes the P\+CB requested by the user. \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_af8c8690ef4431e1629f9ab7c5539eeae}{block\+P\+CB} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em block\+P\+CB blocks the specified P\+CB \end{DoxyCompactList}\item 
+int \hyperlink{comm__list_8c_ac26704b8c23bbe0e0fdf8e838915e29d}{unblock\+P\+CB} (char parameters\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{input_8h_a7a9a231e30b47bc0345749c8bd1e5077}{M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}\mbox{]})
+\begin{DoxyCompactList}\small\item\em unblock\+P\+CB unblocks the specified P\+CB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!block\+P\+CB@{block\+P\+CB}}
+\index{block\+P\+CB@{block\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{block\+P\+C\+B(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{blockPCB(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int block\+P\+CB (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_af8c8690ef4431e1629f9ab7c5539eeae}{}\label{comm__list_8c_af8c8690ef4431e1629f9ab7c5539eeae}
+
+
+block\+P\+CB blocks the specified P\+CB 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 738 of file comm\+\_\+list.\+c.
+
+
+
+References B\+L\+O\+C\+K\+ED, and change\+Process\+State().
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+738                                             \{
+739     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* name = parameters[0];
+740     \hyperlink{group___r2_ga83a5983d76f08725aadc23bf47930436}{changeProcessState}(name, \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a376c1b6a3f75d283a2efacf737438d61}{BLOCKED});
+741     \textcolor{keywordflow}{return} 0;
+742 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!create\+P\+CB@{create\+P\+CB}}
+\index{create\+P\+CB@{create\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{create\+P\+C\+B(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{createPCB(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int create\+P\+CB (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_ae147f79757d354c727a87836c71f1b05}{}\label{comm__list_8c_ae147f79757d354c727a87836c71f1b05}
+
+
+create\+P\+CB creates a P\+CB 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 714 of file comm\+\_\+list.\+c.
+
+
+
+References setup\+P\+C\+B().
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+714                                              \{
+715     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* name = (\textcolor{keyword}{const} \textcolor{keywordtype}{char}*)parameters[0];
+716     \hyperlink{pcb_8h_ab3268ce0bdfc94e5757917d42c73d9f1}{e\_PROCESS\_CLASS\_t} \textcolor{keyword}{class }= (\hyperlink{pcb_8h_ab3268ce0bdfc94e5757917d42c73d9f1}{e\_PROCESS\_CLASS\_t})parameters[1];
+717     \hyperlink{pcb_8h_aade1badcda6beffd30258586dcad6550}{processPriority\_t} priority = (\hyperlink{pcb_8h_aade1badcda6beffd30258586dcad6550}{processPriority\_t})parameters[2];
+718 
+719     \hyperlink{pcb_8h_a9928a07bb6f59213464656fdab142e70}{setupPCB}(name, \textcolor{keyword}{class}, priority);
+720     \textcolor{keywordflow}{return} 0;
+721 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!date@{date}}
+\index{date@{date}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{date(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{date(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int date (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a2b5b0b260a749c7a0371b96f079b9d69}{}\label{comm__list_8c_a2b5b0b260a749c7a0371b96f079b9d69}
+
+
+Definition at line 363 of file comm\+\_\+list.\+c.
+
+
+
+References get\+Date(), serial\+\_\+println(), set\+Date(), and strcmp().
+
+
+
+Referenced by init\+Cmd\+Array().
+
+
+\begin{DoxyCode}
+363                                         \{
+364     \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--get"})) \{
+365         \hyperlink{comm__list_8c_affb6f9c7b2c1d585677a5bba1da35c06}{getDate}();
+366     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--set"})) \{
+367         \hyperlink{comm__list_8c_abcb304e34ec42b6fa3df07249ce8c1b7}{setDate}(&parameters[1]);
+368     \} \textcolor{keywordflow}{else} \{
+369         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"ERROR HAS BEEN NOTICED"});
+370     \}
+371     \textcolor{keywordflow}{return} 0;
+372 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!delete\+P\+CB@{delete\+P\+CB}}
+\index{delete\+P\+CB@{delete\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{delete\+P\+C\+B(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{deletePCB(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int delete\+P\+CB (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a3602fa2889ad77ef2f323f6db3dd967e}{}\label{comm__list_8c_a3602fa2889ad77ef2f323f6db3dd967e}
+
+
+delete\+P\+CB deletes the P\+CB requested by the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 727 of file comm\+\_\+list.\+c.
+
+
+
+References find\+P\+C\+B(), and remove\+P\+C\+B().
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+727                                              \{
+728     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* name = (\textcolor{keyword}{const} \textcolor{keywordtype}{char}*)parameters[0];
+729     \hyperlink{structpcb__t}{pcb\_t}* pcbToRem = \hyperlink{pcb_8h_a3ddbd6b7d5425cfb586dabc05862e9b1}{findPCB}(name);
+730     \hyperlink{pcb_8h_aa7ccac95996427cc60aaee4eec35caf4}{removePCB}(pcbToRem);
+731     \textcolor{keywordflow}{return} 0;
+732 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{get\+Date()}{getDate()}}]{\setlength{\rightskip}{0pt plus 5cm}void get\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_affb6f9c7b2c1d585677a5bba1da35c06}{}\label{comm__list_8c_affb6f9c7b2c1d585677a5bba1da35c06}
+
+
+get\+Date Get the current date from the system. 
+
+No parameters required, prints out a date. 
+
+Definition at line 380 of file comm\+\_\+list.\+c.
+
+
+
+References get\+\_\+date(), and printf.
+
+
+
+Referenced by date(), and set\+Date().
+
+
+\begin{DoxyCode}
+380                \{
+381     \textcolor{keywordtype}{int} month=0, day=0, year=0;
+382     \hyperlink{rtc_8h_ab43f56447c49f42bb4baee3e59e2d1f9}{get\_date}(&day, &month, &year);
+383     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"The current date is %d/%d/20%d UTC\(\backslash\)r\(\backslash\)n"}, day, month, year);
+384 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!get\+Num\+Days\+In\+Month@{get\+Num\+Days\+In\+Month}}
+\index{get\+Num\+Days\+In\+Month@{get\+Num\+Days\+In\+Month}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{get\+Num\+Days\+In\+Month(int month, int year)}{getNumDaysInMonth(int month, int year)}}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Num\+Days\+In\+Month (
+\begin{DoxyParamCaption}
+\item[{int}]{month, }
+\item[{int}]{year}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a63e5b5d633e0beec232fe5765124ad7e}{}\label{comm__list_8c_a63e5b5d633e0beec232fe5765124ad7e}
+
+
+get\+Num\+Days\+In\+Month is a helper function to allow the easy retrieval of days in a month based on the month input by the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & is an integer from 1-\/12 \\
+\hline
+{\em year} & is an integer representing the year to check if it\textquotesingle{}s a leap year \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of days in the corresponding month 
+\end{DoxyReturn}
+
+
+Definition at line 19 of file comm\+\_\+list.\+c.
+
+
+
+Referenced by set\+Date().
+
+
+\begin{DoxyCode}
+19                                            \{
+20     \textcolor{keywordtype}{int} days = 0;
+21     \textcolor{keywordflow}{switch} (month) \{
+22     \textcolor{keywordflow}{case} 01: \textcolor{keywordflow}{case} 3: \textcolor{keywordflow}{case} 5: \textcolor{keywordflow}{case} 7: \textcolor{keywordflow}{case} 8: \textcolor{keywordflow}{case} 10: \textcolor{keywordflow}{case} 12:
+23         days = 31;
+24         \textcolor{keywordflow}{break};
+25     \textcolor{keywordflow}{case} 4: \textcolor{keywordflow}{case} 6: \textcolor{keywordflow}{case} 9: \textcolor{keywordflow}{case} 11:
+26         days = 30;
+27         \textcolor{keywordflow}{break};
+28     \textcolor{keywordflow}{case} 2:
+29         \textcolor{keywordflow}{if}(year%4==0)
+30             days = 29;
+31         \textcolor{keywordflow}{else}
+32             days = 28;
+33     \textcolor{keywordflow}{default}:
+34         \textcolor{keywordflow}{break};
+35     \}
+36     \textcolor{keywordflow}{return} days;
+37 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{get\+Time()}{getTime()}}]{\setlength{\rightskip}{0pt plus 5cm}void get\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a1c7c164fd3c7dea7004ece3c6251fc94}{}\label{comm__list_8c_a1c7c164fd3c7dea7004ece3c6251fc94}
+
+
+get\+Time this function has the side-\/effect of printing the current time to the terminal. 
+
+No parameters are required. 
+
+Definition at line 444 of file comm\+\_\+list.\+c.
+
+
+
+References get\+\_\+time(), serial\+\_\+print(), and sprintf().
+
+
+
+Referenced by set\+Time(), and time().
+
+
+\begin{DoxyCode}
+444                \{
+445     \textcolor{keywordtype}{int} hour=0, minutes=0, seconds=0;
+446     \hyperlink{rtc_8h_a35fa24488cb7eb077e8dc995729202cf}{get\_time}(&hour, &minutes, &seconds);
+447 
+448     \textcolor{keywordtype}{char} buf[500]; \hyperlink{string_8h_ae9cac82f3293a00d8ec8705a3fc5cf64}{\(\backslash\)}
+449 \hyperlink{string_8h_ae9cac82f3293a00d8ec8705a3fc5cf64}{    sprintf}(buf, 500, \textcolor{stringliteral}{"\(\backslash\)033[38;2;255;0;255mThe current time is %d:%d.%d UTC\(\backslash\)r\(\backslash\)n\(\backslash\)0
+      33[38;2;255;255;255m"}, hour, minutes, seconds); \hyperlink{serial_8h_a995827efcd4dcfb780c9fbb9645410a4}{\(\backslash\)}
+450 \hyperlink{serial_8h_a995827efcd4dcfb780c9fbb9645410a4}{    serial\_print}(buf);
+451     \textcolor{comment}{//printf("\(\backslash\)033[38;2;255;0;255mThe current time is %d:%d.%d UTC\(\backslash\)r\(\backslash\)n\(\backslash\)033[38;2;255;255;255m", hour,
+       minutes, seconds);}
+452 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help@{help}}
+\index{help@{help}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help()}{help()}}]{\setlength{\rightskip}{0pt plus 5cm}void help (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a97ee70a8770dc30d06c744b24eb2fcfc}{}\label{comm__list_8c_a97ee70a8770dc30d06c744b24eb2fcfc}
+
+
+help prints out a list of all possible commands and a brief description of what they do. 
+
+
+
+Definition at line 80 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+
+Referenced by help\+Func().
+
+
+\begin{DoxyCode}
+80             \{
+81 
+82     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"UNIX style commands\(\backslash\)r\(\backslash\)n"});
+83     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command   | what it does"});
+84     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"\_\_\_\_\_\_\_   | \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_"});
+85     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"version   | Get the current version of the OS"});
+86     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"date      | Interact with the current system date"});
+87     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"time      | Interact with the current system time"});
+88     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"help      | Shows the command options"});
+89     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"shutdown  | Shut down the system"});
+90     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+91     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Type 'help [command]' to see what the command does and arguments it
+       requires."});
+92     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+93 
+94 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Block\+P\+CB@{help\+Block\+P\+CB}}
+\index{help\+Block\+P\+CB@{help\+Block\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Block\+P\+C\+B()}{helpBlockPCB()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Block\+P\+CB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a35106b0a99fb607930e3caa5f2a88974}{}\label{comm__list_8c_a35106b0a99fb607930e3caa5f2a88974}
+
+
+block\+P\+CB blocks the specified P\+CB 
+
+
+
+Definition at line 329 of file comm\+\_\+list.\+c.
+
+
+\begin{DoxyCode}
+329                     \{
+330 
+331 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Create\+P\+CB@{help\+Create\+P\+CB}}
+\index{help\+Create\+P\+CB@{help\+Create\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Create\+P\+C\+B()}{helpCreatePCB()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Create\+P\+CB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a72381b23fce4dc8d86d6ef7fbc440eda}{}\label{comm__list_8c_a72381b23fce4dc8d86d6ef7fbc440eda}
+
+
+create\+P\+CB creates a P\+CB 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 311 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+311                      \{
+312     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Creates a PCB."});
+313     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: show -processes -b 'PCBname'"});
+314     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Arguments:"});
+315     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"-processes -b -'the name of the PCB'"});
+316     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+317 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Date@{help\+Date}}
+\index{help\+Date@{help\+Date}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Date(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{helpDate(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Date (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_ae7390c4786bfe500bab96f1e0439902a}{}\label{comm__list_8c_ae7390c4786bfe500bab96f1e0439902a}
+
+
+Definition at line 194 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println(), strcmp(), and strlen().
+
+
+
+Referenced by help\+Func().
+
+
+\begin{DoxyCode}
+195 \{
+196     \textcolor{keywordflow}{if}(\hyperlink{string_8h_a2dee044e4e667b5b789b493abd21cfa4}{strlen}(parameters[0]) <= 1)
+197     \{
+198         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Retireves or Sets the system date"});
+199         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'date'"});
+200         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"\(\backslash\)033[38;2;255;255;0mArguments available: \(\backslash\)033[38;2;255;0;0m--set,
+       --get\(\backslash\)033[0m"});
+201         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Enter the command 'help date --get' or 'help date --set'"});
+202     \}
+203     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0], \textcolor{stringliteral}{"set"}))
+204     \{
+205         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Sets the system date"});
+206         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'date --set'"});
+207         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Usage: \(\backslash\)033[38;2;255;255;0m 'date --set' \(\backslash\)"DD/MM/YYYY\(\backslash\)" \(\backslash\)033[0m"});
+208     \}
+209     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0], \textcolor{stringliteral}{"get"}))
+210     \{
+211         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Gets the system date"});
+212         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'date --get'"});
+213         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Usage: \(\backslash\)033[38;2;255;255;0m 'date --get' \(\backslash\)033[0m"});
+214     \}
+215 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Delete\+P\+CB@{help\+Delete\+P\+CB}}
+\index{help\+Delete\+P\+CB@{help\+Delete\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Delete\+P\+C\+B()}{helpDeletePCB()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Delete\+P\+CB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a603af725d8289ae121f4ba45d55e654f}{}\label{comm__list_8c_a603af725d8289ae121f4ba45d55e654f}
+
+
+delete\+P\+CB deletes the P\+CB requested by the user. 
+
+
+
+Definition at line 322 of file comm\+\_\+list.\+c.
+
+
+\begin{DoxyCode}
+322                      \{
+323 
+324 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Func@{help\+Func}}
+\index{help\+Func@{help\+Func}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Func(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{helpFunc(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int help\+Func (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_af4729cc64f3f6ec814af70e26c9ab9ca}{}\label{comm__list_8c_af4729cc64f3f6ec814af70e26c9ab9ca}
+
+
+help\+Func compares the parameters after the \textquotesingle{}help\textquotesingle{} command and determines which function to call. 
+
+help\+Func calls the other help functions
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & the command that you want to print the help information about. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an integer 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file comm\+\_\+list.\+c.
+
+
+
+References help(), help\+Date(), help\+Get\+Version(), help\+Shutdown(), help\+Time(), I\+M\+P\+R\+O\+P\+E\+R\+\_\+\+C\+O\+M\+M\+A\+ND, serial\+\_\+println(), and strcmp().
+
+
+
+Referenced by init\+Cmd\+Array().
+
+
+\begin{DoxyCode}
+59                                             \{
+60     \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{""}) || !\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"\(\backslash\)0"})) \{
+61         \hyperlink{comm__list_8c_a97ee70a8770dc30d06c744b24eb2fcfc}{help}();
+62     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"shutdown"})==0) \{
+63         \hyperlink{comm__list_8c_af128492f8bc92a7110f7e2de0bf26fa0}{helpShutdown}();
+64     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"version"})==0) \{
+65         \hyperlink{comm__list_8c_aa0721512217377ef46085ce000a6daf4}{helpGetVersion}();
+66     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"time"})==0) \{
+67         \hyperlink{comm__list_8c_a4ade66f75a1cf0af90a2e983c6d4e656}{helpTime}(&parameters[1]);
+68     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"date"})==0) \{
+69         \hyperlink{comm__list_8c_ae7390c4786bfe500bab96f1e0439902a}{helpDate}(&parameters[1]);
+70     \} \textcolor{keywordflow}{else} \{
+71         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\hyperlink{comm__vars_8h_adc0c870b429ed41ab22e23dbba9e6af1}{IMPROPER\_COMMAND});
+72     \}
+73     \textcolor{keywordflow}{return} 0;
+74 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Get\+Date@{help\+Get\+Date}}
+\index{help\+Get\+Date@{help\+Get\+Date}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Get\+Date()}{helpGetDate()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Get\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a0f223b2f9d2c4887ab9d4943a565a20f}{}\label{comm__list_8c_a0f223b2f9d2c4887ab9d4943a565a20f}
+
+
+help\+Get\+Date prints the help instructions for get date. Tells the user what the command and arguments for \textquotesingle{}get date\textquotesingle{} are. 
+
+No parameters are needed to be passed in, as it just prints to the console. 
+
+Definition at line 118 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+118                    \{
+119     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Get the current date."});
+120     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'get date'"});
+121     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"There are no arguments required."});
+122     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+123 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Get\+Time@{help\+Get\+Time}}
+\index{help\+Get\+Time@{help\+Get\+Time}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Get\+Time()}{helpGetTime()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Get\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_ab023cd64db7b635c8e4048430fdd51c9}{}\label{comm__list_8c_ab023cd64db7b635c8e4048430fdd51c9}
+
+
+help\+Get\+Time prints the help instructions for get time. Tells the user what the commands and arguments for \textquotesingle{}get time\textquotesingle{} are. 
+
+No parameters are needed to be passed in, as it just prints to the console. 
+
+Definition at line 146 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+146                    \{
+147     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Get the current time in UTC."});
+148     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'get time'"});
+149     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"There are no arguments required."});
+150     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+151 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Get\+Version@{help\+Get\+Version}}
+\index{help\+Get\+Version@{help\+Get\+Version}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Get\+Version()}{helpGetVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}int help\+Get\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_aa0721512217377ef46085ce000a6daf4}{}\label{comm__list_8c_aa0721512217377ef46085ce000a6daf4}
+
+
+help\+Get\+Version prints the help instructions for version. Tells the user what the command and arguments for \textquotesingle{}version\textquotesingle{} are. 
+
+No parameters are needed to be passed in, as it just prints to the console. 
+
+Definition at line 102 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+
+Referenced by help\+Func().
+
+
+\begin{DoxyCode}
+102                      \{
+103     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Get the current version of the operating system."});
+104     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'version'"});
+105     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"There are no arguments required."});
+106     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"This will return R1, R2,... showing the current module."});
+107     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+108     \textcolor{keywordflow}{return} 0;
+109 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Resume\+P\+CB@{help\+Resume\+P\+CB}}
+\index{help\+Resume\+P\+CB@{help\+Resume\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Resume\+P\+C\+B()}{helpResumePCB()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Resume\+P\+CB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_aba83fcaebd5841ba00582be3913d012d}{}\label{comm__list_8c_aba83fcaebd5841ba00582be3913d012d}
+
+
+Definition at line 251 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+251                      \{
+252     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Resume a particular PCB from running."});
+253     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: pcb --resume 'pcb name'"});
+254     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Arguments:"});
+255     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"'the name of the PCB to be resumed'"});
+256     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+257 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Set\+Date@{help\+Set\+Date}}
+\index{help\+Set\+Date@{help\+Set\+Date}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Set\+Date()}{helpSetDate()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Set\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a315b74fd1af8e5c10ae8fea09a7f1343}{}\label{comm__list_8c_a315b74fd1af8e5c10ae8fea09a7f1343}
+
+
+help\+Set\+Date prints the help instructions for set date. Tells the user what the command and arguments for \textquotesingle{}set date\textquotesingle{} are. 
+
+No parameters are needed to be passed in, as it just prints to the console. 
+
+Definition at line 131 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+131                    \{
+132     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Set the current date"});
+133     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'set date --set \(\backslash\)"DD/MM/YYYY\(\backslash\)" "});
+134     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Arguments:"});
+135     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"--set \(\backslash\)"MM/DD/YYYY\(\backslash\)""});
+136     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"ex. 'set date --set \(\backslash\)"03/12/2017\(\backslash\)"'"});
+137     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+138 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Set\+Priority@{help\+Set\+Priority}}
+\index{help\+Set\+Priority@{help\+Set\+Priority}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Set\+Priority()}{helpSetPriority()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Set\+Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_ace39d9c4df8b991ae1db257969f511f3}{}\label{comm__list_8c_ace39d9c4df8b991ae1db257969f511f3}
+
+
+Definition at line 259 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+259                        \{
+260     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Set the priority of a particular PCB."});
+261     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: pcb --setpriority -n 'pcb name' -p 'pcb priority'"});
+262     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Arguments:"});
+263     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"-'the name of the PCB' -'the priority level for the PCB'"});
+264     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+265 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Set\+Time@{help\+Set\+Time}}
+\index{help\+Set\+Time@{help\+Set\+Time}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Set\+Time()}{helpSetTime()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Set\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a38bedc7695ebaf1fddec31cac15327b0}{}\label{comm__list_8c_a38bedc7695ebaf1fddec31cac15327b0}
+
+
+help\+Set\+Time prints the help instructions for set time. Tells the user what the command and arguments for \textquotesingle{}set time\textquotesingle{} are. 
+
+No parameters are needed to be passed in, as it just prints to the console. 
+
+Definition at line 160 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+160                   \{
+161     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Set the current time in UTC"});
+162     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'set time --set \(\backslash\)"HH:MM.SS\(\backslash\)"'"});
+163     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Arguments: "});
+164     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"--set \(\backslash\)"HH:MM.SS\(\backslash\)"   using 24 hour"});
+165     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"ex. 'set time --set[14:20.00]' to set the system time to 2:20.00 PM"});
+166     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+167 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Show\+All\+Processes@{help\+Show\+All\+Processes}}
+\index{help\+Show\+All\+Processes@{help\+Show\+All\+Processes}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Show\+All\+Processes()}{helpShowAllProcesses()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Show\+All\+Processes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a20c49565baaff2aec112f4d99d63058f}{}\label{comm__list_8c_a20c49565baaff2aec112f4d99d63058f}
+
+
+show\+All\+Processes shows all processes in the system. 
+
+
+
+Definition at line 278 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+278                             \{
+279     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Show all of the processes in the system."});
+280     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: pcb --showall"});
+281     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Arguments:"});
+282     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+283 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Show\+Blocked\+Processes@{help\+Show\+Blocked\+Processes}}
+\index{help\+Show\+Blocked\+Processes@{help\+Show\+Blocked\+Processes}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Show\+Blocked\+Processes()}{helpShowBlockedProcesses()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Show\+Blocked\+Processes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a42841eb74573504baa22dd0c76ca83e9}{}\label{comm__list_8c_a42841eb74573504baa22dd0c76ca83e9}
+
+
+show\+Blocked\+Processes shows all processes that are blocked. 
+
+
+
+Definition at line 299 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+299                                 \{
+300     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Show all of the processes that are blocked."});
+301     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: show -processes -b 'PCBname'"});
+302     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Arguments:"});
+303     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"-processes -b -'the name of the PCB'"});
+304     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+305 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Show\+P\+CB@{help\+Show\+P\+CB}}
+\index{help\+Show\+P\+CB@{help\+Show\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Show\+P\+C\+B()}{helpShowPCB()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Show\+P\+CB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a8f9ff33592233864136430a150026353}{}\label{comm__list_8c_a8f9ff33592233864136430a150026353}
+
+
+Definition at line 267 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+267                    \{
+268     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Show the information of a particular PCB."});
+269     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: pcb --show 'PCBname'"});
+270     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Arguments:"});
+271     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"-show 'the name of the PCB'"});
+272     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+273 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Show\+Ready\+Processes@{help\+Show\+Ready\+Processes}}
+\index{help\+Show\+Ready\+Processes@{help\+Show\+Ready\+Processes}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Show\+Ready\+Processes()}{helpShowReadyProcesses()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Show\+Ready\+Processes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_afc0abad04f83d121f3c7d8f4e08eade7}{}\label{comm__list_8c_afc0abad04f83d121f3c7d8f4e08eade7}
+
+
+show\+Ready\+Processes shows all processes that are ready, in the ready queue (linked list). 
+
+
+
+Definition at line 288 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+288                               \{
+289     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Show all of the processes that are ready."});
+290     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: show -processes -r 'PCBname'"});
+291     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Arguments:"});
+292     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"-processes -r -'the name of the PCB'"});
+293     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+294 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Shutdown@{help\+Shutdown}}
+\index{help\+Shutdown@{help\+Shutdown}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Shutdown()}{helpShutdown()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Shutdown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_af128492f8bc92a7110f7e2de0bf26fa0}{}\label{comm__list_8c_af128492f8bc92a7110f7e2de0bf26fa0}
+
+
+help\+Shutdown prints the help instructions for set date. Tells the user what the command and arguments for \textquotesingle{}set date\textquotesingle{} are. 
+
+No parameters are needed to be passed in, as it just prints to the console. 
+
+Definition at line 175 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+
+Referenced by help\+Func().
+
+
+\begin{DoxyCode}
+175                     \{
+176     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Shut down the system."});
+177     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'shutdown'"});
+178     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"No arguments required."});
+179     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"You will be prompted to confirm that you want to shutdown."});
+180     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+181 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Suspend\+P\+CB@{help\+Suspend\+P\+CB}}
+\index{help\+Suspend\+P\+CB@{help\+Suspend\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Suspend\+P\+C\+B()}{helpSuspendPCB()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Suspend\+P\+CB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a5c4cb1d2574709bc85d25706f5534cf4}{}\label{comm__list_8c_a5c4cb1d2574709bc85d25706f5534cf4}
+
+
+help\+Suspend\+P\+CB prints the help instructions for the suspend\+P\+CB command. 
+
+
+
+Definition at line 243 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+243                       \{
+244     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Suspend a particular PCB from running."});
+245     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: pcb --suspend 'pcb name'"});
+246     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Arguments:"});
+247     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"'the name of the PCB to be suspended'"});
+248     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+249 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Time@{help\+Time}}
+\index{help\+Time@{help\+Time}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Time(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{helpTime(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Time (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a4ade66f75a1cf0af90a2e983c6d4e656}{}\label{comm__list_8c_a4ade66f75a1cf0af90a2e983c6d4e656}
+
+
+Definition at line 217 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println(), strcmp(), and strlen().
+
+
+
+Referenced by help\+Func().
+
+
+\begin{DoxyCode}
+218 \{
+219     \textcolor{keywordflow}{if}(\hyperlink{string_8h_a2dee044e4e667b5b789b493abd21cfa4}{strlen}(parameters[0]) <= 1)
+220     \{
+221         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Retireves or Sets the system time"});
+222         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'time'"});
+223         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"\(\backslash\)033[38;2;255;255;0mArguments available: \(\backslash\)033[38;2;255;0;0m--set,
+       --get\(\backslash\)033[0m"});
+224         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Enter the command 'help time --get' or 'help time --set'"});
+225     \}
+226     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0], \textcolor{stringliteral}{"set"}))
+227     \{
+228         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Sets the system time"});
+229         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'time --set'"});
+230         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Usage: \(\backslash\)033[38;2;255;255;0m 'time --set' \(\backslash\)"DD/MM/YYYY\(\backslash\)" \(\backslash\)033[0m"});
+231     \}
+232     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0], \textcolor{stringliteral}{"get"}))
+233     \{
+234         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Gets the system date"});
+235         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'time --get'"});
+236         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Usage: \(\backslash\)033[38;2;255;255;0m 'time --get' \(\backslash\)033[0m"});
+237     \}
+238 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Unblock\+P\+CB@{help\+Unblock\+P\+CB}}
+\index{help\+Unblock\+P\+CB@{help\+Unblock\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Unblock\+P\+C\+B()}{helpUnblockPCB()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Unblock\+P\+CB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a2f4de74d76cc04ea63e4f253fcdf5aec}{}\label{comm__list_8c_a2f4de74d76cc04ea63e4f253fcdf5aec}
+
+
+unblock\+P\+CB unblocks the specified P\+CB. 
+
+
+
+Definition at line 336 of file comm\+\_\+list.\+c.
+
+
+\begin{DoxyCode}
+336                       \{
+337 
+338 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!help\+Version@{help\+Version}}
+\index{help\+Version@{help\+Version}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{help\+Version()}{helpVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}void help\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a6b64cff6b85c2b7edb02636de6e9d2ba}{}\label{comm__list_8c_a6b64cff6b85c2b7edb02636de6e9d2ba}
+
+
+help\+Version prints the help instructions for using the version command. No arguments are required. 
+
+
+
+Definition at line 187 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+\begin{DoxyCode}
+187                    \{
+188     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Shows the version of the operating system."});
+189     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Command: 'version'"});
+190     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"No arguments required."});
+191     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"});
+192 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{is\+Empty(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{isEmpty(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int is\+Empty (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{}\label{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}
+
+
+Definition at line 39 of file comm\+\_\+list.\+c.
+
+
+
+References strcmp().
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+39                                            \{
+40     \textcolor{keywordtype}{int} empty = 0;
+41     \textcolor{keywordflow}{if}((!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{""})) || (!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"\(\backslash\)0"}))) \{
+42         empty = 1;
+43     \}
+44     \textcolor{keywordflow}{return} empty;
+45 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!pcb\+Func@{pcb\+Func}}
+\index{pcb\+Func@{pcb\+Func}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{pcb\+Func(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{pcbFunc(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int pcb\+Func (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_ac903af80a2e0afe97b30f5ca88a1505a}{}\label{comm__list_8c_ac903af80a2e0afe97b30f5ca88a1505a}
+
+
+Definition at line 499 of file comm\+\_\+list.\+c.
+
+
+
+References block\+P\+C\+B(), create\+P\+C\+B(), delete\+P\+C\+B(), E\+X\+T\+R\+A\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS, is\+Empty(), printf, resume\+P\+C\+B(), serial\+\_\+print(), serial\+\_\+println(), show\+All\+Processes(), show\+Blocked\+Processes(), show\+P\+C\+B(), show\+Ready\+Processes(), strcmp(), suspend\+P\+C\+B(), and unblock\+P\+C\+B().
+
+
+
+Referenced by init\+Cmd\+Array().
+
+
+\begin{DoxyCode}
+499                                            \{
+500     \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--suspend"})) \{
+501         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[1])) \{
+502             \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Missing name of PCB to suspend."});
+503         \} \textcolor{keywordflow}{else} \{
+504             \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[2])) \{
+505                 \hyperlink{comm__list_8c_adb12aae9347bfdc11c97b2c89c448ce2}{suspendPCB}(&parameters[1]);
+506             \} \textcolor{keywordflow}{else} \{
+507                 \hyperlink{comm__list_8c_adb12aae9347bfdc11c97b2c89c448ce2}{suspendPCB}((&parameters[1]));
+508                 \hyperlink{serial_8h_a995827efcd4dcfb780c9fbb9645410a4}{serial\_print}(\hyperlink{comm__vars_8h_a3d75ee5ce40f6fc7b3182661c2e11fde}{EXTRA\_PARAMETERS});
+509                 \hyperlink{serial_8h_a995827efcd4dcfb780c9fbb9645410a4}{serial\_print}(parameters[2]);
+510                 \hyperlink{serial_8h_a995827efcd4dcfb780c9fbb9645410a4}{serial\_print}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"});
+511             \}
+512         \}
+513     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--resume"})) \{
+514         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[1])) \{
+515             \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Missing name of PCB to suspend."});
+516         \} \textcolor{keywordflow}{else} \{
+517             \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[2])) \{
+518                 \hyperlink{comm__list_8c_a672eae99ab4e3da15306bc6df644bb50}{resumePCB}(&parameters[1]);
+519             \} \textcolor{keywordflow}{else} \{
+520                 \hyperlink{comm__list_8c_a672eae99ab4e3da15306bc6df644bb50}{resumePCB}((&parameters[1]));
+521                 \hyperlink{serial_8h_a995827efcd4dcfb780c9fbb9645410a4}{serial\_print}(\hyperlink{comm__vars_8h_a3d75ee5ce40f6fc7b3182661c2e11fde}{EXTRA\_PARAMETERS});
+522                 \hyperlink{serial_8h_a995827efcd4dcfb780c9fbb9645410a4}{serial\_print}(parameters[2]);
+523                 \hyperlink{serial_8h_a995827efcd4dcfb780c9fbb9645410a4}{serial\_print}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"});            \}
+524         \}
+525 
+526     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--setpriority"})) \{
+527         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[4])) \{
+528             \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Missing parameters."});
+529         \} \textcolor{keywordflow}{else} \{
+530     \textcolor{comment}{/*        if((!strcmp(parameters[1],"--name") || !strcmp(parameters[1],"-n")) &&
+       (!strcmp(parameters[3],"--priority") || !strcmp(parameters[3],"-p"))) \{}
+531 \textcolor{comment}{                setPriority(&parameters[2], &parameters[4]);}
+532 \textcolor{comment}{            \} else if((!strcmp(parameters[3],"--name") || !strcmp(parameters[3],"-n")) &&
+       (!strcmp(parameters[1],"--priority") || !strcmp(parameters[1],"-p"))) \{}
+533 \textcolor{comment}{                setPriority(&parameters[4], &parameters[2]);}
+534 \textcolor{comment}{            \} else \{}
+535 \textcolor{comment}{                printf("%sProper command: 'pcb --setpriority -n \(\backslash\)"pcb name\(\backslash\)" -p \(\backslash\)"pcb priority\(\backslash\)"","");}
+536 \textcolor{comment}{            \}*/}
+537         \}
+538     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--show"})) \{
+539         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[2])) \{
+540             \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Missing name of pcb to show%s.\(\backslash\)n"},\textcolor{stringliteral}{""});
+541         \} \textcolor{keywordflow}{else} \{
+542             \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[1],\textcolor{stringliteral}{"-n"}) || !\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[1],\textcolor{stringliteral}{"--name"})) \{
+543                 \hyperlink{comm__list_8c_a9b84e5992ebbf428fc68351c9453e52e}{showPCB}(&parameters[2]);
+544             \} \textcolor{keywordflow}{else} \{
+545                 \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Type 'help pcb --show' to see the arguments required.%s\(\backslash\)n"},\textcolor{stringliteral}{""});
+546             \}
+547         \}
+548     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--showall"})) \{
+549         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[1])) \{
+550             \hyperlink{comm__list_8c_a15a1fce149a24a3c2925b6ca44cb79c7}{showAllProcesses}(&parameters[0]);
+551 
+552         \} \textcolor{keywordflow}{else} \{
+553             \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"No arguments required%s\(\backslash\)n"},\textcolor{stringliteral}{""});
+554             \hyperlink{comm__list_8c_a15a1fce149a24a3c2925b6ca44cb79c7}{showAllProcesses}(&parameters[0]);
+555         \}
+556     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--showready"})) \{
+557         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[1])) \{
+558             \hyperlink{comm__list_8c_abc0ff5bef60dfc962f4455492297a191}{showReadyProcesses}(&parameters[0]);
+559 
+560         \} \textcolor{keywordflow}{else} \{
+561             \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"No arguments required%s\(\backslash\)n"},\textcolor{stringliteral}{""});
+562             \hyperlink{comm__list_8c_abc0ff5bef60dfc962f4455492297a191}{showReadyProcesses}(&parameters[0]);
+563         \}
+564     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--showblocked"})) \{
+565         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[1])) \{
+566             \hyperlink{comm__list_8c_aea06cb173ad17f9139253574d010d678}{showBlockedProcesses}(&parameters[0]);
+567 
+568         \} \textcolor{keywordflow}{else} \{
+569             \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"No arguments required%s\(\backslash\)n"},\textcolor{stringliteral}{""});
+570             \hyperlink{comm__list_8c_aea06cb173ad17f9139253574d010d678}{showBlockedProcesses}(&parameters[0]);
+571         \}
+572     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--create"})) \{
+573         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[2])) \{
+574             \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Missing name of pcb to create%s.\(\backslash\)n"},\textcolor{stringliteral}{""});
+575         \} \textcolor{keywordflow}{else} \{
+576             \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[1],\textcolor{stringliteral}{"-n"}) || !\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[1],\textcolor{stringliteral}{"--name"})) \{
+577                 \hyperlink{comm__list_8c_ae147f79757d354c727a87836c71f1b05}{createPCB}(&parameters[2]);
+578             \} \textcolor{keywordflow}{else} \{
+579                 \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Type 'help pcb --create' to see the arguments required.%s\(\backslash\)n"},\textcolor{stringliteral}{""});
+580             \}
+581         \}
+582     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--delete"})) \{
+583         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[2])) \{
+584             \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Missing name of pcb to create%s.\(\backslash\)n"},\textcolor{stringliteral}{""});
+585         \} \textcolor{keywordflow}{else} \{
+586             \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[1],\textcolor{stringliteral}{"-n"}) || !\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[1],\textcolor{stringliteral}{"--name"})) \{
+587                 \hyperlink{comm__list_8c_a3602fa2889ad77ef2f323f6db3dd967e}{deletePCB}(&parameters[2]);
+588             \} \textcolor{keywordflow}{else} \{
+589                 \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Type 'help pcb --delete' to see the arguments required.%s\(\backslash\)n"},\textcolor{stringliteral}{""});
+590             \}
+591         \}
+592     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--block"})) \{
+593         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[2])) \{
+594             \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Missing name of pcb to create%s.\(\backslash\)n"},\textcolor{stringliteral}{""});
+595         \} \textcolor{keywordflow}{else} \{
+596             \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[1],\textcolor{stringliteral}{"-n"}) || !\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[1],\textcolor{stringliteral}{"--name"})) \{
+597                 \hyperlink{comm__list_8c_af8c8690ef4431e1629f9ab7c5539eeae}{blockPCB}(&parameters[2]);
+598             \} \textcolor{keywordflow}{else} \{
+599                 \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Type 'help pcb --block' to see the arguments required.%s\(\backslash\)n"},\textcolor{stringliteral}{""});
+600             \}
+601         \}
+602     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--unblock"})) \{
+603         \textcolor{keywordflow}{if}(\hyperlink{comm__list_8c_a123c1c0d25a5a737a49a812d4bfd5d8d}{isEmpty}(&parameters[2])) \{
+604             \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Missing name of pcb to create%s.\(\backslash\)n"},\textcolor{stringliteral}{""});
+605         \} \textcolor{keywordflow}{else} \{
+606             \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[1],\textcolor{stringliteral}{"-n"}) || !\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[1],\textcolor{stringliteral}{"--name"})) \{
+607                 \hyperlink{comm__list_8c_ac26704b8c23bbe0e0fdf8e838915e29d}{unblockPCB}(&parameters[2]);
+608             \} \textcolor{keywordflow}{else} \{
+609                 \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Type 'help pcb --unblock' to see the arguments required.%s\(\backslash\)n"},\textcolor{stringliteral}{""});
+610             \}
+611         \}
+612     \}
+613     \textcolor{keywordflow}{return} 0;
+614 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!resume\+P\+CB@{resume\+P\+CB}}
+\index{resume\+P\+CB@{resume\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{resume\+P\+C\+B(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{resumePCB(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int resume\+P\+CB (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a672eae99ab4e3da15306bc6df644bb50}{}\label{comm__list_8c_a672eae99ab4e3da15306bc6df644bb50}
+
+
+resume\+P\+CB resumes the P\+CB passed in by the user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an integer. 
+\end{DoxyReturn}
+
+
+Definition at line 635 of file comm\+\_\+list.\+c.
+
+
+
+References change\+Process\+State(), and R\+U\+N\+N\+I\+NG.
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+635                                              \{
+636     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* name = (\textcolor{keyword}{const} \textcolor{keywordtype}{char}*)parameters[0];
+637     \hyperlink{group___r2_ga83a5983d76f08725aadc23bf47930436}{changeProcessState}(name, \hyperlink{pcb_8h_a8461d6c03c00b03bad59b5a29d27b902a1061be6c3fb88d32829cba6f6b2be304}{RUNNING});
+638     \textcolor{keywordflow}{return} 0;
+639 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{set\+Date(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{setDate(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Date (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_abcb304e34ec42b6fa3df07249ce8c1b7}{}\label{comm__list_8c_abcb304e34ec42b6fa3df07249ce8c1b7}
+
+
+set\+Date sets the system date using the input from the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & take the unconsumed parameters from commhandler from the command prompt.\\
+\hline
+\end{DoxyParams}
+Checks if the parameters exist, otherwise will return improper command. If paramters exist, will check to make sure the parameters are correct, such that the days and months are valid.
+
+Calls set\+\_\+date from rtc to set the current date. After setting the date, will print the current date.
+
+Ex. Command is "date --set \textquotesingle{}03/12/2017\textquotesingle{}, 03, 12 , 2017 are passed over. parameters\mbox{[}0\mbox{]} is the day parameters\mbox{[}1\mbox{]} is the month parameters\mbox{[}2\mbox{]} is the year 
+
+Definition at line 402 of file comm\+\_\+list.\+c.
+
+
+
+References atoi(), get\+Date(), get\+Num\+Days\+In\+Month(), I\+M\+P\+R\+O\+P\+E\+R\+\_\+\+C\+O\+M\+M\+A\+ND, printf, serial\+\_\+println(), set\+\_\+date(), and strlen().
+
+
+
+Referenced by date().
+
+
+\begin{DoxyCode}
+402                                             \{
+403     \textcolor{comment}{//printf("day %d %s, month %d %s, year %d %s\(\backslash\)r\(\backslash\)n", atoi(parameters[0]), parameters[0],
+       atoi(parameters[1]), parameters[1], atoi(parameters[2]), parameters[2]);}
+404     \textcolor{keywordflow}{if}(\hyperlink{string_8h_a2dee044e4e667b5b789b493abd21cfa4}{strlen}(parameters[2]) <= 1 || !\hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[0]) || !\hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[1]) || !
+      \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[2]))
+405     \{
+406         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\hyperlink{comm__vars_8h_adc0c870b429ed41ab22e23dbba9e6af1}{IMPROPER\_COMMAND});
+407         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)nInvalid Parameters"});
+408     \}
+409     \textcolor{keywordflow}{else}
+410     \{
+411         \textcolor{keywordtype}{int} daysInMonth = \hyperlink{comm__list_8c_a63e5b5d633e0beec232fe5765124ad7e}{getNumDaysInMonth}(\hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[1]), 
+      \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[2]));
+412         \textcolor{keywordflow}{if}((\hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[0]) > 0) && (daysInMonth >= \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[0])))\{
+413             \hyperlink{rtc_8h_a7903b907981d739e3d156a964255d45e}{set\_date}(\hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[0]), \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[1]), 
+      \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[2]));
+414         \} \textcolor{keywordflow}{else} \{
+415             \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Double check the input parameters"});
+416             \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"\(\backslash\)033[38;2;255;0;255mTotal days in your selected month are:  %d UTC\(\backslash\)r\(\backslash\)n\(\backslash\)0
+      33[38;2;255;255;255m"}, daysInMonth);
+417             \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"});
+418         \}
+419     \}
+420     \hyperlink{comm__list_8c_affb6f9c7b2c1d585677a5bba1da35c06}{getDate}();
+421 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!set\+Priority@{set\+Priority}}
+\index{set\+Priority@{set\+Priority}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{set\+Priority(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{setPriority(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int set\+Priority (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a3c30cca674e48a10a60180721d65cee0}{}\label{comm__list_8c_a3c30cca674e48a10a60180721d65cee0}
+
+
+set\+Priority sets the priority of a particular process 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & takes in an array\\
+\hline
+\end{DoxyParams}
+\mbox{[}0\mbox{]} is the process \mbox{[}1\mbox{]} is the priority 
+
+Definition at line 649 of file comm\+\_\+list.\+c.
+
+
+
+References find\+P\+C\+B(), and printf.
+
+
+\begin{DoxyCode}
+649                                                \{
+650     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Priority: %s, Name: %s\(\backslash\)n"},parameters[1], parameters[0]);
+651     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* name = (\textcolor{keyword}{const} \textcolor{keywordtype}{char}*)parameters[0];
+652     \hyperlink{pcb_8h_aade1badcda6beffd30258586dcad6550}{processPriority\_t} newPriority = (\hyperlink{pcb_8h_aade1badcda6beffd30258586dcad6550}{processPriority\_t})parameters[0];
+653     \hyperlink{structpcb__t}{pcb\_t}* process = \hyperlink{pcb_8h_a3ddbd6b7d5425cfb586dabc05862e9b1}{findPCB}(name);
+654     process->priority = newPriority;
+655     \textcolor{keywordflow}{return} 0;
+656 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{set\+Time(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{setTime(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Time (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a684ac3c738428c05031f6b5c5b121d85}{}\label{comm__list_8c_a684ac3c738428c05031f6b5c5b121d85}
+
+
+set\+Time sets the current system time from the users input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & take the unconsumed parameters from commhandler from the command prompt.\\
+\hline
+\end{DoxyParams}
+Calls set\+\_\+time from rtc to set the sytem time. Then prints out the current time.
+
+Ex. Command is "time --set \textquotesingle{}14\+:20.\+55\textquotesingle{}, 14, 20 , 55 are passed over. parameters\mbox{[}1\mbox{]} is the hour (24 hour) parameters\mbox{[}2\mbox{]} is the minute parameters\mbox{[}3\mbox{]} is the second 
+
+Definition at line 466 of file comm\+\_\+list.\+c.
+
+
+
+References atoi(), get\+Time(), I\+M\+P\+R\+O\+P\+E\+R\+\_\+\+C\+O\+M\+M\+A\+ND, serial\+\_\+println(), set\+\_\+time(), and strlen().
+
+
+
+Referenced by time().
+
+
+\begin{DoxyCode}
+466                                             \{
+467     \textcolor{keywordflow}{if}(\hyperlink{string_8h_a2dee044e4e667b5b789b493abd21cfa4}{strlen}(parameters[2]) <= 1 || !\hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[0]) || !\hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[1]) || !
+      \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[2]))
+468     \{
+469         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\hyperlink{comm__vars_8h_adc0c870b429ed41ab22e23dbba9e6af1}{IMPROPER\_COMMAND});
+470         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)nInvalid Parameters"});
+471     \}
+472     \textcolor{keywordflow}{else}
+473     \{
+474         \textcolor{keywordflow}{if}(\hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[0]) < 0 || \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[0]) > 24 || \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[1]) < 0 || 
+      \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[1]) > 59 || \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[2]) < 0 || \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[2]) > 59) \{
+475             \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Double check the input parameters"});
+476             \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"Make sure 0 HH 24 and 0 MM 59 and 0 SS 59"});
+477             \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"});
+478         \} \textcolor{keywordflow}{else} \{
+479             \hyperlink{rtc_8h_a9f75815e4f89e0ff7065999f43867e92}{set\_time}(\hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[0]), \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[1]), 
+      \hyperlink{string_8h_a30670a60464f77af17dfb353353d6df8}{atoi}(parameters[2]));
+480         \}
+481     \}
+482     \hyperlink{comm__list_8c_a1c7c164fd3c7dea7004ece3c6251fc94}{getTime}();
+483 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!show\+All\+Processes@{show\+All\+Processes}}
+\index{show\+All\+Processes@{show\+All\+Processes}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{show\+All\+Processes(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{showAllProcesses(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int show\+All\+Processes (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a15a1fce149a24a3c2925b6ca44cb79c7}{}\label{comm__list_8c_a15a1fce149a24a3c2925b6ca44cb79c7}
+
+
+show\+All\+Processes shows all processes in the system. 
+
+
+
+Definition at line 677 of file comm\+\_\+list.\+c.
+
+
+
+References blocked\+Queue, printf, print\+List(), ready\+Queue, suspended\+Blocked\+Queue, and suspended\+Ready\+Queue.
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+677                                                     \{
+678     (void)parameters;
+679     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nReady Queue:\(\backslash\)n"});
+680     \hyperlink{linked__list_8h_a9bbec3837a303ae4bbc5eafb23ead2d5}{printList}(&\hyperlink{pcb_8h_a7b1bca867586a0a58222b805dbe3be28}{readyQueue});
+681     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nBlocked Queue:\(\backslash\)n"});
+682     \hyperlink{linked__list_8h_a9bbec3837a303ae4bbc5eafb23ead2d5}{printList}(&\hyperlink{pcb_8h_aa3eb63b40a5cf1eb03b494f7ddd1af2a}{blockedQueue});
+683     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nSuspended-Ready Queue:\(\backslash\)n"});
+684     \hyperlink{linked__list_8h_a9bbec3837a303ae4bbc5eafb23ead2d5}{printList}(&\hyperlink{pcb_8h_a95c66b02e576aabe04df3fdc9e981fc3}{suspendedReadyQueue});
+685     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nSuspended-Blocked Queue:\(\backslash\)n"});
+686     \hyperlink{linked__list_8h_a9bbec3837a303ae4bbc5eafb23ead2d5}{printList}(&\hyperlink{pcb_8h_ae83c9a71ab217215db8dfe3eb9c94e8e}{suspendedBlockedQueue});
+687     \textcolor{keywordflow}{return} 0;
+688 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!show\+Blocked\+Processes@{show\+Blocked\+Processes}}
+\index{show\+Blocked\+Processes@{show\+Blocked\+Processes}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{show\+Blocked\+Processes(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{showBlockedProcesses(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int show\+Blocked\+Processes (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_aea06cb173ad17f9139253574d010d678}{}\label{comm__list_8c_aea06cb173ad17f9139253574d010d678}
+
+
+show\+Blocked\+Processes shows all processes that are blocked. 
+
+
+
+Definition at line 703 of file comm\+\_\+list.\+c.
+
+
+
+References blocked\+Queue, printf, and print\+List().
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+703                                                         \{
+704     (void)parameters;
+705     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nBlocked Queue:\(\backslash\)n"});
+706     \hyperlink{linked__list_8h_a9bbec3837a303ae4bbc5eafb23ead2d5}{printList}(&\hyperlink{pcb_8h_aa3eb63b40a5cf1eb03b494f7ddd1af2a}{blockedQueue});
+707     \textcolor{keywordflow}{return} 0;
+708 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!show\+P\+CB@{show\+P\+CB}}
+\index{show\+P\+CB@{show\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{show\+P\+C\+B(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{showPCB(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int show\+P\+CB (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a9b84e5992ebbf428fc68351c9453e52e}{}\label{comm__list_8c_a9b84e5992ebbf428fc68351c9453e52e}
+
+
+show\+P\+CB shows the process information for the process requested by the user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & the process the user requests \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 662 of file comm\+\_\+list.\+c.
+
+
+
+References class\+To\+String(), find\+P\+C\+B(), is\+Suspended(), printf, and state\+To\+String().
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+662                                            \{
+663     (void)parameters;
+664     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* name = (\textcolor{keyword}{const} \textcolor{keywordtype}{char}*)parameters[0];
+665     \hyperlink{structpcb__t}{pcb\_t}* process = \hyperlink{pcb_8h_a3ddbd6b7d5425cfb586dabc05862e9b1}{findPCB}(name);
+666     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \textcolor{keyword}{class }= \hyperlink{group___r2_gac38459f8731293f12b7fb0170c923471}{classToString}(process->processClass);
+667     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* state = \hyperlink{group___r2_ga8667e4228a987f7d43e598f9855e9a52}{stateToString}(process->processState);
+668     \textcolor{keywordtype}{int} priority = (int) process->priority;
+669     \textcolor{keywordtype}{int} isSus = \hyperlink{group___r2_ga1e42e70128de8086a07dbcd97e000942}{isSuspended}(process->processState);
+670     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"Process name: %s  Class: %s  State: %s  Suspended: %s  Priority: %d"}, name, \textcolor{keyword}{class}, state,
+       isSus ? \textcolor{stringliteral}{"true"} : \textcolor{stringliteral}{"false"}, priority);
+671     \textcolor{keywordflow}{return} 0;
+672 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!show\+Ready\+Processes@{show\+Ready\+Processes}}
+\index{show\+Ready\+Processes@{show\+Ready\+Processes}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{show\+Ready\+Processes(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{showReadyProcesses(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int show\+Ready\+Processes (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_abc0ff5bef60dfc962f4455492297a191}{}\label{comm__list_8c_abc0ff5bef60dfc962f4455492297a191}
+
+
+show\+Ready\+Processes shows all processes that are ready, in the ready queue (linked list). 
+
+
+
+Definition at line 693 of file comm\+\_\+list.\+c.
+
+
+
+References printf, print\+List(), and ready\+Queue.
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+693                                                       \{
+694     (void)parameters;
+695     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"%s"}, \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nReady Queue:\(\backslash\)n"});
+696     \hyperlink{linked__list_8h_a9bbec3837a303ae4bbc5eafb23ead2d5}{printList}(&\hyperlink{pcb_8h_a7b1bca867586a0a58222b805dbe3be28}{readyQueue});
+697     \textcolor{keywordflow}{return} 0;
+698 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!shutdown\+Func@{shutdown\+Func}}
+\index{shutdown\+Func@{shutdown\+Func}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{shutdown\+Func(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{shutdownFunc(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int shutdown\+Func (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a514416c2792fdc8614585266d618fbf8}{}\label{comm__list_8c_a514416c2792fdc8614585266d618fbf8}
+
+
+Definition at line 487 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+println(), and sprintf().
+
+
+
+Referenced by init\+Cmd\+Array().
+
+
+\begin{DoxyCode}
+487                                                 \{
+488     (void)parameters;
+489     \textcolor{keywordtype}{char} buf[500]; \hyperlink{string_8h_ae9cac82f3293a00d8ec8705a3fc5cf64}{\(\backslash\)}
+490 \hyperlink{string_8h_ae9cac82f3293a00d8ec8705a3fc5cf64}{    sprintf}(buf, 500, \textcolor{stringliteral}{"\(\backslash\)033[38;2;255;0;255mShutdown called\(\backslash\)r\(\backslash\)n\(\backslash\)033[38;2;255;255;255m"}); 
+      \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{\(\backslash\)}
+491 \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{}
+492 \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{    serial\_println}(\textcolor{stringliteral}{"Shutdown was called.\(\backslash\)r\(\backslash\)n"});
+493 
+494     \textcolor{keywordflow}{return} 0;
+495 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!suspend\+P\+CB@{suspend\+P\+CB}}
+\index{suspend\+P\+CB@{suspend\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{suspend\+P\+C\+B(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{suspendPCB(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int suspend\+P\+CB (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_adb12aae9347bfdc11c97b2c89c448ce2}{}\label{comm__list_8c_adb12aae9347bfdc11c97b2c89c448ce2}
+
+
+suspend\+P\+CB suspends the pcb passed in by the user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an integer. 
+\end{DoxyReturn}
+
+
+Definition at line 621 of file comm\+\_\+list.\+c.
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+621                                               \{
+622     (void)parameters;
+623     \textcolor{comment}{//const char* name = (const char*)parameters[0];}
+624     \textcolor{comment}{//e\_PROCESS\_STATE\_t state = getState(name);}
+625     \textcolor{comment}{//TODO: FINISH THIS METHOD}
+626 
+627     \textcolor{keywordflow}{return} 0;
+628 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!time@{time}}
+\index{time@{time}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{time(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{time(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int time (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_a5dac732108bdce081376535bd2d51221}{}\label{comm__list_8c_a5dac732108bdce081376535bd2d51221}
+
+
+Definition at line 428 of file comm\+\_\+list.\+c.
+
+
+
+References get\+Time(), serial\+\_\+println(), set\+Time(), and strcmp().
+
+
+
+Referenced by init\+Cmd\+Array().
+
+
+\begin{DoxyCode}
+428                                         \{
+429     \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--get"})) \{
+430         \hyperlink{comm__list_8c_a1c7c164fd3c7dea7004ece3c6251fc94}{getTime}();
+431     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{string_8h_a11bd144d7d44914099a3aeddf1c8567d}{strcmp}(parameters[0],\textcolor{stringliteral}{"--set"})) \{
+432         \hyperlink{comm__list_8c_a684ac3c738428c05031f6b5c5b121d85}{setTime}(&parameters[1]);
+433     \} \textcolor{keywordflow}{else} \{
+434         \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"ERROR HAS BEEN NOTICED"});
+435     \}
+436     \textcolor{keywordflow}{return} 0;
+437 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!unblock\+P\+CB@{unblock\+P\+CB}}
+\index{unblock\+P\+CB@{unblock\+P\+CB}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{unblock\+P\+C\+B(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{unblockPCB(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int unblock\+P\+CB (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_ac26704b8c23bbe0e0fdf8e838915e29d}{}\label{comm__list_8c_ac26704b8c23bbe0e0fdf8e838915e29d}
+
+
+unblock\+P\+CB unblocks the specified P\+CB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 748 of file comm\+\_\+list.\+c.
+
+
+
+Referenced by pcb\+Func().
+
+
+\begin{DoxyCode}
+748                                               \{
+749     (void)parameters;
+750     \textcolor{keywordflow}{return} 0;
+751 \}
+\end{DoxyCode}
+\index{comm\+\_\+list.\+c@{comm\+\_\+list.\+c}!version@{version}}
+\index{version@{version}!comm\+\_\+list.\+c@{comm\+\_\+list.\+c}}
+\subsubsection[{\texorpdfstring{version(char parameters[][M\+A\+X\+\_\+\+L\+E\+N\+G\+TH])}{version(char parameters[][MAX_LENGTH])}}]{\setlength{\rightskip}{0pt plus 5cm}int version (
+\begin{DoxyParamCaption}
+\item[{char}]{parameters\mbox{[}$\,$\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{comm__list_8c_ab21bb30658e69c3d4906e435384fa5fd}{}\label{comm__list_8c_ab21bb30658e69c3d4906e435384fa5fd}
+
+
+version prints out the current version of the operating system. It will print out R1, R2, R3, ... depending on the current module. 
+
+Print the version of the operating system. It will print out R1, R2, R3... depending on the current module No parameters are required. 
+
+Definition at line 352 of file comm\+\_\+list.\+c.
+
+
+
+References serial\+\_\+print(), serial\+\_\+println(), and V\+E\+R\+S\+I\+ON.
+
+
+
+Referenced by init\+Cmd\+Array().
+
+
+\begin{DoxyCode}
+352                                            \{
+353     (void)parameters;
+354     \hyperlink{serial_8h_a995827efcd4dcfb780c9fbb9645410a4}{serial\_print}(\textcolor{stringliteral}{"Version: "});
+355     \hyperlink{serial_8h_a995827efcd4dcfb780c9fbb9645410a4}{serial\_print}(\hyperlink{comm__vars_8h_a1c6d5de492ac61ad29aec7aa9a436bbf}{VERSION});
+356     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" "});
+357     \textcolor{keywordflow}{return} 0;
+358 \}
+\end{DoxyCode}
