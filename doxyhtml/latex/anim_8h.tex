@@ -1,0 +1,500 @@
+\hypertarget{anim_8h}{}\section{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/core/anim.h File Reference}
+\label{anim_8h}\index{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/core/anim.\+h@{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/core/anim.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{anim_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{anim_8h_a5bf31d96ce4c2c86dfab5440a835c457}{start\+\_\+up\+\_\+anim} (void)
+\item 
+void \hyperlink{anim_8h_accd23e11967f6634e7885688e395b964}{busy\+\_\+wait} (void)
+\item 
+void \hyperlink{anim_8h_abc40cd622f423abf44084c8f8595f57f}{clear\+\_\+screen} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{anim.\+h@{anim.\+h}!busy\+\_\+wait@{busy\+\_\+wait}}
+\index{busy\+\_\+wait@{busy\+\_\+wait}!anim.\+h@{anim.\+h}}
+\subsubsection[{\texorpdfstring{busy\+\_\+wait(void)}{busy_wait(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void busy\+\_\+wait (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{anim_8h_accd23e11967f6634e7885688e395b964}{}\label{anim_8h_accd23e11967f6634e7885688e395b964}
+R\+E-\/\+W\+R\+I\+TE T\+H\+IS SO T\+H\+AT IS IS M\+O\+RE E\+F\+F\+I\+C\+I\+E\+NT R\+U\+N\+N\+I\+NG 9999999 A\+SM C\+A\+L\+LS TO W\+A\+IT IS D\+U\+MB I\+N\+T\+E\+R\+R\+U\+P\+TS OR C\+H\+E\+CK T\+I\+ME W\+O\+U\+LD BE B\+E\+T\+T\+ER 
+
+Definition at line 10 of file anim.\+c.
+
+
+
+Referenced by start\+\_\+up\+\_\+anim().
+
+
+\begin{DoxyCode}
+10                  \{
+11     \textcolor{keywordtype}{int} i = 0;
+12     \textcolor{keywordflow}{for} (; i < 9999999; i++) \{
+13         \textcolor{keyword}{asm} \textcolor{keyword}{volatile}(\textcolor{stringliteral}{"nop"});
+14     \}
+15 \}
+\end{DoxyCode}
+\index{anim.\+h@{anim.\+h}!clear\+\_\+screen@{clear\+\_\+screen}}
+\index{clear\+\_\+screen@{clear\+\_\+screen}!anim.\+h@{anim.\+h}}
+\subsubsection[{\texorpdfstring{clear\+\_\+screen(void)}{clear_screen(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void clear\+\_\+screen (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{anim_8h_abc40cd622f423abf44084c8f8595f57f}{}\label{anim_8h_abc40cd622f423abf44084c8f8595f57f}
+
+
+Definition at line 17 of file anim.\+c.
+
+
+
+References serial\+\_\+println().
+
+
+
+Referenced by start\+\_\+up\+\_\+anim().
+
+
+\begin{DoxyCode}
+17                     \{
+18     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"\(\backslash\)033[2J"});
+19 \}
+\end{DoxyCode}
+\index{anim.\+h@{anim.\+h}!start\+\_\+up\+\_\+anim@{start\+\_\+up\+\_\+anim}}
+\index{start\+\_\+up\+\_\+anim@{start\+\_\+up\+\_\+anim}!anim.\+h@{anim.\+h}}
+\subsubsection[{\texorpdfstring{start\+\_\+up\+\_\+anim(void)}{start_up_anim(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void start\+\_\+up\+\_\+anim (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{anim_8h_a5bf31d96ce4c2c86dfab5440a835c457}{}\label{anim_8h_a5bf31d96ce4c2c86dfab5440a835c457}
+
+
+Definition at line 21 of file anim.\+c.
+
+
+
+References busy\+\_\+wait(), clear\+\_\+screen(), and serial\+\_\+println().
+
+
+
+Referenced by kmain().
+
+
+\begin{DoxyCode}
+21                      \{
+22     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 .------------.                                        "})
+      ;
+23     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             .--'  o     . .   `--.                                "});
+24     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          .-'   .    O   .       . `-.                             "});
+25     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       .-'@   @@@@@@@   .  @@@@@      `-.                          "});
+26     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      /@@@  @@@@@@@@@@@   @@@@@@@   .    \(\backslash\)\(\backslash\)                        "});
+27     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    ./    o @@@@@@@@@@@   @@@@@@@       . \(\backslash\)\(\backslash\).                      "});
+28     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   /@@  o   @@@@@@@@@@@.   @@@@@@@   O      \(\backslash\)\(\backslash\)                     "});
+29     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  /@@@@   .   @@@@@@@o    @@@@@@@@@@     @@@ \(\backslash\)\(\backslash\)                    "});
+30     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |@@@@@               . @@@@@@@@@@@@@ o @@@@|                     "});
+31     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" /@@@@@  O  `.-./  .      @@@@@@@@@@@@    @@  \(\backslash\)\(\backslash\)                   "});
+32     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" | @@@@    --`-'       o     @@@@@@@@ @@@@    |                   "});
+33     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |@ @@@        `    o      .  @@   . @@@@@@@  |                    "});
+34     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |       @@  @         .-.     @@@   @@@@@@@  |                   "});
+35     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" \(\backslash\)\(\backslash\)  . @        @@@     `-'   . @@@@   @@@@  o /                   "});
+36     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |      @@   @@@@@ .           @@   .       |                     "});
+37     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  \(\backslash\)\(\backslash\)     @@@@  @\(\backslash\)\(\backslash\)@@    /  .  O    .     o   . /                   "});
+38     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   \(\backslash\)\(\backslash\)  o  @@     \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\)  /         .    .       /                   "});
+39     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    `\(\backslash\)\(\backslash\)     .    .\(\backslash\)\(\backslash\).-.\_\_\_   .      .   .-. /'                     "});
+40     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      \(\backslash\)\(\backslash\)           `-'                `-' /                        "});
+41     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       `-.   o   / |     o    O   .   .-'                          "});
+42     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          `-.   /     .       .    .-'                             "});
+43     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             `--.       .      .--'                                "});
+44     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 `------------'                                        "})
+      ;
+45     
+46     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+47     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+48 
+49     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                  ------------.    "});
+50     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"              --'  o     . .   `--.    "});
+51     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"           -'   .    O   .       . `-.     "});
+52     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"         '@   @@@@@@@   .  @@@@@      `-.  "});
+53     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"        @@  @@@@@@@@@@@   @@@@@@@   .    \(\backslash\)\(\backslash\)    "});
+54     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          o @@@@@@@@@@@   @@@@@@@       . \(\backslash\)\(\backslash\).  "});
+55     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"        o   @@@@@@@@@@@.   @@@@@@@   O      \(\backslash\)\(\backslash\)     "});
+56     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"     @@   .   @@@@@@@o    @@@@@@@@@@     @@@ \(\backslash\)\(\backslash\)    "});
+57     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    @@@@               . @@@@@@@@@@@@@ o @@@@|     "});
+58     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    @@@  O  `.-./  .      @@@@@@@@@@@@    @@  \(\backslash\)\(\backslash\) "});
+59     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    @@@    --`-'       o     @@@@@@@@ @@@@    |    "});
+60     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    @@@        `    o      .  @@   . @@@@@@@  |    "});
+61     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"         @@  @         .-.     @@@   @@@@@@@  |    "});
+62     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    . @        @@@     `-'   . @@@@   @@@@  o /    "});
+63     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"         @@   @@@@@ .           @@   .       |     "});
+64     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"        @@@@  @\(\backslash\)\(\backslash\)@@    /  .  O    .     o   . /    "});
+65     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      o  @@     \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\)  /         .    .       /    "});
+66     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"           .    .\(\backslash\)\(\backslash\).-.\_\_\_   .      .   .-. /'  "});
+67     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                  `-'                `-' /     "});
+68     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"         .   o   / |     o    O   .   .-'  "});
+69     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"           -.   /     .       .    .-'     "});
+70     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"              --.       .      .--'    "});
+71     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                  ------------'          "});
+72 
+73     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+74     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+75 
+76     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                    ----------.    "});
+77     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                   o     . .   `--.    "});
+78     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                .    O   .       . `-.     "});
+79     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"              @@@@@@@   .  @@@@@      `-.  "});
+80     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             @@@@@@@@@@   @@@@@@@   .    \(\backslash\)\(\backslash\)    "});
+81     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"            @@@@@@@@@@@   @@@@@@@       . \(\backslash\)\(\backslash\).  "});
+82     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"            @@@@@@@@@@@.   @@@@@@@   O      \(\backslash\)\(\backslash\)     "});
+83     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"              @@@@@@@o    @@@@@@@@@@     @@@ \(\backslash\)\(\backslash\)    "});
+84     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                       . @@@@@@@@@@@@@ o @@@@|     "});
+85     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"            `.-./  .      @@@@@@@@@@@@    @@  \(\backslash\)\(\backslash\) "});
+86     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"           --`-'       o     @@@@@@@@ @@@@    |    "});
+87     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"               `    o      .  @@   . @@@@@@@  |    "});
+88     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          @  @         .-.     @@@   @@@@@@@  |    "});
+89     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"               @@@     `-'   . @@@@   @@@@  o /    "});
+90     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"              @@@@@ .           @@   .       |     "});
+91     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"           @  @\(\backslash\)\(\backslash\)@@    /  .  O    .     o   . /    "});
+92     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\)  /         .    .       /    "});
+93     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                .\(\backslash\)\(\backslash\).-.\_\_\_   .      .   .-. /'  "});
+94     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                  `-'                `-' /     "});
+95     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 / |     o    O   .   .-'  "});
+96     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                /     .       .    .-'     "});
+97     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                        .      .--'    "});
+98     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                    ----------'          "});
+99     
+100     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+101     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+102 
+103     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                       -------.    "});
+104     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                         . .   `--.    "});
+105     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                         .       . `-.     "});
+106     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                        .  @@@@@      `-.  "});
+107     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                     @@   @@@@@@@   .    \(\backslash\)\(\backslash\)    "});
+108     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                     @@   @@@@@@@       . \(\backslash\)\(\backslash\).  "});
+109     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                    @@@.   @@@@@@@   O      \(\backslash\)\(\backslash\)     "});
+110     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                    @o    @@@@@@@@@@     @@@ \(\backslash\)\(\backslash\)    "});
+111     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                       . @@@@@@@@@@@@@ o @@@@|     "});
+112     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                          @@@@@@@@@@@@    @@  \(\backslash\)\(\backslash\)   "});
+113     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                       o     @@@@@@@@ @@@@    |    "});
+114     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                    o      .  @@   . @@@@@@@  |        "});
+115     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                       .-.     @@@   @@@@@@@  |    "});
+116     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                       `-'   . @@@@   @@@@  o /    "});
+117     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                    .           @@   .       |     "});
+118     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                      /  .  O    .     o   . /     "});
+119     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                     /         .    .       /  "});
+120     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                     \_\_\_   .      .   .-. /'   "});
+121     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                     `-' /     "});
+122     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                         o    O   .   .-'  "});
+123     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                      .       .    .-'     "});
+124     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                        .      .--'    "});
+125     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                       -------'          "});
+126 
+127     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+128     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+129     
+130     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                         -----.    "});
+131     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                           .   `--.    "});
+132     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                 . `-.     "});
+133     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                            @@@@      `-.  "});
+134     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                            @@@@@   .    \(\backslash\)\(\backslash\)    "});
+135     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                             @@@@       . \(\backslash\)\(\backslash\).  "});
+136     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                             @@@@@   O      \(\backslash\)\(\backslash\)     "});
+137     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                             @@@@@@@     @@@ \(\backslash\)\(\backslash\)    "});
+138     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                             @@@@@@@@@ o @@@@|     "});
+139     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                             @@@@@@@@@    @@  \(\backslash\)\(\backslash\) "});
+140     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                             @@@@@@@@ @@@@    |    "});
+141     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                              @@   . @@@@@@@  |    "});
+142     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                               @@@   @@@@@@@  |    "});
+143     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                             . @@@@   @@@@  o /    "});
+144     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                @@   .       |     "});
+145     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                 .     o   . /     "});
+146     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                               .    .       /  "});
+147     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                  .   .-. /'   "});
+148     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                     `-' /     "});
+149     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                              O   .   .-'  "});
+150     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                              .    .-'     "});
+151     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                               .--'    "});
+152     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                         -----'          "});
+153 
+154     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+155     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+156 
+157     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                           ---.    "});
+158     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                               `--.    "});
+159     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                 . `-.     "});
+160     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                      `-.  "});
+161     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                    .    \(\backslash\)\(\backslash\)    "});
+162     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                        . \(\backslash\)\(\backslash\).  "});
+163     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                     O      \(\backslash\)\(\backslash\)     "});
+164     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                         @@@ \(\backslash\)\(\backslash\)    "});
+165     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                       o @@@@|        "});
+166     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                          @@  \(\backslash\)\(\backslash\)   "});
+167     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                      @@@@    |    "});
+168     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                      @@@@@@  |    "});
+169     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                      @@@@@@  |    "});
+170     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                      @@@@  o /    "});
+171     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                             |     "});
+172     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                       o   . /     "});
+173     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                            /  "});
+174     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                      .-. /'   "});
+175     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                     `-' /     "});
+176     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                  .   .-'  "});
+177     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                   .-'     "});
+178     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                               .--'    "});
+179     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                           ---'          "});
+180 
+181     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+182     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+183 
+184     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                             -.    "});
+185     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                 -.    "});
+186     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                    -.     "});
+187     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                      `-.  "});
+188     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                         \(\backslash\)\(\backslash\)    "});
+189     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                          \(\backslash\)\(\backslash\).  "});
+190     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                            \(\backslash\)\(\backslash\)     "});
+191     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                           @ \(\backslash\)\(\backslash\)    "});
+192     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                           @@|     "});
+193     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                              \(\backslash\)\(\backslash\)        "});
+194     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                              |    "});
+195     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                              |    "});
+196     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                              |    "});
+197     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                            o /    "});
+198     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                             |     "});
+199     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                           . /     "});
+200     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                            /  "});
+201     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                          /'   "});
+202     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                         /     "});
+203     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                      .-'  "});
+204     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                    -'     "});
+205     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                                 -'    "});
+206     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                             -'          "});
+207 
+208     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+209     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+210 
+211     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                  .    "});
+212     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             .     "});
+213     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          .    "});
+214     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       .-  "});
+215     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      /    "});
+216     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    .  "});
+217     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   /   "});
+218     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  /    "});
+219     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |    "});
+220     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" /          "});
+221     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |     "});
+222     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |     "});
+223     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |     "});
+224     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" \(\backslash\)\(\backslash\)    "});
+225     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |    "});
+226     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  \(\backslash\)\(\backslash\)   "});
+227     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   \(\backslash\)\(\backslash\)  "});
+228     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    `  "});
+229     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      \(\backslash\)\(\backslash\)   "});
+230     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       `-  "});
+231     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          `    "});
+232     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             `     "});
+233     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 ` "});
+234 
+235     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+236     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+237 
+238     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 .-    "});
+239     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             .-    "});
+240     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          .-   "});
+241     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       .-'@    "});
+242     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      /@@  "});
+243     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    ./     "});
+244     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   /@@     "});
+245     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  /@@@     "});
+246     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |@@@     "});
+247     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" /@@@   "});
+248     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" | @@  "});
+249     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |@ @       "});
+250     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |     "});
+251     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" \(\backslash\)\(\backslash\)  .     "});
+252     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |        "});
+253     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  \(\backslash\)\(\backslash\)       "});
+254     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   \(\backslash\)\(\backslash\)  o   "});
+255     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    `\(\backslash\)\(\backslash\)    "});
+256     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      \(\backslash\)\(\backslash\)       "});
+257     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       `-.     "});
+258     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          `-   "});
+259     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             `-    "});
+260     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 `-   "});
+261 
+262     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+263     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+264 
+265     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 .---  "});
+266     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             .--'      "});
+267     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          .-'      "});
+268     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       .-'@   @    "});
+269     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      /@@@  @@     "});
+270     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    ./    o @  "});
+271     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   /@@  o   @  "});
+272     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  /@@@@   .    "});
+273     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |@@@@@       "});
+274     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" /@@@@@  O      "});
+275     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" | @@@@        "});
+276     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |@ @@@             "});
+277     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |       @@    "});
+278     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" \(\backslash\)\(\backslash\)  . @       "});
+279     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |      @@    "});
+280     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  \(\backslash\)\(\backslash\)     @@@@  "});
+281     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   \(\backslash\)\(\backslash\)  o  @@       "});
+282     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    `\(\backslash\)\(\backslash\)     .      "});
+283     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      \(\backslash\)\(\backslash\)           "});
+284     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       `-.   o     "});
+285     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          `-.      "});
+286     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             `--.      "});
+287     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 `---  "});
+288 
+289     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+290     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+291 
+292     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 .-----    "});
+293     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             .--'  o       "});
+294     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          .-'   .    O     "});
+295     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       .-'@   @@@@@@@  "});
+296     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      /@@@  @@@@@@@@@  "});
+297     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    ./    o @@@@@@@@   "});
+298     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   /@@  o   @@@@@@@@   "});
+299     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  /@@@@   .   @@@@@@   "});
+300     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |@@@@@               "});
+301     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" /@@@@@  O  `.-./  .    "});
+302     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" | @@@@    --`-'       "});
+303     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |@ @@@        `            "});
+304     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |       @@  @         "});
+305     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" \(\backslash\)\(\backslash\)  . @        @@@    "});
+306     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |      @@   @@@@@    "});
+307     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  \(\backslash\)\(\backslash\)     @@@@  @\(\backslash\)\(\backslash\)@@       "});
+308     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   \(\backslash\)\(\backslash\)  o  @@     \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\)     "});
+309     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    `\(\backslash\)\(\backslash\)     .    .\(\backslash\)\(\backslash\).-     "});
+310     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      \(\backslash\)\(\backslash\)           `-'     "});
+311     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       `-.   o   / |   "});
+312     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          `-.   /          "});
+313     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             `--.          "});
+314     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 `-----  "});
+315 
+316     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+317     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+318 
+319     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 .---------    "});
+320     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             .--'  o     . .       "});
+321     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          .-'   .    O   .         "});
+322     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       .-'@   @@@@@@@   .  @@@@@   "});
+323     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      /@@@  @@@@@@@@@@@   @@@@@@@  "});
+324     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    ./    o @@@@@@@@@@@   @@@@@@@      "});
+325     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   /@@  o   @@@@@@@@@@@.   @@@@@@@     "});
+326     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  /@@@@   .   @@@@@@@o    @@@@@@@@@    "});
+327     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |@@@@@               . @@@@@@@@@@    "});
+328     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" /@@@@@  O  `.-./  .      @@@@@@@@@        "});
+329     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" | @@@@    --`-'       o     @@@@@@    "});
+330     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |@ @@@        `    o      .  @@        "});
+331     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |       @@  @         .-.     @@@     "});
+332     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" \(\backslash\)\(\backslash\)  . @        @@@     `-'   . @@@@   "});
+333     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |      @@   @@@@@ .           @@     "});
+334     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  \(\backslash\)\(\backslash\)     @@@@  @\(\backslash\)\(\backslash\)@@    /  .  O    .   "});
+335     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   \(\backslash\)\(\backslash\)  o  @@     \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\)  /         .    "});
+336     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    `\(\backslash\)\(\backslash\)     .    .\(\backslash\)\(\backslash\).-.\_\_\_   .         "});
+337     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      \(\backslash\)\(\backslash\)           `-'                 "});
+338     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       `-.   o   / |     o    O    "});
+339     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          `-.   /     .       .    "});
+340     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             `--.       .          "});
+341     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 `---------   "});
+342     
+343     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+344     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+345 
+346     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 .-----------  "});
+347     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             .--'  o     . .   `-  "});
+348     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          .-'   .    O   .       .     "});
+349     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       .-'@   @@@@@@@   .  @@@@@       "});
+350     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      /@@@  @@@@@@@@@@@   @@@@@@@   .      "});
+351     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    ./    o @@@@@@@@@@@   @@@@@@@          "});
+352     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   /@@  o   @@@@@@@@@@@.   @@@@@@@   O     "});
+353     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  /@@@@   .   @@@@@@@o    @@@@@@@@@@       "});
+354     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |@@@@@               . @@@@@@@@@@@@@ o   "});
+355     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" /@@@@@  O  `.-./  .      @@@@@@@@@@@@             "});
+356     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" | @@@@    --`-'       o     @@@@@@@@ @@@@     "});
+357     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |@ @@@        `    o      .  @@   . @@@@@      "});
+358     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |       @@  @         .-.     @@@   @@@@@     "});
+359     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" \(\backslash\)\(\backslash\)  . @        @@@     `-'   . @@@@   @@@@    "});
+360     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |      @@   @@@@@ .           @@   .     "});
+361     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  \(\backslash\)\(\backslash\)     @@@@  @\(\backslash\)\(\backslash\)@@    /  .  O    .     o     "});
+362     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   \(\backslash\)\(\backslash\)  o  @@     \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\)  /         .    .       "});
+363     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    `\(\backslash\)\(\backslash\)     .    .\(\backslash\)\(\backslash\).-.\_\_\_   .      .   .  "});
+364     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      \(\backslash\)\(\backslash\)           `-'                `    "});
+365     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       `-.   o   / |     o    O   .    "});
+366     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          `-.   /     .       .        "});
+367     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             `--.       .      .-  "});
+368     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 `-----------          "});
+369 
+370     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+371     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+372 
+373     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 .------------     "});
+374     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             .--'  o     . .   `--.    "});
+375     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          .-'   .    O   .       . `-.     "});
+376     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       .-'@   @@@@@@@   .  @@@@@      `-   "});
+377     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      /@@@  @@@@@@@@@@@   @@@@@@@   .    \(\backslash\)\(\backslash\)    "});
+378     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    ./    o @@@@@@@@@@@   @@@@@@@       . \(\backslash\)\(\backslash\)   "});
+379     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   /@@  o   @@@@@@@@@@@.   @@@@@@@   O         "});
+380     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  /@@@@   .   @@@@@@@o    @@@@@@@@@@     @@@   "});
+381     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |@@@@@               . @@@@@@@@@@@@@ o @@@@  "});
+382     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" /@@@@@  O  `.-./  .      @@@@@@@@@@@@    @@       "});
+383     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" | @@@@    --`-'       o     @@@@@@@@ @@@@         "});
+384     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |@ @@@        `    o      .  @@   . @@@@@@@       "});
+385     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |       @@  @         .-.     @@@   @@@@@@@       "});
+386     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" \(\backslash\)\(\backslash\)  . @        @@@     `-'   . @@@@   @@@@  o     "});
+387     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |      @@   @@@@@ .           @@   .         "});
+388     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  \(\backslash\)\(\backslash\)     @@@@  @\(\backslash\)\(\backslash\)@@    /  .  O    .     o   .     "});
+389     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   \(\backslash\)\(\backslash\)  o  @@     \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\)  /         .    .           "});
+390     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    `\(\backslash\)\(\backslash\)     .    .\(\backslash\)\(\backslash\).-.\_\_\_   .      .   .-. /  "});
+391     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      \(\backslash\)\(\backslash\)           `-'                `-' /    "});
+392     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       `-.   o   / |     o    O   .   .-   "});
+393     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          `-.   /     .       .    .-'     "});
+394     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             `--.       .      .--'    "});
+395     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 `------------             "});
+396 
+397     \hyperlink{anim_8c_a251b758efbc88876a3f556ccc47fe40f}{busy\_wait}();
+398     \hyperlink{anim_8c_a4953d1edcbbfc7e420c423ded1d5621a}{clear\_screen}();
+399 
+400     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 .------------.                                        "})
+      ;
+401     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             .--'  o     . .   `--.                                "});
+402     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          .-'   .    O   .       . `-.                             "});
+403     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       .-'@   @@@@@@@   .  @@@@@      `-.                          "});
+404     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      /@@@  @@@@@@@@@@@   @@@@@@@   .    \(\backslash\)\(\backslash\)                        "});
+405     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    ./    o @@@@@@@@@@@   @@@@@@@       . \(\backslash\)\(\backslash\).                      "});
+406     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   /@@  o   @@@@@@@@@@@.   @@@@@@@   O      \(\backslash\)\(\backslash\)                     "});
+407     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  /@@@@   .   @@@@@@@o    @@@@@@@@@@     @@@ \(\backslash\)\(\backslash\)                    "});
+408     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |@@@@@               . @@@@@@@@@@@@@ o @@@@|                     "});
+409     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" /@@@@@  O  `.-./  .      @@@@@@@@@@@@    @@  \(\backslash\)\(\backslash\)                   "});
+410     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" | @@@@    --`-'       o     @@@@@@@@ @@@@    |                   "});
+411     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |@ @@@        `    o      .  @@   . @@@@@@@  |   \(\backslash\)033[3m\(\backslash\)033[4mFull Moon
+       OS\(\backslash\)033[0m"});
+412     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" |       @@  @         .-.     @@@   @@@@@@@  |   Version: R1  "});
+413     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{" \(\backslash\)\(\backslash\)  . @        @@@     `-'   . @@@@   @@@@  o /                   "});
+414     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  |      @@   @@@@@ .           @@   .       |                     "});
+415     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"  \(\backslash\)\(\backslash\)     @@@@  @\(\backslash\)\(\backslash\)@@    /  .  O    .     o   . /                   "});
+416     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"   \(\backslash\)\(\backslash\)  o  @@     \(\backslash\)\(\backslash\) \(\backslash\)\(\backslash\)  /         .    .       /                   "});
+417     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"    `\(\backslash\)\(\backslash\)     .    .\(\backslash\)\(\backslash\).-.\_\_\_   .      .   .-. /'                     "});
+418     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"      \(\backslash\)\(\backslash\)           `-'                `-' /                        "});
+419     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"       `-.   o   / |     o    O   .   .-'                          "});
+420     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"          `-.   /     .       .    .-'                             "});
+421     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"             `--.       .      .--'                                "});
+422     \hyperlink{serial_8h_a3514f7abff236a4e00a6c46021ce5e22}{serial\_println}(\textcolor{stringliteral}{"                 `------------'                                        "})
+      ;
+423 \}
+\end{DoxyCode}

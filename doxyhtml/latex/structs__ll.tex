@@ -1,0 +1,118 @@
+\hypertarget{structs__ll}{}\section{linked\+List\+\_\+t Struct Reference}
+\label{structs__ll}\index{linked\+List\+\_\+t@{linked\+List\+\_\+t}}
+
+
+struct definition for the linked list  
+
+
+
+
+{\ttfamily \#include $<$linked\+\_\+list$>$}
+
+
+
+Collaboration diagram for linked\+List\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{structs__ll__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnode__t}{node\+\_\+t} \hyperlink{structs__ll_a0056de8ffd1d9af11ed1a8bb771ae227}{head}
+\item 
+\hyperlink{structnode__t}{node\+\_\+t} \hyperlink{structs__ll_a3253fe5f72d8914dd8331e74aba9982e}{tail}
+\item 
+int($\ast$ \hyperlink{structs__ll_ac22c97ea79a7ec45eb27584f2f91295c}{search\+Comp\+Func} )(void $\ast$, void $\ast$)
+\item 
+int($\ast$ \hyperlink{structs__ll_accf6a1a7fe14f0693107a00a47b86d0d}{insert\+Comp\+Func} )(void $\ast$, void $\ast$)
+\item 
+int($\ast$ \hyperlink{structs__ll_a3cf5521a73fc3474e83aef51c777bb7f}{free\+Node\+Func} )(\hyperlink{structnode__t}{node\+\_\+t} $\ast$node\+To\+Free)
+\item 
+void($\ast$ \hyperlink{structs__ll_ad3b310fea19fca7898583a8c0eb87449}{print\+Node\+Func} )(void $\ast$)
+\item 
+\hyperlink{system_8h_a7c94ea6f8948649f8d181ae55911eeaf}{size\+\_\+t} \hyperlink{structs__ll_abeb40a7e7b4c71ba09151cde4005c201}{length}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+struct definition for the linked list 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{linked__list_8h}{linked\+\_\+list.\+h} 
+\end{DoxySeeAlso}
+
+
+Definition at line 62 of file linked\+\_\+list.\+h.
+
+
+
+\subsection{Field Documentation}
+\index{s\+\_\+ll@{s\+\_\+ll}!free\+Node\+Func@{free\+Node\+Func}}
+\index{free\+Node\+Func@{free\+Node\+Func}!s\+\_\+ll@{s\+\_\+ll}}
+\subsubsection[{\texorpdfstring{free\+Node\+Func}{freeNodeFunc}}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ linked\+List\+\_\+t\+::free\+Node\+Func) ({\bf node\+\_\+t} $\ast$node\+To\+Free)}\hypertarget{structs__ll_a3cf5521a73fc3474e83aef51c777bb7f}{}\label{structs__ll_a3cf5521a73fc3474e83aef51c777bb7f}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{linked__list_8c_a45d030386936adffa3eb5586ce93d131}{set\+Insert\+Comparison\+Function} 
+\end{DoxySeeAlso}
+
+
+Definition at line 68 of file linked\+\_\+list.\+h.
+
+\index{s\+\_\+ll@{s\+\_\+ll}!head@{head}}
+\index{head@{head}!s\+\_\+ll@{s\+\_\+ll}}
+\subsubsection[{\texorpdfstring{head}{head}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+t} linked\+List\+\_\+t\+::head}\hypertarget{structs__ll_a0056de8ffd1d9af11ed1a8bb771ae227}{}\label{structs__ll_a0056de8ffd1d9af11ed1a8bb771ae227}
+
+
+Definition at line 64 of file linked\+\_\+list.\+h.
+
+\index{s\+\_\+ll@{s\+\_\+ll}!insert\+Comp\+Func@{insert\+Comp\+Func}}
+\index{insert\+Comp\+Func@{insert\+Comp\+Func}!s\+\_\+ll@{s\+\_\+ll}}
+\subsubsection[{\texorpdfstring{insert\+Comp\+Func}{insertCompFunc}}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ linked\+List\+\_\+t\+::insert\+Comp\+Func) (void $\ast$, void $\ast$)}\hypertarget{structs__ll_accf6a1a7fe14f0693107a00a47b86d0d}{}\label{structs__ll_accf6a1a7fe14f0693107a00a47b86d0d}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{linked__list_8c_a12e5138ac02af0f6b42ff2f1b29c610a}{set\+Search\+Comparison\+Function} 
+\end{DoxySeeAlso}
+
+
+Definition at line 67 of file linked\+\_\+list.\+h.
+
+\index{s\+\_\+ll@{s\+\_\+ll}!length@{length}}
+\index{length@{length}!s\+\_\+ll@{s\+\_\+ll}}
+\subsubsection[{\texorpdfstring{length}{length}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf size\+\_\+t} linked\+List\+\_\+t\+::length}\hypertarget{structs__ll_abeb40a7e7b4c71ba09151cde4005c201}{}\label{structs__ll_abeb40a7e7b4c71ba09151cde4005c201}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___r2_gafc8969d7969f61c928a01f4c302e669b}{set\+Print\+Function} 
+\end{DoxySeeAlso}
+
+
+Definition at line 70 of file linked\+\_\+list.\+h.
+
+\index{s\+\_\+ll@{s\+\_\+ll}!print\+Node\+Func@{print\+Node\+Func}}
+\index{print\+Node\+Func@{print\+Node\+Func}!s\+\_\+ll@{s\+\_\+ll}}
+\subsubsection[{\texorpdfstring{print\+Node\+Func}{printNodeFunc}}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ linked\+List\+\_\+t\+::print\+Node\+Func) (void $\ast$)}\hypertarget{structs__ll_ad3b310fea19fca7898583a8c0eb87449}{}\label{structs__ll_ad3b310fea19fca7898583a8c0eb87449}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{linked__list_8c_a3b6f817f74d12d2cf4a35405f447c73d}{set\+Free\+Function} 
+\end{DoxySeeAlso}
+
+
+Definition at line 69 of file linked\+\_\+list.\+h.
+
+\index{s\+\_\+ll@{s\+\_\+ll}!search\+Comp\+Func@{search\+Comp\+Func}}
+\index{search\+Comp\+Func@{search\+Comp\+Func}!s\+\_\+ll@{s\+\_\+ll}}
+\subsubsection[{\texorpdfstring{search\+Comp\+Func}{searchCompFunc}}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ linked\+List\+\_\+t\+::search\+Comp\+Func) (void $\ast$, void $\ast$)}\hypertarget{structs__ll_ac22c97ea79a7ec45eb27584f2f91295c}{}\label{structs__ll_ac22c97ea79a7ec45eb27584f2f91295c}
+
+
+Definition at line 66 of file linked\+\_\+list.\+h.
+
+\index{s\+\_\+ll@{s\+\_\+ll}!tail@{tail}}
+\index{tail@{tail}!s\+\_\+ll@{s\+\_\+ll}}
+\subsubsection[{\texorpdfstring{tail}{tail}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+t} linked\+List\+\_\+t\+::tail}\hypertarget{structs__ll_a3253fe5f72d8914dd8331e74aba9982e}{}\label{structs__ll_a3253fe5f72d8914dd8331e74aba9982e}
+
+
+Definition at line 65 of file linked\+\_\+list.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/\hyperlink{linked__list_8h}{linked\+\_\+list.\+h}\end{DoxyCompactItemize}
