@@ -1,0 +1,779 @@
+\hypertarget{linked__list_8h}{}\section{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/linked\+\_\+list.h File Reference}
+\label{linked__list_8h}\index{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/linked\+\_\+list.\+h@{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/linked\+\_\+list.\+h}}
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$core/mpx\+\_\+supt.\+h$>$}\\*
+Include dependency graph for linked\+\_\+list.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{linked__list_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{linked__list_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__ll__node}{node\+\_\+t}
+\begin{DoxyCompactList}\small\item\em struct for a node of the linked list \end{DoxyCompactList}\item 
+struct \hyperlink{structs__ll}{linked\+List\+\_\+t}
+\begin{DoxyCompactList}\small\item\em struct definition for the linked list \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{linked__list_8h_a4bdabb4388c831c1f8c4d31e67801e74}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+F\+\_\+\+L\+L\+\_\+\+N\+O\+D\+ES}~256
+\item 
+\#define \hyperlink{linked__list_8h_a33fa4884df656ed557638b8bd9585a7e}{V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+L\+L\+\_\+\+L\+E\+N\+G\+TH}(L\+I\+S\+T\+\_\+\+L\+E\+N\+G\+TH)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{linked__list_8h_a88e42961d952fbe5abb7e8cb26c916cc}{init\+Linked\+List} (\hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$list)
+\begin{DoxyCompactList}\small\item\em initilize list and the optional array that backs the list \end{DoxyCompactList}\item 
+\hyperlink{structnode__t}{node\+\_\+t} $\ast$ \hyperlink{linked__list_8h_a20871a48a5ca68065f74200de139228b}{insert\+After\+Node} (\hyperlink{structnode__t}{node\+\_\+t} $\ast$preceeding\+Node, \hyperlink{structnode__t}{node\+\_\+t} $\ast$new\+Node)
+\begin{DoxyCompactList}\small\item\em insert a node into the parent list of the preceeding\+Node after preceeding\+Node \end{DoxyCompactList}\item 
+\hyperlink{structnode__t}{node\+\_\+t} $\ast$ \hyperlink{linked__list_8h_a04df23f8eb8508551930249bad9f159a}{insert\+Before\+Node} (\hyperlink{structnode__t}{node\+\_\+t} $\ast$node\+To\+Follow, \hyperlink{structnode__t}{node\+\_\+t} $\ast$new\+Node)
+\begin{DoxyCompactList}\small\item\em insert a node into the parent list of the node\+To\+Follow before node\+To\+Follow \end{DoxyCompactList}\item 
+\hyperlink{structnode__t}{node\+\_\+t} $\ast$ \hyperlink{linked__list_8h_a40b9cae4db9ce33443e541191e75f540}{insert\+Node} (\hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$list, \hyperlink{structnode__t}{node\+\_\+t} $\ast$new\+Node)
+\begin{DoxyCompactList}\small\item\em Will insert the node into the list. This function will attempt to call the list\textquotesingle{}s \hyperlink{linked__list_8c_a45d030386936adffa3eb5586ce93d131}{insert comparison} function if defined. The function will insert the new node into the list after this function returns $>$ 0. If the \hyperlink{linked__list_8c_a45d030386936adffa3eb5586ce93d131}{insert comparison} function is not defined for this list, the inserting function will placed the new node at the end of the list before the tail. \end{DoxyCompactList}\item 
+\hyperlink{structnode__t}{node\+\_\+t} $\ast$ \hyperlink{linked__list_8h_a042e8aa38eb81453dd7e81ade7d38b5b}{make\+New\+Node} (\hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$list, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em get new node, allocate a new node or find an unused node from the list\textquotesingle{}s pool \end{DoxyCompactList}\item 
+\hyperlink{structnode__t}{node\+\_\+t} $\ast$ \hyperlink{linked__list_8h_a1573ed6fa569b80577b596e78cd90b4a}{move\+Node\+To\+New\+List} (\hyperlink{structnode__t}{node\+\_\+t} $\ast$node\+To\+Move, \hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$new\+List)
+\begin{DoxyCompactList}\small\item\em If a node needs to move lists and lists are array backed, instead of just moving preceeding and suceeding pointers of the node, the node actaully needs to move backing arrays so one list\textquotesingle{}s nodes are not the only ones being consumed. The equivalent process will be to execute the parent list\textquotesingle{}s remove\+Node funcion, execute the make\+New\+Node function on the new\+List, copy all structure members to the new node, and return the new node. The list of node\+To\+Move free\+Node\+Func will be called with node\+To\+Mov as the argument. If the lists are not array backed, the function simply removes the node from its containing list and calls insert\+Node on the new list. \end{DoxyCompactList}\item 
+void \hyperlink{linked__list_8h_a3b6f817f74d12d2cf4a35405f447c73d}{set\+Free\+Function} (\hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$list, int($\ast$new\+Free\+Func)(\hyperlink{structnode__t}{node\+\_\+t} $\ast$))
+\begin{DoxyCompactList}\small\item\em sets the function whose job it is to free the node\textquotesingle{}s memory \end{DoxyCompactList}\item 
+void \hyperlink{linked__list_8h_a45d030386936adffa3eb5586ce93d131}{set\+Insert\+Comparison\+Function} (\hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$list, int($\ast$new\+Comp\+Func)(void $\ast$, void $\ast$))
+\begin{DoxyCompactList}\small\item\em takes in a function pointer and sets the library shared comparison pointer \end{DoxyCompactList}\item 
+void \hyperlink{group___r2_gafc8969d7969f61c928a01f4c302e669b}{set\+Print\+Function} (\hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$list, void($\ast$new\+Print\+Func)(void $\ast$))
+\begin{DoxyCompactList}\small\item\em sets the function whose job it is to print the list to the screen. \end{DoxyCompactList}\item 
+void \hyperlink{linked__list_8h_a12e5138ac02af0f6b42ff2f1b29c610a}{set\+Search\+Comparison\+Function} (\hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$list, int($\ast$new\+Search\+Func)(void $\ast$, void $\ast$))
+\begin{DoxyCompactList}\small\item\em sets the function whose job it is to compare the input data with the data in the list. the first void parameter will always be the data contained in the list, the second will be the data passed to the search function. \end{DoxyCompactList}\item 
+\hyperlink{structnode__t}{node\+\_\+t} $\ast$ \hyperlink{linked__list_8h_ad225d0f3d9e1b59a58117ba0bc491189}{remove\+Node} (\hyperlink{structnode__t}{node\+\_\+t} $\ast$node\+To\+Remove)
+\begin{DoxyCompactList}\small\item\em will remove the node from the list. the list hierarchy will change to reflect the missing node. \end{DoxyCompactList}\item 
+\hyperlink{structnode__t}{node\+\_\+t} $\ast$ \hyperlink{linked__list_8h_a75ff37d4b2282fa64cb59415e17f8ee5}{search\+List} (\hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$list\+To\+Search, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em goes through the list using the list\textquotesingle{}s comparison function to find the node which matches the data. if the search function is undefined for this list, the function returns null immedietly. \end{DoxyCompactList}\item 
+void \hyperlink{linked__list_8h_a9bbec3837a303ae4bbc5eafb23ead2d5}{print\+List} (\hyperlink{structlinked_list__t}{linked\+List\+\_\+t} $\ast$list)
+\begin{DoxyCompactList}\small\item\em test function to show list functionality. uses const char$\ast$ as test data \end{DoxyCompactList}\item 
+void \hyperlink{linked__list_8h_a0a60ac1fe6e5055de61277ac9703b13e}{list\+Test} ()
+\begin{DoxyCompactList}\small\item\em test the linked\+\_\+list class with const char$\ast$ data and output to screen the results of the test \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__ll__node}{s\+\_\+ll\+\_\+node} \hyperlink{linked__list_8h_aaa4b117a86b9205e66f2cde318c1f01e}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module provides a generic linked list that can be array backed or use dynamic allocation 
+
+\subsection{Macro Definition Documentation}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+F\+\_\+\+L\+L\+\_\+\+N\+O\+D\+ES@{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+F\+\_\+\+L\+L\+\_\+\+N\+O\+D\+ES}}
+\index{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+F\+\_\+\+L\+L\+\_\+\+N\+O\+D\+ES@{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+F\+\_\+\+L\+L\+\_\+\+N\+O\+D\+ES}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+F\+\_\+\+L\+L\+\_\+\+N\+O\+D\+ES}{MAX_NUM_OF_LL_NODES}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+F\+\_\+\+L\+L\+\_\+\+N\+O\+D\+ES~256}\hypertarget{linked__list_8h_a4bdabb4388c831c1f8c4d31e67801e74}{}\label{linked__list_8h_a4bdabb4388c831c1f8c4d31e67801e74}
+
+
+Definition at line 22 of file linked\+\_\+list.\+h.
+
+
+
+Referenced by init\+Linked\+List(), and make\+New\+Node().
+
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+L\+L\+\_\+\+L\+E\+N\+G\+TH@{V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+L\+L\+\_\+\+L\+E\+N\+G\+TH}}
+\index{V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+L\+L\+\_\+\+L\+E\+N\+G\+TH@{V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+L\+L\+\_\+\+L\+E\+N\+G\+TH}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+L\+L\+\_\+\+L\+E\+N\+G\+TH}{VARIABLE_LL_LENGTH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+L\+L\+\_\+\+L\+E\+N\+G\+TH(
+\begin{DoxyParamCaption}
+\item[{}]{L\+I\+S\+T\+\_\+\+L\+E\+N\+G\+TH}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a33fa4884df656ed557638b8bd9585a7e}{}\label{linked__list_8h_a33fa4884df656ed557638b8bd9585a7e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{ \(\backslash\)
+    typedef \textcolor{keyword}{struct }s\_ll\_##LIST\_LENGTH##\_t linkedList\_##LIST\_LENGTH##\_t \(\backslash\)
+    struct s\_ll\_##LIST\_LENGTH##\_t \(\backslash\)
+    \{ \(\backslash\)
+        node\_t head; \(\backslash\)
+        node\_t tail; \(\backslash\)
+        int (*searchCompFunc)(\textcolor{keywordtype}{void}*, \textcolor{keywordtype}{void}*); \(\backslash\)
+        int (*comparisonFunc)(\textcolor{keywordtype}{void}*, \textcolor{keywordtype}{void}*); \(\backslash\)
+        int (*freeNodeFunc)(\hyperlink{structnode__t}{node\_t} *nodeToFree); \(\backslash\)
+        void (*\hyperlink{linked__list_8h_a9bbec3837a303ae4bbc5eafb23ead2d5}{printList})(\textcolor{keywordtype}{void}*); \hyperlink{system_8h_a7c94ea6f8948649f8d181ae55911eeaf}{\(\backslash\)}
+\hyperlink{system_8h_a7c94ea6f8948649f8d181ae55911eeaf}{        size\_t} length; \(\backslash\)
+        unsigned \textcolor{keywordtype}{int} numNodesInUse; \(\backslash\)
+        node\_t backingArray[LIST\_LENGTH]; \(\backslash\)
+    \}; \(\backslash\)
+\}
+\end{DoxyCode}
+defines a macro that will generate a new type that has a different array backing size, new type has the name linked\+List\+\_\+$<$list\+\_\+length$>$\+\_\+t 
+
+Definition at line 81 of file linked\+\_\+list.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!init\+Linked\+List@{init\+Linked\+List}}
+\index{init\+Linked\+List@{init\+Linked\+List}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{init\+Linked\+List(linked\+List\+\_\+t $\ast$list)}{initLinkedList(linkedList_t *list)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Linked\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf linked\+List\+\_\+t} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a88e42961d952fbe5abb7e8cb26c916cc}{}\label{linked__list_8h_a88e42961d952fbe5abb7e8cb26c916cc}
+
+
+initilize list and the optional array that backs the list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & pointer to list \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3 of file linked\+\_\+list.\+c.
+
+
+
+References M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+F\+\_\+\+L\+L\+\_\+\+N\+O\+D\+ES.
+
+
+
+Referenced by init\+P\+C\+B\+Queues(), and list\+Test().
+
+
+\begin{DoxyCode}
+4 \{
+5 \textcolor{preprocessor}{#ifdef LL\_IS\_ARRAY\_BACKED}
+6     \textcolor{keywordtype}{int} i;
+7     \textcolor{keywordflow}{for}(i=0; i < \hyperlink{linked__list_8h_a4bdabb4388c831c1f8c4d31e67801e74}{MAX\_NUM\_OF\_LL\_NODES}; i++)
+8     \{
+9         list->backingArray[i].data=0;
+10         list->backingArray[i].inUse=0;
+11         list->backingArray[i].next=0;
+12         list->backingArray[i].prev=0;
+13         list->backingArray[i].parentList = list;
+14     \}
+15 
+16     list->head.parentList = list;
+17     list->head.inUse=1;
+18 
+19     list->tail.parentList = list;
+20     list->tail.inUse=1;
+21 \textcolor{preprocessor}{#endif}
+22 
+23     list->head.data=0;
+24     list->head.next =
+25         list->head.prev = &list->tail;
+26 
+27     list->tail.data=0;
+28     list->tail.next =
+29         list->tail.prev = &list->head;
+30 
+31     list->length = 0;
+32     list->insertCompFunc = 0;
+33     list->freeNodeFunc = 0;
+34     list->searchCompFunc = 0;
+35 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!insert\+After\+Node@{insert\+After\+Node}}
+\index{insert\+After\+Node@{insert\+After\+Node}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{insert\+After\+Node(node\+\_\+t $\ast$preceeding\+Node, node\+\_\+t $\ast$new\+Node)}{insertAfterNode(node_t *preceedingNode, node_t *newNode)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+t}$\ast$ insert\+After\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+t} $\ast$}]{preceeding\+Node, }
+\item[{{\bf node\+\_\+t} $\ast$}]{new\+Node}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a20871a48a5ca68065f74200de139228b}{}\label{linked__list_8h_a20871a48a5ca68065f74200de139228b}
+
+
+insert a node into the parent list of the preceeding\+Node after preceeding\+Node 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preceeding\+Node} & node to insert the new node afterwards \\
+\hline
+{\em new\+Node} & the new node to insert. if the list is array backed, the new\+Node will be copied to the list\textquotesingle{}s node pool if it currently does not reside there \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to node inserted in the parent list of preceeding\+Node, null if insertion failed 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file linked\+\_\+list.\+c.
+
+
+
+References move\+Node\+To\+New\+List().
+
+
+\begin{DoxyCode}
+79 \{
+80 \textcolor{preprocessor}{#ifdef LL\_IS\_ARRAY\_BACKED}
+81     \textcolor{keywordflow}{if}(preceedingNode->parentList != newNode->parentList)
+82     \{
+83         \textcolor{comment}{//if the node to insert is not apart of the list to insert after, the function moveNodeToNewList
+       makes a}
+84             \textcolor{comment}{//new node in the parent list of the preceedingNode and recursively calls this function with
+       the newly moved node}
+85         \textcolor{keywordflow}{return} \hyperlink{linked__list_8c_a20871a48a5ca68065f74200de139228b}{insertAfterNode}(preceedingNode,
+86                             \hyperlink{linked__list_8c_a1573ed6fa569b80577b596e78cd90b4a}{moveNodeToNewList}(newNode, preceedingNode->parentList));
+87     \}
+88 \textcolor{preprocessor}{#endif}
+89 
+90     newNode->next = preceedingNode->next;
+91     newNode->prev = preceedingNode;
+92 
+93     newNode->next->prev = newNode;
+94     newNode->prev->next = newNode;
+95 
+96     \textcolor{keywordflow}{return} newNode;
+97 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!insert\+Before\+Node@{insert\+Before\+Node}}
+\index{insert\+Before\+Node@{insert\+Before\+Node}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{insert\+Before\+Node(node\+\_\+t $\ast$node\+To\+Follow, node\+\_\+t $\ast$new\+Node)}{insertBeforeNode(node_t *nodeToFollow, node_t *newNode)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+t}$\ast$ insert\+Before\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+t} $\ast$}]{node\+To\+Follow, }
+\item[{{\bf node\+\_\+t} $\ast$}]{new\+Node}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a04df23f8eb8508551930249bad9f159a}{}\label{linked__list_8h_a04df23f8eb8508551930249bad9f159a}
+
+
+insert a node into the parent list of the node\+To\+Follow before node\+To\+Follow 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+To\+Follow} & node to insert the new\+Node before \\
+\hline
+{\em new\+Node} & the new node to insert. if the list is array backed, the new\+Node will be copied to the list\textquotesingle{}s node pool if it currently does not reside there \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to node inserted in the parent list of node\+To\+Follow, null if insertion failed 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file linked\+\_\+list.\+c.
+
+
+
+References move\+Node\+To\+New\+List().
+
+
+
+Referenced by insert\+Node().
+
+
+\begin{DoxyCode}
+100 \{
+101 \textcolor{preprocessor}{#ifdef LL\_IS\_ARRAY\_BACKED}
+102     \textcolor{keywordflow}{if}(nodeToFollow->parentList != newNode->parentList)
+103     \{
+104         \textcolor{comment}{//if the node to insert is not apart of the list to insert after, the function moveNodeToNewList
+       makes a}
+105             \textcolor{comment}{//new node in the parent list of the preceedingNode and recursively calls this function with
+       the newly moved node}
+106         \textcolor{keywordflow}{return} \hyperlink{linked__list_8c_a04df23f8eb8508551930249bad9f159a}{insertBeforeNode}(nodeToFollow,
+107                             \hyperlink{linked__list_8c_a1573ed6fa569b80577b596e78cd90b4a}{moveNodeToNewList}(newNode, nodeToFollow->parentList));
+108     \}
+109 \textcolor{preprocessor}{#endif}
+110 
+111     newNode->next = nodeToFollow;
+112     newNode->prev = nodeToFollow->prev;
+113 
+114     newNode->next->prev = newNode;
+115     newNode->prev->next = newNode;
+116 
+117     \textcolor{keywordflow}{return} newNode;
+118 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!insert\+Node@{insert\+Node}}
+\index{insert\+Node@{insert\+Node}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{insert\+Node(linked\+List\+\_\+t $\ast$list, node\+\_\+t $\ast$new\+Node)}{insertNode(linkedList_t *list, node_t *newNode)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+t}$\ast$ insert\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf linked\+List\+\_\+t} $\ast$}]{list, }
+\item[{{\bf node\+\_\+t} $\ast$}]{new\+Node}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a40b9cae4db9ce33443e541191e75f540}{}\label{linked__list_8h_a40b9cae4db9ce33443e541191e75f540}
+
+
+Will insert the node into the list. This function will attempt to call the list\textquotesingle{}s \hyperlink{linked__list_8c_a45d030386936adffa3eb5586ce93d131}{insert comparison} function if defined. The function will insert the new node into the list after this function returns $>$ 0. If the \hyperlink{linked__list_8c_a45d030386936adffa3eb5586ce93d131}{insert comparison} function is not defined for this list, the inserting function will placed the new node at the end of the list before the tail. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & list to place the node \\
+\hline
+{\em new\+Node} & the new node to insert. if the list is array backed, the new\+Node will be copied to the list\textquotesingle{}s node pool if it currently does not reside there \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the node in the new list, or null if inserting failed. 
+\end{DoxyReturn}
+
+
+Definition at line 173 of file linked\+\_\+list.\+c.
+
+
+
+References insert\+Before\+Node(), and move\+Node\+To\+New\+List().
+
+
+
+Referenced by insert\+P\+C\+B(), list\+Test(), move\+Node\+To\+New\+List(), and setup\+P\+C\+B().
+
+
+\begin{DoxyCode}
+174 \{
+175     \textcolor{comment}{//if newNode is not valid, do not insert any node}
+176     \textcolor{keywordflow}{if}(!newNode)
+177     \{
+178         \textcolor{keywordflow}{return} 0;
+179     \}
+180 
+181 \textcolor{preprocessor}{#ifdef LL\_IS\_ARRAY\_BACKED}
+182     \textcolor{keywordflow}{if}(newNode->parentList != list)
+183     \{
+184         \textcolor{comment}{//if the node to insert is not apart of the list to insert after, the function moveNodeToNewList
+       makes a}
+185             \textcolor{comment}{//new node in the parent list of the preceedingNode and recursively calls this function with
+       the newly moved node}
+186         \textcolor{keywordflow}{return} \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insertNode}(list, \hyperlink{linked__list_8c_a1573ed6fa569b80577b596e78cd90b4a}{moveNodeToNewList}(newNode, list));
+187     \}
+188 \textcolor{preprocessor}{#endif}
+189 
+190     \textcolor{keywordflow}{if}(list->insertCompFunc)
+191     \{
+192         \hyperlink{structnode__t}{node\_t} * itNode = list->head.next;
+193         \textcolor{keywordflow}{for}(; itNode != &(list->tail); itNode = itNode->next)
+194         \{
+195             \textcolor{keywordtype}{int} result = ((*(list->insertCompFunc))(itNode->data, newNode->data));
+196             \textcolor{keywordflow}{if}(result > 0)
+197             \{
+198                 list->length++;
+199                 \textcolor{keywordflow}{return} \hyperlink{linked__list_8c_a04df23f8eb8508551930249bad9f159a}{insertBeforeNode}(itNode, newNode);
+200             \}
+201         \}
+202     \}
+203     \textcolor{keywordflow}{return} \hyperlink{linked__list_8c_a04df23f8eb8508551930249bad9f159a}{insertBeforeNode}(&(list->tail), newNode);
+204 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!list\+Test@{list\+Test}}
+\index{list\+Test@{list\+Test}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{list\+Test()}{listTest()}}]{\setlength{\rightskip}{0pt plus 5cm}void list\+Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a0a60ac1fe6e5055de61277ac9703b13e}{}\label{linked__list_8h_a0a60ac1fe6e5055de61277ac9703b13e}
+
+
+test the linked\+\_\+list class with const char$\ast$ data and output to screen the results of the test 
+
+
+
+Definition at line 249 of file linked\+\_\+list.\+c.
+
+
+
+References comp\+Function(), init\+Linked\+List(), insert\+Node(), make\+New\+Node(), printf, print\+List(), searchcomp\+Function(), search\+List(), set\+Insert\+Comparison\+Function(), set\+Print\+Function(), set\+Search\+Comparison\+Function(), and test\+Print\+Func().
+
+
+
+Referenced by kmain().
+
+
+\begin{DoxyCode}
+250 \{
+251     \hyperlink{structlinked_list__t}{linkedList\_t} list1;
+252     \hyperlink{structlinked_list__t}{linkedList\_t} list2;
+253 
+254     \hyperlink{linked__list_8c_a88e42961d952fbe5abb7e8cb26c916cc}{initLinkedList}(&list1);
+255     \hyperlink{linked__list_8c_a88e42961d952fbe5abb7e8cb26c916cc}{initLinkedList}(&list2);
+256 
+257     \hyperlink{linked__list_8c_a45d030386936adffa3eb5586ce93d131}{setInsertComparisonFunction}(&list1, &\hyperlink{linked__list_8c_aa034eb9ccc5e7790304204b1cb0ed60f}{compFunction});
+258     \hyperlink{linked__list_8c_a12e5138ac02af0f6b42ff2f1b29c610a}{setSearchComparisonFunction}(&list1, &
+      \hyperlink{linked__list_8c_aec835b94f0f2d661880b5e2f75cefada}{searchcompFunction});
+259     \hyperlink{group___r2_gafc8969d7969f61c928a01f4c302e669b}{setPrintFunction}(&list1, &\hyperlink{linked__list_8c_abce3e0a671a927747db173dea67b2afc}{testPrintFunc});
+260 
+261     \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insertNode}(&list1, \hyperlink{linked__list_8c_a042e8aa38eb81453dd7e81ade7d38b5b}{makeNewNode}(&list2, (\textcolor{keywordtype}{void}*)\textcolor{stringliteral}{"test3"}));
+262     \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insertNode}(&list1, \hyperlink{linked__list_8c_a042e8aa38eb81453dd7e81ade7d38b5b}{makeNewNode}(&list2, (\textcolor{keywordtype}{void}*)\textcolor{stringliteral}{"test1"}));
+263     \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insertNode}(&list1, \hyperlink{linked__list_8c_a042e8aa38eb81453dd7e81ade7d38b5b}{makeNewNode}(&list2, (\textcolor{keywordtype}{void}*)\textcolor{stringliteral}{"test5"}));
+264     \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insertNode}(&list1, \hyperlink{linked__list_8c_a042e8aa38eb81453dd7e81ade7d38b5b}{makeNewNode}(&list2, (\textcolor{keywordtype}{void}*)\textcolor{stringliteral}{"test2"}));
+265     \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insertNode}(&list1, \hyperlink{linked__list_8c_a042e8aa38eb81453dd7e81ade7d38b5b}{makeNewNode}(&list2, (\textcolor{keywordtype}{void}*)\textcolor{stringliteral}{"test7"}));
+266     \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insertNode}(&list1, \hyperlink{linked__list_8c_a042e8aa38eb81453dd7e81ade7d38b5b}{makeNewNode}(&list2, (\textcolor{keywordtype}{void}*)\textcolor{stringliteral}{"test4"}));
+267     \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insertNode}(&list1, \hyperlink{linked__list_8c_a042e8aa38eb81453dd7e81ade7d38b5b}{makeNewNode}(&list2, (\textcolor{keywordtype}{void}*)\textcolor{stringliteral}{"test8"}));
+268     \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insertNode}(&list1, \hyperlink{linked__list_8c_a042e8aa38eb81453dd7e81ade7d38b5b}{makeNewNode}(&list2, (\textcolor{keywordtype}{void}*)\textcolor{stringliteral}{"test3"}));
+269 
+270 
+271    \textcolor{comment}{// node\_t * nodeFound = searchList(&list1, (void*)"test3");}
+272 
+273     \hyperlink{structnode__t}{node\_t} * nodeFound = \hyperlink{linked__list_8c_a75ff37d4b2282fa64cb59415e17f8ee5}{searchList}(&list1, (\textcolor{keywordtype}{void}*)\textcolor{stringliteral}{"test5"});
+274     \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"looking for node whose data is: %s\(\backslash\)r\(\backslash\)nsearch return: %d\(\backslash\)r\(\backslash\)n"}, \textcolor{stringliteral}{"test5"}, (\textcolor{keywordtype}{int})nodeFound);
+275 
+276     \textcolor{keywordflow}{if}(nodeFound)
+277     \{
+278         \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"found node:: data string = %s\(\backslash\)r\(\backslash\)n"}, (\textcolor{keyword}{const} \textcolor{keywordtype}{char}*)nodeFound->data);
+279     \}
+280 
+281     \hyperlink{linked__list_8c_a9bbec3837a303ae4bbc5eafb23ead2d5}{printList}(&list1);
+282 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!make\+New\+Node@{make\+New\+Node}}
+\index{make\+New\+Node@{make\+New\+Node}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{make\+New\+Node(linked\+List\+\_\+t $\ast$list, void $\ast$data)}{makeNewNode(linkedList_t *list, void *data)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+t}$\ast$ make\+New\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf linked\+List\+\_\+t} $\ast$}]{list, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a042e8aa38eb81453dd7e81ade7d38b5b}{}\label{linked__list_8h_a042e8aa38eb81453dd7e81ade7d38b5b}
+
+
+get new node, allocate a new node or find an unused node from the list\textquotesingle{}s pool 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & to find an unused node from. This argument is ignored if the list is dynamically allocated \\
+\hline
+{\em data} & pointer to the data the new node should contain, the pointer must be valid obviously \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to new node, null if no new node could be found or created 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file linked\+\_\+list.\+c.
+
+
+
+References M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+F\+\_\+\+L\+L\+\_\+\+N\+O\+D\+ES, and sys\+\_\+alloc\+\_\+mem().
+
+
+
+Referenced by allocate\+P\+C\+B(), list\+Test(), and move\+Node\+To\+New\+List().
+
+
+\begin{DoxyCode}
+38 \{
+39 \textcolor{preprocessor}{#ifdef LL\_IS\_ARRAY\_BACKED}
+40     \textcolor{keywordtype}{int} i;
+41     \textcolor{keywordflow}{for}(i=0; i < \hyperlink{linked__list_8h_a4bdabb4388c831c1f8c4d31e67801e74}{MAX\_NUM\_OF\_LL\_NODES}; i++)
+42     \{
+43         \textcolor{keywordflow}{if}(!list->backingArray[i].inUse)
+44         \{
+45             list->backingArray[i].inUse = 1;
+46             list->numNodesInUse++;
+47             list->backingArray[i].data = data;
+48             \textcolor{keywordflow}{return} &(list->backingArray[i]);
+49         \}
+50     \}
+51     \textcolor{keywordflow}{return} 0;
+52 \textcolor{preprocessor}{#else}
+53     (void)list;
+54     \hyperlink{structnode__t}{node\_t} * newNode = \hyperlink{include_2core_2mpx__supt_8h_a61adad2abba0a3a225c2290b3de1fe93}{sys\_alloc\_mem}(\textcolor{keyword}{sizeof}(\hyperlink{structnode__t}{node\_t}));
+55     newNode->data = data;
+56     newNode->next=0;
+57     newNode->prev=0;
+58     \textcolor{keywordflow}{return} newNode;
+59 
+60 \textcolor{preprocessor}{#endif}
+61 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!move\+Node\+To\+New\+List@{move\+Node\+To\+New\+List}}
+\index{move\+Node\+To\+New\+List@{move\+Node\+To\+New\+List}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{move\+Node\+To\+New\+List(node\+\_\+t $\ast$node\+To\+Move, linked\+List\+\_\+t $\ast$new\+List)}{moveNodeToNewList(node_t *nodeToMove, linkedList_t *newList)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+t}$\ast$ move\+Node\+To\+New\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+t} $\ast$}]{node\+To\+Move, }
+\item[{{\bf linked\+List\+\_\+t} $\ast$}]{new\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a1573ed6fa569b80577b596e78cd90b4a}{}\label{linked__list_8h_a1573ed6fa569b80577b596e78cd90b4a}
+
+
+If a node needs to move lists and lists are array backed, instead of just moving preceeding and suceeding pointers of the node, the node actaully needs to move backing arrays so one list\textquotesingle{}s nodes are not the only ones being consumed. The equivalent process will be to execute the parent list\textquotesingle{}s remove\+Node funcion, execute the make\+New\+Node function on the new\+List, copy all structure members to the new node, and return the new node. The list of node\+To\+Move free\+Node\+Func will be called with node\+To\+Mov as the argument. If the lists are not array backed, the function simply removes the node from its containing list and calls insert\+Node on the new list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+To\+Move} & the node to move, this pointer is no longer guarenteed to be valid. Stop using this pointer, \\
+\hline
+{\em new\+List} & the list to move the node to, this will be the node\textquotesingle{}s new parent list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pointer of param node\+To\+Move will no longer be valid, the pointer to the node in the new list will be returned on sucess. Null on failure and node\+To\+Move will remain valid 
+\end{DoxyReturn}
+
+
+Definition at line 132 of file linked\+\_\+list.\+c.
+
+
+
+References insert\+Node(), make\+New\+Node(), and remove\+Node().
+
+
+
+Referenced by insert\+After\+Node(), insert\+Before\+Node(), and insert\+Node().
+
+
+\begin{DoxyCode}
+133 \{
+134 \textcolor{preprocessor}{#ifdef LL\_IS\_ARRAY\_BACKED}
+135     \hyperlink{structnode__t}{node\_t} *  newNodeInList = \hyperlink{linked__list_8c_a042e8aa38eb81453dd7e81ade7d38b5b}{makeNewNode}(newList, nodeToMove->data);
+136     \textcolor{keywordflow}{if}(!newNodeInList)
+137     \{
+138         \textcolor{keywordflow}{return} 0;
+139     \}
+140 
+141     \hyperlink{linked__list_8c_ad225d0f3d9e1b59a58117ba0bc491189}{removeNode}(nodeToMove);
+142 
+143     \textcolor{keywordflow}{if}(nodeToMove->parentList->freeNodeFunc)
+144     \{
+145         (*(nodeToMove->parentList->freeNodeFunc))(nodeToMove);
+146     \}
+147     \textcolor{keywordflow}{return} newNodeInList;
+148 \textcolor{preprocessor}{#else}
+149     \hyperlink{structnode__t}{node\_t}* removedNode = \hyperlink{linked__list_8c_ad225d0f3d9e1b59a58117ba0bc491189}{removeNode}(nodeToMove);
+150     \textcolor{keywordflow}{return} \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insertNode}(newList, removedNode);
+151 \textcolor{preprocessor}{#endif}
+152 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!print\+List@{print\+List}}
+\index{print\+List@{print\+List}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{print\+List(linked\+List\+\_\+t $\ast$list)}{printList(linkedList_t *list)}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf linked\+List\+\_\+t} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a9bbec3837a303ae4bbc5eafb23ead2d5}{}\label{linked__list_8h_a9bbec3837a303ae4bbc5eafb23ead2d5}
+
+
+test function to show list functionality. uses const char$\ast$ as test data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & list to print the nodes of \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 211 of file linked\+\_\+list.\+c.
+
+
+
+References printf.
+
+
+
+Referenced by list\+Test(), pcb\+Test(), show\+All\+Processes(), show\+Blocked\+Processes(), and show\+Ready\+Processes().
+
+
+\begin{DoxyCode}
+212 \{
+213     \textcolor{keywordflow}{if}(list->printNodeFunc)
+214     \{
+215         \hyperlink{structnode__t}{node\_t} * itNode = list->head.next;
+216         \textcolor{keywordflow}{if}(itNode == &(list->tail))
+217         \{
+218             \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"%s"},\textcolor{stringliteral}{"<List is Empty>\(\backslash\)r\(\backslash\)n"});
+219         \}
+220         \textcolor{keywordflow}{for}(; itNode != &(list->tail); itNode = itNode->next)
+221         \{
+222             list->printNodeFunc(itNode->data);
+223         \}
+224     \}\textcolor{keywordflow}{else}
+225     \{
+226         \hyperlink{string_8h_a0f459d16901ef591acaafa4b67fd4be5}{printf}(\textcolor{stringliteral}{"No Search Function provided for List!%s\(\backslash\)r\(\backslash\)n"},\textcolor{stringliteral}{" "});
+227     \}
+228 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!remove\+Node@{remove\+Node}}
+\index{remove\+Node@{remove\+Node}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{remove\+Node(node\+\_\+t $\ast$node\+To\+Remove)}{removeNode(node_t *nodeToRemove)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+t}$\ast$ remove\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+t} $\ast$}]{node\+To\+Remove}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_ad225d0f3d9e1b59a58117ba0bc491189}{}\label{linked__list_8h_ad225d0f3d9e1b59a58117ba0bc491189}
+
+
+will remove the node from the list. the list hierarchy will change to reflect the missing node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+To\+Remove} & pointer to the node to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the removed node 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file linked\+\_\+list.\+c.
+
+
+
+Referenced by move\+Node\+To\+New\+List(), and remove\+P\+C\+B().
+
+
+\begin{DoxyCode}
+121 \{
+122     \textcolor{keywordflow}{if}(nodeToRemove)
+123     \{
+124         \textcolor{keywordflow}{if}(nodeToRemove->prev)\{nodeToRemove->prev->next = nodeToRemove->next;\}
+125         \textcolor{keywordflow}{if}(nodeToRemove->next)\{nodeToRemove->next->prev = nodeToRemove->prev;\}
+126         nodeToRemove->next = 0;
+127         nodeToRemove->prev = 0;
+128     \}
+129     \textcolor{keywordflow}{return} nodeToRemove;
+130 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!search\+List@{search\+List}}
+\index{search\+List@{search\+List}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{search\+List(linked\+List\+\_\+t $\ast$list\+To\+Search, void $\ast$data)}{searchList(linkedList_t *listToSearch, void *data)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+t}$\ast$ search\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf linked\+List\+\_\+t} $\ast$}]{list\+To\+Search, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a75ff37d4b2282fa64cb59415e17f8ee5}{}\label{linked__list_8h_a75ff37d4b2282fa64cb59415e17f8ee5}
+
+
+goes through the list using the list\textquotesingle{}s comparison function to find the node which matches the data. if the search function is undefined for this list, the function returns null immedietly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+To\+Search} & the list to search \\
+\hline
+{\em data} & valid pointer to data that can be dereferenced. this pointer will be the second argument to the list\textquotesingle{}s \hyperlink{linked__list_8c_a12e5138ac02af0f6b42ff2f1b29c610a}{search comparison} function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null if not found, else pointer to the node that matches. 
+\end{DoxyReturn}
+
+
+Definition at line 154 of file linked\+\_\+list.\+c.
+
+
+
+Referenced by find\+P\+C\+B(), and list\+Test().
+
+
+\begin{DoxyCode}
+155 \{
+156     int (*compFunctCpy)(\textcolor{keywordtype}{void}*,\textcolor{keywordtype}{void}*)  = (listToSearch->searchCompFunc) ?
+157                                             listToSearch->searchCompFunc :
+158                                                 listToSearch->insertCompFunc;
+159     \textcolor{keywordflow}{if}(compFunctCpy)
+160     \{
+161         \hyperlink{structnode__t}{node\_t} * itNode = listToSearch->head.next;
+162         \textcolor{keywordflow}{for}(; itNode != &(listToSearch->tail); itNode = itNode->next)
+163         \{
+164             \textcolor{keywordflow}{if}(!(*(compFunctCpy))(itNode->data, data))
+165             \{
+166                 \textcolor{keywordflow}{return} itNode;
+167             \}
+168         \}
+169     \}
+170     \textcolor{keywordflow}{return} 0;
+171 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!set\+Free\+Function@{set\+Free\+Function}}
+\index{set\+Free\+Function@{set\+Free\+Function}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{set\+Free\+Function(linked\+List\+\_\+t $\ast$list, int($\ast$new\+Free\+Func)(node\+\_\+t $\ast$))}{setFreeFunction(linkedList_t *list, int(*newFreeFunc)(node_t *))}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Free\+Function (
+\begin{DoxyParamCaption}
+\item[{{\bf linked\+List\+\_\+t} $\ast$}]{list, }
+\item[{int($\ast$)({\bf node\+\_\+t} $\ast$)}]{new\+Free\+Func}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a3b6f817f74d12d2cf4a35405f447c73d}{}\label{linked__list_8h_a3b6f817f74d12d2cf4a35405f447c73d}
+
+
+sets the function whose job it is to free the node\textquotesingle{}s memory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to set the function pointer for \\
+\hline
+{\em new\+Free\+Func} & the job of this function should be to free the memory with the node once it the list no longer needs it. This can be literally through free() or by other means. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file linked\+\_\+list.\+c.
+
+
+\begin{DoxyCode}
+69 \{
+70     list->freeNodeFunc = newFreeFunc;
+71 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!set\+Insert\+Comparison\+Function@{set\+Insert\+Comparison\+Function}}
+\index{set\+Insert\+Comparison\+Function@{set\+Insert\+Comparison\+Function}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{set\+Insert\+Comparison\+Function(linked\+List\+\_\+t $\ast$list, int($\ast$new\+Comp\+Func)(void $\ast$, void $\ast$))}{setInsertComparisonFunction(linkedList_t *list, int(*newCompFunc)(void *, void *))}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Insert\+Comparison\+Function (
+\begin{DoxyParamCaption}
+\item[{{\bf linked\+List\+\_\+t} $\ast$}]{list, }
+\item[{int($\ast$)(void $\ast$, void $\ast$)}]{new\+Comp\+Func}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a45d030386936adffa3eb5586ce93d131}{}\label{linked__list_8h_a45d030386936adffa3eb5586ce93d131}
+
+
+takes in a function pointer and sets the library shared comparison pointer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to set the function pointer for \\
+\hline
+{\em new\+Comp\+Func} & pointer to function whose job is to define the comparison of the data stored in the node this function should return 0 if the comparison succeeds. The function should return $<$ 0 if the data to compare comes after the data in the node. The function should return $>$ 0 if the data to compare comes before the data in the node. The first void argument is guarenteed to be the data from the list to compare against. The second void argument is the data in the node passed to the \hyperlink{linked__list_8c_a40b9cae4db9ce33443e541191e75f540}{insert\+Node} function \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file linked\+\_\+list.\+c.
+
+
+
+Referenced by init\+P\+C\+B\+Queues(), and list\+Test().
+
+
+\begin{DoxyCode}
+64 \{
+65     list->insertCompFunc = newCompFunc;
+66 \}
+\end{DoxyCode}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!set\+Search\+Comparison\+Function@{set\+Search\+Comparison\+Function}}
+\index{set\+Search\+Comparison\+Function@{set\+Search\+Comparison\+Function}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{set\+Search\+Comparison\+Function(linked\+List\+\_\+t $\ast$list, int($\ast$new\+Search\+Func)(void $\ast$, void $\ast$))}{setSearchComparisonFunction(linkedList_t *list, int(*newSearchFunc)(void *, void *))}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Search\+Comparison\+Function (
+\begin{DoxyParamCaption}
+\item[{{\bf linked\+List\+\_\+t} $\ast$}]{list, }
+\item[{int($\ast$)(void $\ast$, void $\ast$)}]{new\+Search\+Func}
+\end{DoxyParamCaption}
+)}\hypertarget{linked__list_8h_a12e5138ac02af0f6b42ff2f1b29c610a}{}\label{linked__list_8h_a12e5138ac02af0f6b42ff2f1b29c610a}
+
+
+sets the function whose job it is to compare the input data with the data in the list. the first void parameter will always be the data contained in the list, the second will be the data passed to the search function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & to set the search function for \\
+\hline
+{\em new\+Seach\+Func} & pointer to function whose job is to define the comparison of the data stored in the node this function should return 0 if the comparison succeeds. The function should return $<$ 0 if the data to compare comes after the data in the node. The function should return $>$ 0 if the data to compare comes before the data in the node. The first void argument is guarenteed to be the data from the list to compare against. The second void argument is the data passed to the \hyperlink{linked__list_8c_a75ff37d4b2282fa64cb59415e17f8ee5}{search\+List} function \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file linked\+\_\+list.\+c.
+
+
+
+Referenced by init\+P\+C\+B\+Queues(), and list\+Test().
+
+
+\begin{DoxyCode}
+74 \{
+75     list->searchCompFunc = newSearchFunc;
+76 \}
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\index{linked\+\_\+list.\+h@{linked\+\_\+list.\+h}!\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+attribute\+\_\+\+\_\+@{\+\_\+\+\_\+attribute\+\_\+\+\_\+}!linked\+\_\+list.\+h@{linked\+\_\+list.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+attribute\+\_\+\+\_\+}{__attribute__}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf gdt\+\_\+entry\+\_\+struct} \+\_\+\+\_\+attribute\+\_\+\+\_\+}\hypertarget{linked__list_8h_aaa4b117a86b9205e66f2cde318c1f01e}{}\label{linked__list_8h_aaa4b117a86b9205e66f2cde318c1f01e}

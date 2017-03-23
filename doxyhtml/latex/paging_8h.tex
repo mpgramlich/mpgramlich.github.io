@@ -1,0 +1,317 @@
+\hypertarget{paging_8h}{}\section{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/mem/paging.h File Reference}
+\label{paging_8h}\index{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/mem/paging.\+h@{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/mem/paging.\+h}}
+{\ttfamily \#include $<$system.\+h$>$}\\*
+Include dependency graph for paging.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{paging_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{paging_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpage__entry}{page\+\_\+entry}
+\item 
+struct \hyperlink{structpage__table}{page\+\_\+table}
+\item 
+struct \hyperlink{structpage__dir}{page\+\_\+dir}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{paging_8h_a7d467c1d283fdfa1f2081ba1e0d01b6e}{P\+A\+G\+E\+\_\+\+S\+I\+ZE}~0x1000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{paging_8h_a70101fc152ff58caafbe36ab391a9a68}{set\+\_\+bit} (\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} addr)
+\item 
+void \hyperlink{paging_8h_adcef508c82c20a032508f871e79e1b92}{clear\+\_\+bit} (\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} addr)
+\item 
+\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} \hyperlink{paging_8h_a317b4797bc81f65bd01cfa190800ecdd}{get\+\_\+bit} (\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} addr)
+\item 
+\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} \hyperlink{paging_8h_acb3c25257061521382c7ba900c1c1ab4}{first\+\_\+free} ()
+\item 
+void \hyperlink{paging_8h_a919b727f386797a8b9d8eceb5c4e7313}{init\+\_\+paging} ()
+\item 
+void \hyperlink{paging_8h_a3affceba4cd194e1c516404c14abbe7c}{load\+\_\+page\+\_\+dir} (\hyperlink{structpage__dir}{page\+\_\+dir} $\ast$new\+\_\+page\+\_\+dir)
+\item 
+\hyperlink{structpage__entry}{page\+\_\+entry} $\ast$ \hyperlink{paging_8h_a69b165b3d1adf3aeaae126ca7a5aac3e}{get\+\_\+page} (\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} addr, \hyperlink{structpage__dir}{page\+\_\+dir} $\ast$dir, int make\+\_\+table)
+\item 
+void \hyperlink{paging_8h_a04bce9da2c1d7c59f6efd8e4d9b54db7}{new\+\_\+frame} (\hyperlink{structpage__entry}{page\+\_\+entry} $\ast$page)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{paging.\+h@{paging.\+h}!P\+A\+G\+E\+\_\+\+S\+I\+ZE@{P\+A\+G\+E\+\_\+\+S\+I\+ZE}}
+\index{P\+A\+G\+E\+\_\+\+S\+I\+ZE@{P\+A\+G\+E\+\_\+\+S\+I\+ZE}!paging.\+h@{paging.\+h}}
+\subsubsection[{\texorpdfstring{P\+A\+G\+E\+\_\+\+S\+I\+ZE}{PAGE_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+G\+E\+\_\+\+S\+I\+ZE~0x1000}\hypertarget{paging_8h_a7d467c1d283fdfa1f2081ba1e0d01b6e}{}\label{paging_8h_a7d467c1d283fdfa1f2081ba1e0d01b6e}
+
+
+Definition at line 6 of file paging.\+h.
+
+
+
+Referenced by init\+\_\+paging().
+
+
+
+\subsection{Function Documentation}
+\index{paging.\+h@{paging.\+h}!clear\+\_\+bit@{clear\+\_\+bit}}
+\index{clear\+\_\+bit@{clear\+\_\+bit}!paging.\+h@{paging.\+h}}
+\subsubsection[{\texorpdfstring{clear\+\_\+bit(u32int addr)}{clear_bit(u32int addr)}}]{\setlength{\rightskip}{0pt plus 5cm}void clear\+\_\+bit (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{paging_8h_adcef508c82c20a032508f871e79e1b92}{}\label{paging_8h_adcef508c82c20a032508f871e79e1b92}
+
+
+Definition at line 44 of file paging.\+c.
+
+
+
+References frames, and page\+\_\+size.
+
+
+\begin{DoxyCode}
+45 \{
+46   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} frame  = addr/\hyperlink{paging_8c_a1cc472551ec40b65eef931fde01054e7}{page\_size};
+47   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} index  = frame/32;
+48   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} offset = frame%32;
+49   \hyperlink{paging_8c_a76492529572a1a20a06076ac40d66b29}{frames}[index] &= ~(1 << offset);
+50 \}
+\end{DoxyCode}
+\index{paging.\+h@{paging.\+h}!first\+\_\+free@{first\+\_\+free}}
+\index{first\+\_\+free@{first\+\_\+free}!paging.\+h@{paging.\+h}}
+\subsubsection[{\texorpdfstring{first\+\_\+free()}{first_free()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u32int} first\+\_\+free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{paging_8h_acb3c25257061521382c7ba900c1c1ab4}{}\label{paging_8h_acb3c25257061521382c7ba900c1c1ab4}
+\index{paging.\+h@{paging.\+h}!get\+\_\+bit@{get\+\_\+bit}}
+\index{get\+\_\+bit@{get\+\_\+bit}!paging.\+h@{paging.\+h}}
+\subsubsection[{\texorpdfstring{get\+\_\+bit(u32int addr)}{get_bit(u32int addr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u32int} get\+\_\+bit (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{paging_8h_a317b4797bc81f65bd01cfa190800ecdd}{}\label{paging_8h_a317b4797bc81f65bd01cfa190800ecdd}
+
+
+Definition at line 56 of file paging.\+c.
+
+
+
+References frames, and page\+\_\+size.
+
+
+\begin{DoxyCode}
+57 \{
+58   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} frame  = addr/\hyperlink{paging_8c_a1cc472551ec40b65eef931fde01054e7}{page\_size};
+59   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} index  = frame/32;
+60   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} offset = frame%32;
+61   \textcolor{keywordflow}{return} (\hyperlink{paging_8c_a76492529572a1a20a06076ac40d66b29}{frames}[index] & (1 << offset));  
+62 \}
+\end{DoxyCode}
+\index{paging.\+h@{paging.\+h}!get\+\_\+page@{get\+\_\+page}}
+\index{get\+\_\+page@{get\+\_\+page}!paging.\+h@{paging.\+h}}
+\subsubsection[{\texorpdfstring{get\+\_\+page(u32int addr, page\+\_\+dir $\ast$dir, int make\+\_\+table)}{get_page(u32int addr, page_dir *dir, int make_table)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf page\+\_\+entry}$\ast$ get\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{addr, }
+\item[{{\bf page\+\_\+dir} $\ast$}]{dir, }
+\item[{int}]{make\+\_\+table}
+\end{DoxyParamCaption}
+)}\hypertarget{paging_8h_a69b165b3d1adf3aeaae126ca7a5aac3e}{}\label{paging_8h_a69b165b3d1adf3aeaae126ca7a5aac3e}
+
+
+Definition at line 85 of file paging.\+c.
+
+
+
+References \+\_\+kmalloc(), page\+\_\+size, page\+\_\+table\+::pages, page\+\_\+dir\+::tables, and page\+\_\+dir\+::tables\+\_\+phys.
+
+
+
+Referenced by \+\_\+kmalloc(), and init\+\_\+paging().
+
+
+\begin{DoxyCode}
+86 \{
+87   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} phys\_addr;
+88   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} index = addr / \hyperlink{paging_8c_a1cc472551ec40b65eef931fde01054e7}{page\_size} / 1024;
+89   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} offset = addr / \hyperlink{paging_8c_a1cc472551ec40b65eef931fde01054e7}{page\_size} % 1024;
+90   
+91   \textcolor{comment}{//return it if it exists}
+92   \textcolor{keywordflow}{if} (dir->\hyperlink{structpage__dir_ac89434e3fccabfe9481ea77fdda82faf}{tables}[index])
+93     \textcolor{keywordflow}{return} &dir->\hyperlink{structpage__dir_ac89434e3fccabfe9481ea77fdda82faf}{tables}[index]->\hyperlink{structpage__table_aa066e0fa847ce2fafb6a2feddfa340ff}{pages}[offset];
+94   
+95   \textcolor{comment}{//create it}
+96   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (make\_table)\{
+97     dir->\hyperlink{structpage__dir_ac89434e3fccabfe9481ea77fdda82faf}{tables}[index] = (\hyperlink{structpage__table}{page\_table}*)\hyperlink{heap_8h_a9bfb8053c2382598ef5b2175f475d49a}{\_kmalloc}(\textcolor{keyword}{sizeof}(
+      \hyperlink{structpage__table}{page\_table}), 1, &phys\_addr);
+98     dir->\hyperlink{structpage__dir_a7336b695acaf516613dda626129129d0}{tables\_phys}[index] = phys\_addr | 0x7; \textcolor{comment}{//enable present, writable}
+99     \textcolor{keywordflow}{return} &dir->\hyperlink{structpage__dir_ac89434e3fccabfe9481ea77fdda82faf}{tables}[index]->\hyperlink{structpage__table_aa066e0fa847ce2fafb6a2feddfa340ff}{pages}[offset];
+100   \}
+101   \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} 0;
+102 \}
+\end{DoxyCode}
+\index{paging.\+h@{paging.\+h}!init\+\_\+paging@{init\+\_\+paging}}
+\index{init\+\_\+paging@{init\+\_\+paging}!paging.\+h@{paging.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+paging()}{init_paging()}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+paging (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{paging_8h_a919b727f386797a8b9d8eceb5c4e7313}{}\label{paging_8h_a919b727f386797a8b9d8eceb5c4e7313}
+
+
+Definition at line 111 of file paging.\+c.
+
+
+
+References \+\_\+kmalloc(), frames, get\+\_\+page(), K\+H\+E\+A\+P\+\_\+\+B\+A\+SE, K\+H\+E\+A\+P\+\_\+\+M\+IN, K\+H\+E\+A\+P\+\_\+\+S\+I\+ZE, kmalloc(), load\+\_\+page\+\_\+dir(), make\+\_\+heap(), mem\+\_\+size, memset(), new\+\_\+frame(), nframes, P\+A\+G\+E\+\_\+\+S\+I\+ZE, page\+\_\+size, and phys\+\_\+alloc\+\_\+addr.
+
+
+
+Referenced by kmain().
+
+
+\begin{DoxyCode}
+112 \{
+113   \textcolor{comment}{//create frame bitmap}
+114   \hyperlink{paging_8c_abf36580d5618820f15388083c9313e60}{nframes} = (\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int})(\hyperlink{paging_8c_abf8475f59bfb67fac4b6b5a254dfe56d}{mem\_size}/\hyperlink{paging_8c_a1cc472551ec40b65eef931fde01054e7}{page\_size});
+115   \hyperlink{paging_8c_a76492529572a1a20a06076ac40d66b29}{frames} = (\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int}*)\hyperlink{heap_8h_a15d6a52c5c080c8c7ffc73e336d8e574}{kmalloc}(\hyperlink{paging_8c_abf36580d5618820f15388083c9313e60}{nframes}/32);
+116   \hyperlink{string_8h_ace6ee45c30e71865e6eb635200379db9}{memset}(\hyperlink{paging_8c_a76492529572a1a20a06076ac40d66b29}{frames}, 0, \hyperlink{paging_8c_abf36580d5618820f15388083c9313e60}{nframes}/32);
+117 
+118   \textcolor{comment}{//create kernel directory}
+119   \hyperlink{paging_8c_a61ce943ba80d9dfab89a826cae9ddc4a}{kdir} = (\hyperlink{structpage__dir}{page\_dir}*)\hyperlink{heap_8h_a9bfb8053c2382598ef5b2175f475d49a}{\_kmalloc}(\textcolor{keyword}{sizeof}(\hyperlink{structpage__dir}{page\_dir}), 1, 0); \textcolor{comment}{//page aligned}
+120   \hyperlink{string_8h_ace6ee45c30e71865e6eb635200379db9}{memset}(\hyperlink{paging_8c_a61ce943ba80d9dfab89a826cae9ddc4a}{kdir}, 0, \textcolor{keyword}{sizeof}(\hyperlink{structpage__dir}{page\_dir}));
+121 
+122   \textcolor{comment}{//get pages for kernel heap}
+123   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} i = 0x0;
+124   \textcolor{keywordflow}{for}(i=\hyperlink{heap_8h_a15073b9742f7e29d8174509197eb4ab9}{KHEAP\_BASE}; i<(\hyperlink{heap_8h_a15073b9742f7e29d8174509197eb4ab9}{KHEAP\_BASE}+\hyperlink{heap_8h_aee52619f74498ad224eb8e4354b89e40}{KHEAP\_MIN}); i+=1)\{
+125     \hyperlink{paging_8c_a69b165b3d1adf3aeaae126ca7a5aac3e}{get\_page}(i,\hyperlink{paging_8c_a61ce943ba80d9dfab89a826cae9ddc4a}{kdir},1);
+126   \}
+127 
+128   \textcolor{comment}{//perform identity mapping of used memory}
+129   \textcolor{comment}{//note: placement\_addr gets incremented in get\_page,}
+130   \textcolor{comment}{//so we're mapping the first frames as well}
+131   i = 0x0;
+132   \textcolor{keywordflow}{while} (i < (\hyperlink{paging_8c_a6dfa4ef84e115e891b3679e4932b5c49}{phys\_alloc\_addr}+0x10000))\{
+133     \hyperlink{paging_8c_a04bce9da2c1d7c59f6efd8e4d9b54db7}{new\_frame}(\hyperlink{paging_8c_a69b165b3d1adf3aeaae126ca7a5aac3e}{get\_page}(i,\hyperlink{paging_8c_a61ce943ba80d9dfab89a826cae9ddc4a}{kdir},1));
+134     i += \hyperlink{paging_8c_a1cc472551ec40b65eef931fde01054e7}{page\_size};
+135   \}
+136 
+137   \textcolor{comment}{//allocate heap frames now that the placement addr has increased.}
+138   \textcolor{comment}{//placement addr increases here for heap}
+139   \textcolor{keywordflow}{for}(i=\hyperlink{heap_8h_a15073b9742f7e29d8174509197eb4ab9}{KHEAP\_BASE}; i<(\hyperlink{heap_8h_a15073b9742f7e29d8174509197eb4ab9}{KHEAP\_BASE}+\hyperlink{heap_8h_aee52619f74498ad224eb8e4354b89e40}{KHEAP\_MIN});i+=
+      \hyperlink{paging_8h_a7d467c1d283fdfa1f2081ba1e0d01b6e}{PAGE\_SIZE})\{
+140     \hyperlink{paging_8c_a04bce9da2c1d7c59f6efd8e4d9b54db7}{new\_frame}(\hyperlink{paging_8c_a69b165b3d1adf3aeaae126ca7a5aac3e}{get\_page}(i,\hyperlink{paging_8c_a61ce943ba80d9dfab89a826cae9ddc4a}{kdir},1));
+141   \}
+142 
+143   \textcolor{comment}{//load the kernel page directory; enable paging}
+144   \hyperlink{paging_8c_a31e6c585cbda542534f1b0fc83e40689}{load\_page\_dir}(\hyperlink{paging_8c_a61ce943ba80d9dfab89a826cae9ddc4a}{kdir});
+145 
+146   \textcolor{comment}{//setup the kernel heap}
+147   \hyperlink{paging_8c_a61825456a33b09780a5493c95adcae8a}{kheap} = \hyperlink{heap_8h_a686135c02695aef4208f93d4549a15d0}{make\_heap}(\hyperlink{heap_8h_a15073b9742f7e29d8174509197eb4ab9}{KHEAP\_BASE}, \hyperlink{heap_8h_a0f2696767a10e6efffc64e9b459c4ea6}{KHEAP\_SIZE}, 
+      \hyperlink{heap_8h_a15073b9742f7e29d8174509197eb4ab9}{KHEAP\_BASE}+\hyperlink{heap_8h_aee52619f74498ad224eb8e4354b89e40}{KHEAP\_MIN});
+148 \}
+\end{DoxyCode}
+\index{paging.\+h@{paging.\+h}!load\+\_\+page\+\_\+dir@{load\+\_\+page\+\_\+dir}}
+\index{load\+\_\+page\+\_\+dir@{load\+\_\+page\+\_\+dir}!paging.\+h@{paging.\+h}}
+\subsubsection[{\texorpdfstring{load\+\_\+page\+\_\+dir(page\+\_\+dir $\ast$new\+\_\+page\+\_\+dir)}{load_page_dir(page_dir *new_page_dir)}}]{\setlength{\rightskip}{0pt plus 5cm}void load\+\_\+page\+\_\+dir (
+\begin{DoxyParamCaption}
+\item[{{\bf page\+\_\+dir} $\ast$}]{new\+\_\+page\+\_\+dir}
+\end{DoxyParamCaption}
+)}\hypertarget{paging_8h_a3affceba4cd194e1c516404c14abbe7c}{}\label{paging_8h_a3affceba4cd194e1c516404c14abbe7c}
+
+
+Definition at line 158 of file paging.\+c.
+
+
+
+References page\+\_\+dir\+::tables\+\_\+phys.
+
+
+
+Referenced by init\+\_\+paging().
+
+
+\begin{DoxyCode}
+159 \{
+160   \hyperlink{paging_8c_af7da380833e92d5c7d3c3db41484713b}{cdir} = new\_dir;
+161   \textcolor{keyword}{asm} \textcolor{keyword}{volatile} (\textcolor{stringliteral}{"mov %0,%%cr3"}:: \textcolor{stringliteral}{"b"}(&\hyperlink{paging_8c_af7da380833e92d5c7d3c3db41484713b}{cdir}->\hyperlink{structpage__dir_a7336b695acaf516613dda626129129d0}{tables\_phys}[0]));
+162   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} cr0;
+163   \textcolor{keyword}{asm} \textcolor{keyword}{volatile} (\textcolor{stringliteral}{"mov %%cr0,%0"}: \textcolor{stringliteral}{"=b"}(cr0));
+164   cr0 |= 0x80000000;
+165   \textcolor{keyword}{asm} \textcolor{keyword}{volatile} (\textcolor{stringliteral}{"mov %0,%%cr0"}:: \textcolor{stringliteral}{"b"}(cr0));
+166 \}
+\end{DoxyCode}
+\index{paging.\+h@{paging.\+h}!new\+\_\+frame@{new\+\_\+frame}}
+\index{new\+\_\+frame@{new\+\_\+frame}!paging.\+h@{paging.\+h}}
+\subsubsection[{\texorpdfstring{new\+\_\+frame(page\+\_\+entry $\ast$page)}{new_frame(page_entry *page)}}]{\setlength{\rightskip}{0pt plus 5cm}void new\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{{\bf page\+\_\+entry} $\ast$}]{page}
+\end{DoxyParamCaption}
+)}\hypertarget{paging_8h_a04bce9da2c1d7c59f6efd8e4d9b54db7}{}\label{paging_8h_a04bce9da2c1d7c59f6efd8e4d9b54db7}
+
+
+Definition at line 173 of file paging.\+c.
+
+
+
+References find\+\_\+free(), page\+\_\+entry\+::frameaddr, kpanic(), page\+\_\+size, page\+\_\+entry\+::present, set\+\_\+bit(), page\+\_\+entry\+::usermode, and page\+\_\+entry\+::writeable.
+
+
+
+Referenced by init\+\_\+paging().
+
+
+\begin{DoxyCode}
+174 \{
+175   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} index;
+176   \textcolor{keywordflow}{if} (page->\hyperlink{structpage__entry_a68a6dc54a7ab6f7fb1a068476190bf67}{frameaddr} != 0) \textcolor{keywordflow}{return};
+177   \textcolor{keywordflow}{if} ( (\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int})(-1) == (index=\hyperlink{paging_8c_abe201f9294ab23125146fff36fe95187}{find\_free}()) ) \hyperlink{system_8h_aff8473f901d828d76d3548130731c41d}{kpanic}(\textcolor{stringliteral}{"Out of memory"});
+178   
+179   \textcolor{comment}{//mark a frame as in-use}
+180   \hyperlink{paging_8c_a70101fc152ff58caafbe36ab391a9a68}{set\_bit}(index*\hyperlink{paging_8c_a1cc472551ec40b65eef931fde01054e7}{page\_size});
+181   page->\hyperlink{structpage__entry_a34148a94af9bfabbb8c4f00f9865dfee}{present}   = 1;
+182   page->\hyperlink{structpage__entry_a68a6dc54a7ab6f7fb1a068476190bf67}{frameaddr} = index;
+183   page->\hyperlink{structpage__entry_a2ea8d7684fe45772b6acba70d46e41d9}{writeable} = 1;
+184   page->\hyperlink{structpage__entry_a2beafd3900a1f36f09af9c35a9a14f18}{usermode}  = 0;
+185 \}
+\end{DoxyCode}
+\index{paging.\+h@{paging.\+h}!set\+\_\+bit@{set\+\_\+bit}}
+\index{set\+\_\+bit@{set\+\_\+bit}!paging.\+h@{paging.\+h}}
+\subsubsection[{\texorpdfstring{set\+\_\+bit(u32int addr)}{set_bit(u32int addr)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+\_\+bit (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{paging_8h_a70101fc152ff58caafbe36ab391a9a68}{}\label{paging_8h_a70101fc152ff58caafbe36ab391a9a68}
+
+
+Definition at line 32 of file paging.\+c.
+
+
+
+References frames, and page\+\_\+size.
+
+
+
+Referenced by new\+\_\+frame().
+
+
+\begin{DoxyCode}
+33 \{
+34   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} frame  = addr/\hyperlink{paging_8c_a1cc472551ec40b65eef931fde01054e7}{page\_size};
+35   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} index  = frame/32;
+36   \hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} offset = frame%32;
+37   \hyperlink{paging_8c_a76492529572a1a20a06076ac40d66b29}{frames}[index] |= (1 << offset);
+38 \}
+\end{DoxyCode}
