@@ -1,0 +1,274 @@
+\hypertarget{include_2core_2mpx__supt_8h}{}\section{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/core/mpx\+\_\+supt.h File Reference}
+\label{include_2core_2mpx__supt_8h}\index{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/core/mpx\+\_\+supt.\+h@{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/core/mpx\+\_\+supt.\+h}}
+{\ttfamily \#include $<$system.\+h$>$}\\*
+Include dependency graph for mpx\+\_\+supt.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{include_2core_2mpx__supt_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{include_2core_2mpx__supt_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structparam}{param}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{include_2core_2mpx__supt_8h_ad111e603bbebe5d87f6bc39264ce4733}{E\+X\+IT}~0
+\item 
+\#define \hyperlink{include_2core_2mpx__supt_8h_a9c21a7caee326d7803b94ae1952b27ca}{I\+D\+LE}~1
+\item 
+\#define \hyperlink{include_2core_2mpx__supt_8h_ada74e7db007a68e763f20c17f2985356}{R\+E\+AD}~2
+\item 
+\#define \hyperlink{include_2core_2mpx__supt_8h_aa10f470e996d0f51210d24f442d25e1e}{W\+R\+I\+TE}~3
+\item 
+\#define \hyperlink{include_2core_2mpx__supt_8h_a9d88621bfb79cb860b9ea2b5abb1c7f0}{M\+O\+D\+U\+L\+E\+\_\+\+R1}~0
+\item 
+\#define \hyperlink{include_2core_2mpx__supt_8h_a177f46669733cd706e9476485dfd961b}{M\+O\+D\+U\+L\+E\+\_\+\+R2}~1
+\item 
+\#define \hyperlink{include_2core_2mpx__supt_8h_afe0ac8d1ebddd519bed41c8d8e79fad0}{M\+O\+D\+U\+L\+E\+\_\+\+R3}~2
+\item 
+\#define \hyperlink{include_2core_2mpx__supt_8h_a05541487bcf6e840b918f0a6ef097024}{M\+O\+D\+U\+L\+E\+\_\+\+R4}~4
+\item 
+\#define \hyperlink{include_2core_2mpx__supt_8h_a68745bb3b58fd02dcee2cad3b2331def}{M\+O\+D\+U\+L\+E\+\_\+\+R5}~8
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{include_2core_2mpx__supt_8h_afb6ff5e2e9bdde9d8971a497b6fe38ae}{sys\+\_\+req} (int op\+\_\+code)
+\item 
+void \hyperlink{include_2core_2mpx__supt_8h_a53332c6a3107a4feed6e2e79690a6ffa}{mpx\+\_\+init} (int cur\+\_\+mod)
+\item 
+void \hyperlink{include_2core_2mpx__supt_8h_a4a28bb188c9fed51228c46980b20e605}{sys\+\_\+set\+\_\+malloc} (\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int}($\ast$func)(\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int}))
+\item 
+void \hyperlink{include_2core_2mpx__supt_8h_a2463d934fa39601c275a3ade8afd18bc}{sys\+\_\+set\+\_\+free} (int($\ast$func)(void $\ast$))
+\item 
+void $\ast$ \hyperlink{include_2core_2mpx__supt_8h_a61adad2abba0a3a225c2290b3de1fe93}{sys\+\_\+alloc\+\_\+mem} (\hyperlink{system_8h_a757de76cafbcddaac0d1632902fe4cb8}{u32int} size)
+\item 
+int \hyperlink{include_2core_2mpx__supt_8h_a950663d39dbb073c9dff9cf3b5d3392c}{sys\+\_\+free\+\_\+mem} (void $\ast$ptr)
+\item 
+void \hyperlink{include_2core_2mpx__supt_8h_a83abbeda22fc5e6c2b35523b64199c1c}{idle} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!E\+X\+IT@{E\+X\+IT}}
+\index{E\+X\+IT@{E\+X\+IT}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{E\+X\+IT}{EXIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+X\+IT~0}\hypertarget{include_2core_2mpx__supt_8h_ad111e603bbebe5d87f6bc39264ce4733}{}\label{include_2core_2mpx__supt_8h_ad111e603bbebe5d87f6bc39264ce4733}
+
+
+Definition at line 6 of file mpx\+\_\+supt.\+h.
+
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!I\+D\+LE@{I\+D\+LE}}
+\index{I\+D\+LE@{I\+D\+LE}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{I\+D\+LE}{IDLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+D\+LE~1}\hypertarget{include_2core_2mpx__supt_8h_a9c21a7caee326d7803b94ae1952b27ca}{}\label{include_2core_2mpx__supt_8h_a9c21a7caee326d7803b94ae1952b27ca}
+
+
+Definition at line 7 of file mpx\+\_\+supt.\+h.
+
+
+
+Referenced by idle().
+
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!M\+O\+D\+U\+L\+E\+\_\+\+R1@{M\+O\+D\+U\+L\+E\+\_\+\+R1}}
+\index{M\+O\+D\+U\+L\+E\+\_\+\+R1@{M\+O\+D\+U\+L\+E\+\_\+\+R1}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{M\+O\+D\+U\+L\+E\+\_\+\+R1}{MODULE_R1}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+O\+D\+U\+L\+E\+\_\+\+R1~0}\hypertarget{include_2core_2mpx__supt_8h_a9d88621bfb79cb860b9ea2b5abb1c7f0}{}\label{include_2core_2mpx__supt_8h_a9d88621bfb79cb860b9ea2b5abb1c7f0}
+
+
+Definition at line 11 of file mpx\+\_\+supt.\+h.
+
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!M\+O\+D\+U\+L\+E\+\_\+\+R2@{M\+O\+D\+U\+L\+E\+\_\+\+R2}}
+\index{M\+O\+D\+U\+L\+E\+\_\+\+R2@{M\+O\+D\+U\+L\+E\+\_\+\+R2}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{M\+O\+D\+U\+L\+E\+\_\+\+R2}{MODULE_R2}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+O\+D\+U\+L\+E\+\_\+\+R2~1}\hypertarget{include_2core_2mpx__supt_8h_a177f46669733cd706e9476485dfd961b}{}\label{include_2core_2mpx__supt_8h_a177f46669733cd706e9476485dfd961b}
+
+
+Definition at line 12 of file mpx\+\_\+supt.\+h.
+
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!M\+O\+D\+U\+L\+E\+\_\+\+R3@{M\+O\+D\+U\+L\+E\+\_\+\+R3}}
+\index{M\+O\+D\+U\+L\+E\+\_\+\+R3@{M\+O\+D\+U\+L\+E\+\_\+\+R3}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{M\+O\+D\+U\+L\+E\+\_\+\+R3}{MODULE_R3}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+O\+D\+U\+L\+E\+\_\+\+R3~2}\hypertarget{include_2core_2mpx__supt_8h_afe0ac8d1ebddd519bed41c8d8e79fad0}{}\label{include_2core_2mpx__supt_8h_afe0ac8d1ebddd519bed41c8d8e79fad0}
+
+
+Definition at line 13 of file mpx\+\_\+supt.\+h.
+
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!M\+O\+D\+U\+L\+E\+\_\+\+R4@{M\+O\+D\+U\+L\+E\+\_\+\+R4}}
+\index{M\+O\+D\+U\+L\+E\+\_\+\+R4@{M\+O\+D\+U\+L\+E\+\_\+\+R4}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{M\+O\+D\+U\+L\+E\+\_\+\+R4}{MODULE_R4}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+O\+D\+U\+L\+E\+\_\+\+R4~4}\hypertarget{include_2core_2mpx__supt_8h_a05541487bcf6e840b918f0a6ef097024}{}\label{include_2core_2mpx__supt_8h_a05541487bcf6e840b918f0a6ef097024}
+
+
+Definition at line 14 of file mpx\+\_\+supt.\+h.
+
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!M\+O\+D\+U\+L\+E\+\_\+\+R5@{M\+O\+D\+U\+L\+E\+\_\+\+R5}}
+\index{M\+O\+D\+U\+L\+E\+\_\+\+R5@{M\+O\+D\+U\+L\+E\+\_\+\+R5}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{M\+O\+D\+U\+L\+E\+\_\+\+R5}{MODULE_R5}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+O\+D\+U\+L\+E\+\_\+\+R5~8}\hypertarget{include_2core_2mpx__supt_8h_a68745bb3b58fd02dcee2cad3b2331def}{}\label{include_2core_2mpx__supt_8h_a68745bb3b58fd02dcee2cad3b2331def}
+
+
+Definition at line 15 of file mpx\+\_\+supt.\+h.
+
+
+
+Referenced by sys\+\_\+alloc\+\_\+mem(), and sys\+\_\+free\+\_\+mem().
+
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!R\+E\+AD@{R\+E\+AD}}
+\index{R\+E\+AD@{R\+E\+AD}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+AD}{READ}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+AD~2}\hypertarget{include_2core_2mpx__supt_8h_ada74e7db007a68e763f20c17f2985356}{}\label{include_2core_2mpx__supt_8h_ada74e7db007a68e763f20c17f2985356}
+
+
+Definition at line 8 of file mpx\+\_\+supt.\+h.
+
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!W\+R\+I\+TE@{W\+R\+I\+TE}}
+\index{W\+R\+I\+TE@{W\+R\+I\+TE}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{W\+R\+I\+TE}{WRITE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+R\+I\+TE~3}\hypertarget{include_2core_2mpx__supt_8h_aa10f470e996d0f51210d24f442d25e1e}{}\label{include_2core_2mpx__supt_8h_aa10f470e996d0f51210d24f442d25e1e}
+
+
+Definition at line 9 of file mpx\+\_\+supt.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!idle@{idle}}
+\index{idle@{idle}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{idle()}{idle()}}]{\setlength{\rightskip}{0pt plus 5cm}void idle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{include_2core_2mpx__supt_8h_a83abbeda22fc5e6c2b35523b64199c1c}{}\label{include_2core_2mpx__supt_8h_a83abbeda22fc5e6c2b35523b64199c1c}
+
+
+Definition at line 47 of file mpx\+\_\+supt.\+c.
+
+
+\begin{DoxyCode}
+48 \{
+49   \textcolor{keywordflow}{while}(1)\{
+50     \hyperlink{kernel_2core_2mpx__supt_8c_afb6ff5e2e9bdde9d8971a497b6fe38ae}{sys\_req}(\hyperlink{include_2core_2mpx__supt_8h_a9c21a7caee326d7803b94ae1952b27ca}{IDLE});
+51   \}
+52 \}
+\end{DoxyCode}
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!mpx\+\_\+init@{mpx\+\_\+init}}
+\index{mpx\+\_\+init@{mpx\+\_\+init}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{mpx\+\_\+init(int cur\+\_\+mod)}{mpx_init(int cur_mod)}}]{\setlength{\rightskip}{0pt plus 5cm}void mpx\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{int}]{cur\+\_\+mod}
+\end{DoxyParamCaption}
+)}\hypertarget{include_2core_2mpx__supt_8h_a53332c6a3107a4feed6e2e79690a6ffa}{}\label{include_2core_2mpx__supt_8h_a53332c6a3107a4feed6e2e79690a6ffa}
+
+
+Definition at line 16 of file mpx\+\_\+supt.\+c.
+
+
+\begin{DoxyCode}
+17 \{
+18   \hyperlink{kernel_2core_2mpx__supt_8c_a3d19c725b7f9f45e9da97a79ca6a4737}{current\_module} = cur\_mod;
+19 \}
+\end{DoxyCode}
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!sys\+\_\+alloc\+\_\+mem@{sys\+\_\+alloc\+\_\+mem}}
+\index{sys\+\_\+alloc\+\_\+mem@{sys\+\_\+alloc\+\_\+mem}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{sys\+\_\+alloc\+\_\+mem(u32int size)}{sys_alloc_mem(u32int size)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ sys\+\_\+alloc\+\_\+mem (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{include_2core_2mpx__supt_8h_a61adad2abba0a3a225c2290b3de1fe93}{}\label{include_2core_2mpx__supt_8h_a61adad2abba0a3a225c2290b3de1fe93}
+
+
+Definition at line 31 of file mpx\+\_\+supt.\+c.
+
+
+
+Referenced by allocate\+P\+C\+B(), and make\+New\+Node().
+
+
+\begin{DoxyCode}
+32 \{
+33   \textcolor{keywordflow}{if} (\hyperlink{kernel_2core_2mpx__supt_8c_a3d19c725b7f9f45e9da97a79ca6a4737}{current\_module} < \hyperlink{include_2core_2mpx__supt_8h_a68745bb3b58fd02dcee2cad3b2331def}{MODULE\_R5})
+34     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{void} *) \hyperlink{heap_8h_a15d6a52c5c080c8c7ffc73e336d8e574}{kmalloc}(size);
+35   \textcolor{keywordflow}{else}
+36     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{void} *) (*student\_malloc)(size);
+37 \}
+\end{DoxyCode}
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!sys\+\_\+free\+\_\+mem@{sys\+\_\+free\+\_\+mem}}
+\index{sys\+\_\+free\+\_\+mem@{sys\+\_\+free\+\_\+mem}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{sys\+\_\+free\+\_\+mem(void $\ast$ptr)}{sys_free_mem(void *ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}int sys\+\_\+free\+\_\+mem (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\hypertarget{include_2core_2mpx__supt_8h_a950663d39dbb073c9dff9cf3b5d3392c}{}\label{include_2core_2mpx__supt_8h_a950663d39dbb073c9dff9cf3b5d3392c}
+
+
+Definition at line 39 of file mpx\+\_\+supt.\+c.
+
+
+
+Referenced by free\+P\+C\+B().
+
+
+\begin{DoxyCode}
+40 \{
+41   \textcolor{keywordflow}{if} (\hyperlink{kernel_2core_2mpx__supt_8c_a3d19c725b7f9f45e9da97a79ca6a4737}{current\_module} >= \hyperlink{include_2core_2mpx__supt_8h_a68745bb3b58fd02dcee2cad3b2331def}{MODULE\_R5})
+42     \textcolor{keywordflow}{return} (*\hyperlink{kernel_2core_2mpx__supt_8c_a19c47c02b0338bc13716d98305bb8a34}{student\_free})(ptr);
+43   \textcolor{comment}{// otherwise we don't free anything}
+44   \textcolor{keywordflow}{return} -1;
+45 \}
+\end{DoxyCode}
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!sys\+\_\+req@{sys\+\_\+req}}
+\index{sys\+\_\+req@{sys\+\_\+req}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{sys\+\_\+req(int op\+\_\+code)}{sys_req(int op_code)}}]{\setlength{\rightskip}{0pt plus 5cm}int sys\+\_\+req (
+\begin{DoxyParamCaption}
+\item[{int}]{op\+\_\+code}
+\end{DoxyParamCaption}
+)}\hypertarget{include_2core_2mpx__supt_8h_afb6ff5e2e9bdde9d8971a497b6fe38ae}{}\label{include_2core_2mpx__supt_8h_afb6ff5e2e9bdde9d8971a497b6fe38ae}
+
+
+Definition at line 9 of file mpx\+\_\+supt.\+c.
+
+
+\begin{DoxyCode}
+10 \{
+11   \hyperlink{kernel_2core_2mpx__supt_8c_a3b4b77494d0fad58939896ddc5290c99}{params}.\hyperlink{structparam_a81c8b24055c2908ebe480598aba6044c}{op\_code} = op\_code;
+12   \textcolor{keyword}{asm} \textcolor{keyword}{volatile} (\textcolor{stringliteral}{"int $60"});
+13   \textcolor{keywordflow}{return} 0;
+14 \}
+\end{DoxyCode}
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!sys\+\_\+set\+\_\+free@{sys\+\_\+set\+\_\+free}}
+\index{sys\+\_\+set\+\_\+free@{sys\+\_\+set\+\_\+free}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{sys\+\_\+set\+\_\+free(int($\ast$func)(void $\ast$))}{sys_set_free(int(*func)(void *))}}]{\setlength{\rightskip}{0pt plus 5cm}void sys\+\_\+set\+\_\+free (
+\begin{DoxyParamCaption}
+\item[{int($\ast$)(void $\ast$)}]{func}
+\end{DoxyParamCaption}
+)}\hypertarget{include_2core_2mpx__supt_8h_a2463d934fa39601c275a3ade8afd18bc}{}\label{include_2core_2mpx__supt_8h_a2463d934fa39601c275a3ade8afd18bc}
+
+
+Definition at line 26 of file mpx\+\_\+supt.\+c.
+
+
+\begin{DoxyCode}
+27 \{
+28   \hyperlink{kernel_2core_2mpx__supt_8c_a19c47c02b0338bc13716d98305bb8a34}{student\_free} = func;
+29 \}
+\end{DoxyCode}
+\index{include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}!sys\+\_\+set\+\_\+malloc@{sys\+\_\+set\+\_\+malloc}}
+\index{sys\+\_\+set\+\_\+malloc@{sys\+\_\+set\+\_\+malloc}!include/core/mpx\+\_\+supt.\+h@{include/core/mpx\+\_\+supt.\+h}}
+\subsubsection[{\texorpdfstring{sys\+\_\+set\+\_\+malloc(u32int($\ast$func)(u32int))}{sys_set_malloc(u32int(*func)(u32int))}}]{\setlength{\rightskip}{0pt plus 5cm}void sys\+\_\+set\+\_\+malloc (
+\begin{DoxyParamCaption}
+\item[{{\bf u32int}($\ast$)({\bf u32int})}]{func}
+\end{DoxyParamCaption}
+)}\hypertarget{include_2core_2mpx__supt_8h_a4a28bb188c9fed51228c46980b20e605}{}\label{include_2core_2mpx__supt_8h_a4a28bb188c9fed51228c46980b20e605}
+
+
+Definition at line 21 of file mpx\+\_\+supt.\+c.
+
+
+\begin{DoxyCode}
+22 \{
+23   \hyperlink{kernel_2core_2mpx__supt_8c_a421e2b48efb5facc71d16979252710e2}{student\_malloc} = func;
+24 \}
+\end{DoxyCode}

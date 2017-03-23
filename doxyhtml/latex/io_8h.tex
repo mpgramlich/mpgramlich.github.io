@@ -1,0 +1,58 @@
+\hypertarget{io_8h}{}\section{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/core/io.h File Reference}
+\label{io_8h}\index{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/core/io.\+h@{/home/loudish/mpx-\/spring2017-\/modestus/mpx\+\_\+core/include/core/io.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{io_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{io_8h_a0e661d36f40638a36550a534076f155b}{outb}(port,  data)~\hyperlink{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}{asm} \hyperlink{system_8h_af55a5e48555be7d32ad73e76cf5d4db0}{volatile} (\char`\"{}outb \%\%al,\%\%dx\char`\"{} \+: \+: \char`\"{}a\char`\"{} (data), \char`\"{}d\char`\"{} (port))
+\item 
+\#define \hyperlink{io_8h_ad6488a48837d179b1833e2f48dac9665}{inb}(port)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{io.\+h@{io.\+h}!inb@{inb}}
+\index{inb@{inb}!io.\+h@{io.\+h}}
+\subsubsection[{\texorpdfstring{inb}{inb}}]{\setlength{\rightskip}{0pt plus 5cm}\#define inb(
+\begin{DoxyParamCaption}
+\item[{}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8h_ad6488a48837d179b1833e2f48dac9665}{}\label{io_8h_ad6488a48837d179b1833e2f48dac9665}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\{                      \(\backslash\)
+      unsigned \textcolor{keywordtype}{char} r;                      \hyperlink{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}{\(\backslash\)}
+\hyperlink{system_8h_a71921cebf4610b0dbb2b7a0daaf3fedf}{      asm} \textcolor{keyword}{volatile} (\textcolor{stringliteral}{"inb %%dx,%%al"}: \textcolor{stringliteral}{"=a"} (r): \textcolor{stringliteral}{"d"} (port));    \(\backslash\)
+      r;                            \(\backslash\)
+    \})
+\end{DoxyCode}
+
+
+Definition at line 15 of file io.\+h.
+
+
+
+Referenced by do\+\_\+isr(), get\+\_\+date(), get\+\_\+time(), init\+\_\+serial(), and serial\+\_\+poll().
+
+\index{io.\+h@{io.\+h}!outb@{outb}}
+\index{outb@{outb}!io.\+h@{io.\+h}}
+\subsubsection[{\texorpdfstring{outb}{outb}}]{\setlength{\rightskip}{0pt plus 5cm}\#define outb(
+\begin{DoxyParamCaption}
+\item[{}]{port, }
+\item[{}]{data}
+\end{DoxyParamCaption}
+)~{\bf asm} {\bf volatile} (\char`\"{}outb \%\%al,\%\%dx\char`\"{} \+: \+: \char`\"{}a\char`\"{} (data), \char`\"{}d\char`\"{} (port))}\hypertarget{io_8h_a0e661d36f40638a36550a534076f155b}{}\label{io_8h_a0e661d36f40638a36550a534076f155b}
+
+
+Definition at line 8 of file io.\+h.
+
+
+
+Referenced by do\+\_\+isr(), get\+\_\+date(), get\+\_\+time(), init\+\_\+pic(), init\+\_\+serial(), serial\+\_\+print(), serial\+\_\+println(), set\+\_\+date(), and set\+\_\+time().
+
