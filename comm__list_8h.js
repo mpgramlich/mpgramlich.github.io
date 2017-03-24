@@ -19,6 +19,7 @@ var comm__list_8h =
     [ "helpGetDate", "comm__list_8h.html#a0f223b2f9d2c4887ab9d4943a565a20f", null ],
     [ "helpGetTime", "comm__list_8h.html#ab023cd64db7b635c8e4048430fdd51c9", null ],
     [ "helpGetVersion", "comm__list_8h.html#aa0721512217377ef46085ce000a6daf4", null ],
+    [ "helpLoadR3", "comm__list_8h.html#a1840a2b83f0069bae0f79260690e8455", null ],
     [ "helpPcb", "comm__list_8h.html#a1f65434c6dfc1eb5b97d4dba4f923dc4", null ],
     [ "helpPcbPrint", "comm__list_8h.html#ad5bf868baaa12963086a0aa11c632159", null ],
     [ "helpResumePCB", "comm__list_8h.html#aba83fcaebd5841ba00582be3913d012d", null ],
@@ -51,7 +52,7 @@ var comm__list_8h =
     [ "time", "comm__list_8h.html#a5dac732108bdce081376535bd2d51221", null ],
     [ "unblockPCB", "comm__list_8h.html#ac26704b8c23bbe0e0fdf8e838915e29d", null ],
     [ "version", "comm__list_8h.html#ab21bb30658e69c3d4906e435384fa5fd", null ],
-    [ "yield", "group___r3.html#gafc524ab0eefdb42c7b8432b587a781e1", null ],
+    [ "yield", "group___r3.html#ga5768364c7013185a759dd51767808150", null ],
     [ "__attribute__", "comm__list_8h.html#a7ec0161c488281f85601e9f92d9226bd", null ],
     [ "cmdArray", "comm__list_8h.html#a5582c68677f88e6cacb6b1a2086f34c1", null ]
 ];

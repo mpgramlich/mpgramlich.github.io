@@ -16,6 +16,7 @@ var comm__list_8c =
     [ "helpGetDate", "comm__list_8c.html#a0f223b2f9d2c4887ab9d4943a565a20f", null ],
     [ "helpGetTime", "comm__list_8c.html#ab023cd64db7b635c8e4048430fdd51c9", null ],
     [ "helpGetVersion", "comm__list_8c.html#aa0721512217377ef46085ce000a6daf4", null ],
+    [ "helpLoadR3", "comm__list_8c.html#a1840a2b83f0069bae0f79260690e8455", null ],
     [ "helpPcb", "comm__list_8c.html#a1f65434c6dfc1eb5b97d4dba4f923dc4", null ],
     [ "helpPcbPrint", "comm__list_8c.html#ad5bf868baaa12963086a0aa11c632159", null ],
     [ "helpResumePCB", "comm__list_8c.html#aba83fcaebd5841ba00582be3913d012d", null ],
@@ -47,5 +48,5 @@ var comm__list_8c =
     [ "time", "comm__list_8c.html#a5dac732108bdce081376535bd2d51221", null ],
     [ "unblockPCB", "comm__list_8c.html#ac26704b8c23bbe0e0fdf8e838915e29d", null ],
     [ "version", "comm__list_8c.html#ab21bb30658e69c3d4906e435384fa5fd", null ],
-    [ "yield", "group___r3.html#gafc524ab0eefdb42c7b8432b587a781e1", null ]
+    [ "yield", "group___r3.html#ga5768364c7013185a759dd51767808150", null ]
 ];
