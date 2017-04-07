@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['reclaimfreemem',['reclaimFreeMem',['../mcb_8h.html#ac69c3ad25fcff74b9230bf7391c5a1f1',1,'reclaimFreeMem():&#160;mcb.c'],['../mcb_8c.html#ac69c3ad25fcff74b9230bf7391c5a1f1',1,'reclaimFreeMem():&#160;mcb.c']]],
   ['removenode',['removeNode',['../linked__list_8h.html#ad225d0f3d9e1b59a58117ba0bc491189',1,'removeNode(node_t *nodeToRemove):&#160;linked_list.c'],['../linked__list_8c.html#ad225d0f3d9e1b59a58117ba0bc491189',1,'removeNode(node_t *nodeToRemove):&#160;linked_list.c']]],
   ['removepcb',['removePCB',['../pcb_8h.html#aa7ccac95996427cc60aaee4eec35caf4',1,'removePCB(pcb_t *pcbToRemove):&#160;pcb.c'],['../pcb_8c.html#aa7ccac95996427cc60aaee4eec35caf4',1,'removePCB(pcb_t *pcbToRemove):&#160;pcb.c']]],
   ['reserved',['reserved',['../interrupts_8c.html#ad686e3fee8ec8346a6d8e98d970a02dd',1,'interrupts.c']]],

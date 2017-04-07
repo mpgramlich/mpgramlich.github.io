@@ -12,6 +12,6 @@ digraph "/home/loudish/modustus-cs450/mpx-spring2017-modestus/mpx_core/kernel" {
   }
   }
   dir_2b2cfc5bbf2f7ab54aab1325e138d170 [shape=box label="include" fillcolor="white" style="filled" color="red" URL="dir_2b2cfc5bbf2f7ab54aab1325e138d170.html"];
-  dir_9d92afb85601fa668a77948a323ddb7b->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="35", labeldistance=1.5 headhref="dir_000005_000001.html"];
+  dir_9d92afb85601fa668a77948a323ddb7b->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="37", labeldistance=1.5 headhref="dir_000005_000001.html"];
   dir_c05810f7c5bba5b5172f5ac15b87dda3->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="9", labeldistance=1.5 headhref="dir_000006_000001.html"];
 }

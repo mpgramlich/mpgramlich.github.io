@@ -5,5 +5,7 @@ var searchData=
   ['base_5flow',['base_low',['../structidt__entry__struct.html#aefa75d6bfe07f1f544393b4dbccb3e76',1,'idt_entry_struct::base_low()'],['../structgdt__entry__struct.html#a90f05cd7f227a34e977a639843a23275',1,'gdt_entry_struct::base_low()'],['../tables_8h.html#a0a776dced2c26f16298425cde39f8364',1,'base_low():&#160;tables.h']]],
   ['base_5fmid',['base_mid',['../structgdt__entry__struct.html#a0369f1e190c433425c5b0f40c2070715',1,'gdt_entry_struct::base_mid()'],['../tables_8h.html#a35c709a004babd09046db9f667ba0646',1,'base_mid():&#160;tables.h']]],
   ['block',['block',['../structindex__entry.html#a0a8d4dc0595b5f2ef42e7080c5221c1f',1,'index_entry']]],
-  ['blockedqueue',['blockedQueue',['../pcb_8h.html#aa3eb63b40a5cf1eb03b494f7ddd1af2a',1,'blockedQueue():&#160;pcb.c'],['../pcb_8c.html#aa3eb63b40a5cf1eb03b494f7ddd1af2a',1,'blockedQueue():&#160;pcb.c']]]
+  ['blockedqueue',['blockedQueue',['../pcb_8h.html#aa3eb63b40a5cf1eb03b494f7ddd1af2a',1,'blockedQueue():&#160;pcb.c'],['../pcb_8c.html#aa3eb63b40a5cf1eb03b494f7ddd1af2a',1,'blockedQueue():&#160;pcb.c']]],
+  ['blockstartaddress',['blockStartAddress',['../structs__cmcb.html#a10cf069ed44e11f2f21cd9c94b39af97',1,'s_cmcb::blockStartAddress()'],['../mcb_8h.html#a8b9256d8e16785159b4ccfe14a4d5426',1,'blockStartAddress():&#160;mcb.h']]],
+  ['blockstopaddress',['blockStopAddress',['../structs__lmcb.html#a6f9264550050e966b061f5359445554b',1,'s_lmcb::blockStopAddress()'],['../mcb_8h.html#a5119e0ddf9610bdb2d03cb4d616a0dd2',1,'blockStopAddress():&#160;mcb.h']]]
 ];

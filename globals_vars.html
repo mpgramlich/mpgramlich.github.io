@@ -143,7 +143,8 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 
 <h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
 <li>__attribute__
-: <a class="el" href="linked__list_8h.html#aaa4b117a86b9205e66f2cde318c1f01e">linked_list.h</a>
+: <a class="el" href="mpx__supt_8h.html#aaa4b117a86b9205e66f2cde318c1f01e">mpx_supt.h</a>
+, <a class="el" href="linked__list_8h.html#a85102f38d73fa37c0aecdc6857c88f68">linked_list.h</a>
 , <a class="el" href="comm__list_8h.html#a7ec0161c488281f85601e9f92d9226bd">comm_list.h</a>
 </li>
 <li>__end
@@ -158,6 +159,9 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
 <li>access
 : <a class="el" href="tables_8h.html#a360a726ac0b61d9e4e1be3ad34f80244">tables.h</a>
+</li>
+<li>associatedLMCB
+: <a class="el" href="mcb_8h.html#af3bd270fce2d099d9b0cecc37cbbfc83">mcb.h</a>
 </li>
 </ul>
 
@@ -179,6 +183,12 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 : <a class="el" href="pcb_8h.html#aa3eb63b40a5cf1eb03b494f7ddd1af2a">pcb.h</a>
 , <a class="el" href="pcb_8c.html#aa3eb63b40a5cf1eb03b494f7ddd1af2a">pcb.c</a>
 </li>
+<li>blockStartAddress
+: <a class="el" href="mcb_8h.html#a8b9256d8e16785159b4ccfe14a4d5426">mcb.h</a>
+</li>
+<li>blockStopAddress
+: <a class="el" href="mcb_8h.html#a5119e0ddf9610bdb2d03cb4d616a0dd2">mcb.h</a>
+</li>
 </ul>
 
 
@@ -192,12 +202,12 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 <li>cdir
 : <a class="el" href="paging_8c.html#af7da380833e92d5c7d3c3db41484713b">paging.c</a>
 </li>
+<li>cmcbType
+: <a class="el" href="mcb_8h.html#a592f19cefbb67d79cb943022e584952d">mcb.h</a>
+</li>
 <li>cmdArray
 : <a class="el" href="commhand_8c.html#a5582c68677f88e6cacb6b1a2086f34c1">commhand.c</a>
 , <a class="el" href="comm__list_8h.html#a5582c68677f88e6cacb6b1a2086f34c1">comm_list.h</a>
-</li>
-<li>comm_hist
-: <a class="el" href="commhand_8c.html#a3d3b206df340b640d0fca3a5c7436dfe">commhand.c</a>
 </li>
 <li>cs
 : <a class="el" href="system_8h.html#aff16eb39266599b77ad4025e1cf36c4e">system.h</a>
@@ -289,8 +299,8 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
-<li>hist_i
-: <a class="el" href="commhand_8c.html#addd367ad6cf3ffe96855b76b451d02d5">commhand.c</a>
+<li>heapLoc
+: <a class="el" href="mcb_8c.html#aa5d00c7627e28a8de2f666cbb96a14e7">mcb.c</a>
 </li>
 </ul>
 
@@ -322,16 +332,34 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>lastMCBError
+: <a class="el" href="mcb_8h.html#ae567d529759c33fd482f6c50d1477540">mcb.h</a>
+, <a class="el" href="mcb_8c.html#ae567d529759c33fd482f6c50d1477540">mcb.c</a>
+</li>
 <li>limit
 : <a class="el" href="tables_8h.html#a68fd3b4f6c14a331ca9b226cbf122e13">tables.h</a>
 </li>
 <li>limit_low
 : <a class="el" href="tables_8h.html#af9013229edfb91d4820f66b8df890ce3">tables.h</a>
 </li>
+<li>lmcbType
+: <a class="el" href="mcb_8h.html#aa9fb52e9bbd584b87cf4851cf119506f">mcb.h</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>mcbAllocList
+: <a class="el" href="mcb_8h.html#a644924686a50359017d53fbf6786cc7f">mcb.h</a>
+, <a class="el" href="mcb_8c.html#a644924686a50359017d53fbf6786cc7f">mcb.c</a>
+</li>
+<li>mcbBlockSize
+: <a class="el" href="mcb_8h.html#a087253a00063bd542eafb83bdba7b151">mcb.h</a>
+</li>
+<li>mcbFreeList
+: <a class="el" href="mcb_8h.html#ac7f1b247ae17641b38fbfb74c91bc161">mcb.h</a>
+, <a class="el" href="mcb_8c.html#ac7f1b247ae17641b38fbfb74c91bc161">mcb.c</a>
+</li>
 <li>mem_size
 : <a class="el" href="paging_8c.html#abf8475f59bfb67fac4b6b5a254dfe56d">paging.c</a>
 </li>
@@ -352,6 +380,9 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 <li>params
 : <a class="el" href="mpx__supt_8c.html#a3b4b77494d0fad58939896ddc5290c99">mpx_supt.c</a>
 </li>
+<li>parsed
+: <a class="el" href="commhand_8c.html#a24479450dc033806449c5afc77e94116">commhand.c</a>
+</li>
 <li>phys_alloc_addr
 : <a class="el" href="heap_8c.html#a6dfa4ef84e115e891b3679e4932b5c49">heap.c</a>
 , <a class="el" href="paging_8c.html#a6dfa4ef84e115e891b3679e4932b5c49">paging.c</a>
@@ -360,6 +391,9 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 : <a class="el" href="pcb_8h.html#a8e319ed5099e8558e03c1bdd25c9559a">pcb.h</a>
 , <a class="el" href="pcb_8c.html#a8e319ed5099e8558e03c1bdd25c9559a">pcb.c</a>
 </li>
+<li>procName
+: <a class="el" href="mcb_8h.html#aa7866e3cd0f0b2f316b5cbb02617f62e">mcb.h</a>
+</li>
 </ul>
 
 
@@ -367,6 +401,9 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 <li>readyQueue
 : <a class="el" href="pcb_8h.html#a7b1bca867586a0a58222b805dbe3be28">pcb.h</a>
 , <a class="el" href="pcb_8c.html#a7b1bca867586a0a58222b805dbe3be28">pcb.c</a>
+</li>
+<li>representingNode
+: <a class="el" href="mcb_8h.html#af9eab6ab47e06e8aff7d76ebe1cf3fd3">mcb.h</a>
 </li>
 </ul>
 
@@ -388,7 +425,7 @@ $(document).ready(function(){initNavTree('globals_vars.html','');});
 : <a class="el" href="mpx__supt_8c.html#a19c47c02b0338bc13716d98305bb8a34">mpx_supt.c</a>
 </li>
 <li>student_malloc
-: <a class="el" href="mpx__supt_8c.html#a421e2b48efb5facc71d16979252710e2">mpx_supt.c</a>
+: <a class="el" href="mpx__supt_8c.html#a26fac3fca6b2dcbd7ac09d9058843207">mpx_supt.c</a>
 </li>
 <li>suspendedBlockedQueue
 : <a class="el" href="pcb_8h.html#ae83c9a71ab217215db8dfe3eb9c94e8e">pcb.h</a>

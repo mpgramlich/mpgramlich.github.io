@@ -19,9 +19,11 @@ var annotated_dup =
     [ "param", "structparam.html", "structparam" ],
     [ "pcb_t", "structpcb__t.html", null ],
     [ "pcbQueue_t", "structpcb_queue__t.html", null ],
+    [ "s_cmcb", "structs__cmcb.html", "structs__cmcb" ],
     [ "s_cmd_struct", "structs__cmd__struct.html", "structs__cmd__struct" ],
     [ "s_ll", "structs__ll.html", "structs__ll" ],
     [ "s_ll_node", "structs__ll__node.html", "structs__ll__node" ],
+    [ "s_lmcb", "structs__lmcb.html", "structs__lmcb" ],
     [ "s_pcb_stuct", "structs__pcb__stuct.html", "structs__pcb__stuct" ],
     [ "s_processContext", "structs__process_context.html", "structs__process_context" ]
 ];

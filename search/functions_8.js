@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['heapisempty',['heapIsEmpty',['../mcb_8h.html#a4cbe2179547680c3ae8f25b9072a5767',1,'heapIsEmpty():&#160;mcb.c'],['../mcb_8c.html#a4cbe2179547680c3ae8f25b9072a5767',1,'heapIsEmpty():&#160;mcb.c']]],
+  ['heaptest',['heapTest',['../mcb_8h.html#a8d44e2debd148ff03704bed92efc125e',1,'heapTest():&#160;mcb.c'],['../mcb_8c.html#a8d44e2debd148ff03704bed92efc125e',1,'heapTest():&#160;mcb.c']]],
   ['help',['help',['../comm__list_8c.html#a97ee70a8770dc30d06c744b24eb2fcfc',1,'help():&#160;comm_list.c'],['../comm__list_8h.html#a97ee70a8770dc30d06c744b24eb2fcfc',1,'help():&#160;comm_list.c']]],
   ['helpblockpcb',['helpBlockPCB',['../comm__list_8c.html#a35106b0a99fb607930e3caa5f2a88974',1,'helpBlockPCB():&#160;comm_list.c'],['../comm__list_8h.html#a35106b0a99fb607930e3caa5f2a88974',1,'helpBlockPCB():&#160;comm_list.c']]],
   ['helpcreatepcb',['helpCreatePCB',['../comm__list_8c.html#a72381b23fce4dc8d86d6ef7fbc440eda',1,'helpCreatePCB():&#160;comm_list.c'],['../comm__list_8h.html#a72381b23fce4dc8d86d6ef7fbc440eda',1,'helpCreatePCB():&#160;comm_list.c']]],
@@ -10,6 +12,14 @@ var searchData=
   ['helpgettime',['helpGetTime',['../comm__list_8c.html#ab023cd64db7b635c8e4048430fdd51c9',1,'helpGetTime():&#160;comm_list.c'],['../comm__list_8h.html#ab023cd64db7b635c8e4048430fdd51c9',1,'helpGetTime():&#160;comm_list.c']]],
   ['helpgetversion',['helpGetVersion',['../comm__list_8c.html#aa0721512217377ef46085ce000a6daf4',1,'helpGetVersion():&#160;comm_list.c'],['../comm__list_8h.html#aa0721512217377ef46085ce000a6daf4',1,'helpGetVersion():&#160;comm_list.c']]],
   ['helploadr3',['helpLoadR3',['../comm__list_8c.html#a1840a2b83f0069bae0f79260690e8455',1,'helpLoadR3():&#160;comm_list.c'],['../comm__list_8h.html#a1840a2b83f0069bae0f79260690e8455',1,'helpLoadR3():&#160;comm_list.c']]],
+  ['helpmcb',['helpMCB',['../comm__list_8c.html#a5ff79f24b32e441cd5b475d8d9cea611',1,'helpMCB(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#a5ff79f24b32e441cd5b475d8d9cea611',1,'helpMCB(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
+  ['helpmcballocate',['helpMCBAllocate',['../comm__list_8c.html#a1d57dcdcba66fb02d7f27e84f3d3ee4e',1,'helpMCBAllocate():&#160;comm_list.c'],['../comm__list_8h.html#a1d57dcdcba66fb02d7f27e84f3d3ee4e',1,'helpMCBAllocate():&#160;comm_list.c']]],
+  ['helpmcbfreemem',['helpMCBFreeMem',['../comm__list_8c.html#ad09952b98f2609761d8002652f228641',1,'helpMCBFreeMem():&#160;comm_list.c'],['../comm__list_8h.html#ad09952b98f2609761d8002652f228641',1,'helpMCBFreeMem():&#160;comm_list.c']]],
+  ['helpmcbinitheap',['helpMCBInitHeap',['../comm__list_8c.html#ac2a923a4b2c7d12cef6b7adfc5ca54da',1,'helpMCBInitHeap():&#160;comm_list.c'],['../comm__list_8h.html#ac2a923a4b2c7d12cef6b7adfc5ca54da',1,'helpMCBInitHeap():&#160;comm_list.c']]],
+  ['helpmcbisempty',['helpMCBIsEmpty',['../comm__list_8c.html#a1d2ef37bc009d048041d29f19326919e',1,'helpMCBIsEmpty():&#160;comm_list.c'],['../comm__list_8h.html#a1d2ef37bc009d048041d29f19326919e',1,'helpMCBIsEmpty():&#160;comm_list.c']]],
+  ['helpmcbprint',['helpMcbPrint',['../comm__list_8c.html#a29643248054bf6e9cdee66e6ed6b4771',1,'helpMcbPrint():&#160;comm_list.c'],['../comm__list_8h.html#a29643248054bf6e9cdee66e6ed6b4771',1,'helpMcbPrint():&#160;comm_list.c']]],
+  ['helpmcbshowallocated',['helpMCBShowAllocated',['../comm__list_8c.html#a4e41c30f123e8c01539689688b282f71',1,'helpMCBShowAllocated():&#160;comm_list.c'],['../comm__list_8h.html#a4e41c30f123e8c01539689688b282f71',1,'helpMCBShowAllocated():&#160;comm_list.c']]],
+  ['helpmcbshowfree',['helpMCBShowFree',['../comm__list_8c.html#a9421cc52ca74dd6e029ae47d50ea18c0',1,'helpMCBShowFree():&#160;comm_list.c'],['../comm__list_8h.html#a9421cc52ca74dd6e029ae47d50ea18c0',1,'helpMCBShowFree():&#160;comm_list.c']]],
   ['helppcb',['helpPcb',['../comm__list_8c.html#a1f65434c6dfc1eb5b97d4dba4f923dc4',1,'helpPcb(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#a1f65434c6dfc1eb5b97d4dba4f923dc4',1,'helpPcb(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
   ['helppcbprint',['helpPcbPrint',['../comm__list_8c.html#ad5bf868baaa12963086a0aa11c632159',1,'helpPcbPrint():&#160;comm_list.c'],['../comm__list_8h.html#ad5bf868baaa12963086a0aa11c632159',1,'helpPcbPrint():&#160;comm_list.c']]],
   ['helpresumepcb',['helpResumePCB',['../comm__list_8c.html#aba83fcaebd5841ba00582be3913d012d',1,'helpResumePCB():&#160;comm_list.c'],['../comm__list_8h.html#aba83fcaebd5841ba00582be3913d012d',1,'helpResumePCB():&#160;comm_list.c']]],

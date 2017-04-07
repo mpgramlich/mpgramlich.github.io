@@ -7,5 +7,5 @@ digraph "/home/loudish/modustus-cs450/mpx-spring2017-modestus/mpx_core/modules/R
   dir_a58fc58dbb9b6123981aa6a673112028 [shape=box, label="include", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a58fc58dbb9b6123981aa6a673112028.html"];
   }
   dir_2b2cfc5bbf2f7ab54aab1325e138d170 [shape=box label="include" fillcolor="white" style="filled" color="red" URL="dir_2b2cfc5bbf2f7ab54aab1325e138d170.html"];
-  dir_a58fc58dbb9b6123981aa6a673112028->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="1", labeldistance=1.5 headhref="dir_000010_000001.html"];
+  dir_a58fc58dbb9b6123981aa6a673112028->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="2", labeldistance=1.5 headhref="dir_000010_000001.html"];
 }
