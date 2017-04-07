@@ -1,8 +1,10 @@
 var searchData=
 [
+  ['s_5fcmcb',['s_cmcb',['../structs__cmcb.html',1,'']]],
   ['s_5fcmd_5fstruct',['s_cmd_struct',['../structs__cmd__struct.html',1,'']]],
   ['s_5fll',['s_ll',['../structs__ll.html',1,'']]],
   ['s_5fll_5fnode',['s_ll_node',['../structs__ll__node.html',1,'']]],
+  ['s_5flmcb',['s_lmcb',['../structs__lmcb.html',1,'']]],
   ['s_5fpcb_5fstuct',['s_pcb_stuct',['../structs__pcb__stuct.html',1,'']]],
   ['s_5fprocesscontext',['s_processContext',['../structs__process_context.html',1,'']]],
   ['searchcompfunc',['searchCompFunc',['../structs__ll.html#adba6e6a1b395433564b38b58712fba2a',1,'s_ll']]],
@@ -39,6 +41,8 @@ var searchData=
   ['shutdownfunc',['shutdownFunc',['../comm__list_8c.html#a514416c2792fdc8614585266d618fbf8',1,'shutdownFunc(char parameters[][MAX_LENGTH]):&#160;comm_list.c'],['../comm__list_8h.html#a514416c2792fdc8614585266d618fbf8',1,'shutdownFunc(char parameters[][MAX_LENGTH]):&#160;comm_list.c']]],
   ['size',['size',['../structheader.html#af8cc659f702446226bc2ebabba437d5d',1,'header::size()'],['../structindex__entry.html#a2b0247aae5c7f9884f8eef1ee121adb0',1,'index_entry::size()']]],
   ['size_5ft',['size_t',['../system_8h.html#a7c94ea6f8948649f8d181ae55911eeaf',1,'system.h']]],
+  ['sizeofheapallocated',['sizeOfHeapAllocated',['../mcb_8h.html#a1a4274824a05891f1a923d6932a74277',1,'mcb.h']]],
+  ['sizeofheapfree',['sizeOfHeapFree',['../mcb_8h.html#a14f64211a5c926dd18ccbba1fc245422',1,'mcb.h']]],
   ['sprintf',['sprintf',['../string_8h.html#ae9cac82f3293a00d8ec8705a3fc5cf64',1,'sprintf(char *str, int bufLength, const char *format,...) __attribute__((format(printf:&#160;string.h'],['../string_8c.html#ab9309bf0926dae39da7b2062058b669d',1,'sprintf(char *str, int bufLength, const char *format,...):&#160;string.c']]],
   ['sselect',['sselect',['../structidt__entry__struct.html#a85254c7df6a612f4a4b3bb470ff3370c',1,'idt_entry_struct::sselect()'],['../tables_8h.html#ab3f34507900160b4a9b309b4ed039e07',1,'sselect():&#160;tables.h']]],
   ['stack',['stack',['../structs__pcb__stuct.html#a3de14f25a2689f6b760f7fc36c09ff45',1,'s_pcb_stuct']]],
@@ -58,7 +62,7 @@ var searchData=
   ['strlen',['strlen',['../string_8h.html#a2dee044e4e667b5b789b493abd21cfa4',1,'strlen(const char *s):&#160;string.c'],['../string_8c.html#a2dee044e4e667b5b789b493abd21cfa4',1,'strlen(const char *s):&#160;string.c']]],
   ['strtok',['strtok',['../string_8h.html#af1a867dcea42fc1215d0eddf19283ef3',1,'strtok(char *s1, const char *s2):&#160;string.c'],['../string_8c.html#af1a867dcea42fc1215d0eddf19283ef3',1,'strtok(char *s1, const char *s2):&#160;string.c']]],
   ['student_5ffree',['student_free',['../mpx__supt_8c.html#a19c47c02b0338bc13716d98305bb8a34',1,'mpx_supt.c']]],
-  ['student_5fmalloc',['student_malloc',['../mpx__supt_8c.html#a421e2b48efb5facc71d16979252710e2',1,'mpx_supt.c']]],
+  ['student_5fmalloc',['student_malloc',['../mpx__supt_8c.html#a26fac3fca6b2dcbd7ac09d9058843207',1,'mpx_supt.c']]],
   ['success',['SUCCESS',['../pcb_8h.html#a7e8c3ee6ff86c6b9d8fd0d2418cc2f8eac7f69f7c9e5aea9b8f54cf02870e2bf8',1,'pcb.h']]],
   ['suspended',['SUSPENDED',['../pcb_8h.html#a62786f54ed7251d1b1de61f23b707fc1a1c2114335a42993ac5cc5dbf65f83d41',1,'pcb.h']]],
   ['suspendedblockedqueue',['suspendedBlockedQueue',['../pcb_8h.html#ae83c9a71ab217215db8dfe3eb9c94e8e',1,'suspendedBlockedQueue():&#160;pcb.c'],['../pcb_8c.html#ae83c9a71ab217215db8dfe3eb9c94e8e',1,'suspendedBlockedQueue():&#160;pcb.c']]],
@@ -72,7 +76,7 @@ var searchData=
   ['sys_5ffree_5fmem',['sys_free_mem',['../mpx__supt_8h.html#a950663d39dbb073c9dff9cf3b5d3392c',1,'sys_free_mem(void *ptr):&#160;mpx_supt.c'],['../mpx__supt_8c.html#a950663d39dbb073c9dff9cf3b5d3392c',1,'sys_free_mem(void *ptr):&#160;mpx_supt.c']]],
   ['sys_5freq',['sys_req',['../mpx__supt_8h.html#afb6ff5e2e9bdde9d8971a497b6fe38ae',1,'sys_req(int op_code):&#160;mpx_supt.c'],['../mpx__supt_8c.html#afb6ff5e2e9bdde9d8971a497b6fe38ae',1,'sys_req(int op_code):&#160;mpx_supt.c']]],
   ['sys_5fset_5ffree',['sys_set_free',['../mpx__supt_8h.html#a2463d934fa39601c275a3ade8afd18bc',1,'sys_set_free(int(*func)(void *)):&#160;mpx_supt.c'],['../mpx__supt_8c.html#a2463d934fa39601c275a3ade8afd18bc',1,'sys_set_free(int(*func)(void *)):&#160;mpx_supt.c']]],
-  ['sys_5fset_5fmalloc',['sys_set_malloc',['../mpx__supt_8h.html#a4a28bb188c9fed51228c46980b20e605',1,'sys_set_malloc(u32int(*func)(u32int)):&#160;mpx_supt.c'],['../mpx__supt_8c.html#a4a28bb188c9fed51228c46980b20e605',1,'sys_set_malloc(u32int(*func)(u32int)):&#160;mpx_supt.c']]],
+  ['sys_5fset_5fmalloc',['sys_set_malloc',['../mpx__supt_8h.html#a9ffbe4e6d16b71fd2acbfcb27947e784',1,'sys_set_malloc(void *(*func)(size_t)):&#160;mpx_supt.c'],['../mpx__supt_8c.html#a9ffbe4e6d16b71fd2acbfcb27947e784',1,'sys_set_malloc(void *(*func)(size_t)):&#160;mpx_supt.c']]],
   ['system',['SYSTEM',['../pcb_8h.html#ab3268ce0bdfc94e5757917d42c73d9f1a57cc238145ec1361c72c327674c0d754',1,'pcb.h']]],
   ['system_2ec',['system.c',['../system_8c.html',1,'']]],
   ['system_2eh',['system.h',['../system_8h.html',1,'']]]

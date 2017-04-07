@@ -11,7 +11,7 @@ var searchData=
   ['stackbase',['stackBase',['../structs__pcb__stuct.html#ae0f0e7da704e3de9b8bde295b04c522b',1,'s_pcb_stuct']]],
   ['stacktop',['stackTop',['../structs__pcb__stuct.html#ab19f23bae6d9f5103a1856aeec1575e7',1,'s_pcb_stuct']]],
   ['student_5ffree',['student_free',['../mpx__supt_8c.html#a19c47c02b0338bc13716d98305bb8a34',1,'mpx_supt.c']]],
-  ['student_5fmalloc',['student_malloc',['../mpx__supt_8c.html#a421e2b48efb5facc71d16979252710e2',1,'mpx_supt.c']]],
+  ['student_5fmalloc',['student_malloc',['../mpx__supt_8c.html#a26fac3fca6b2dcbd7ac09d9058843207',1,'mpx_supt.c']]],
   ['suspendedblockedqueue',['suspendedBlockedQueue',['../pcb_8h.html#ae83c9a71ab217215db8dfe3eb9c94e8e',1,'suspendedBlockedQueue():&#160;pcb.c'],['../pcb_8c.html#ae83c9a71ab217215db8dfe3eb9c94e8e',1,'suspendedBlockedQueue():&#160;pcb.c']]],
   ['suspendedreadyqueue',['suspendedReadyQueue',['../pcb_8h.html#a95c66b02e576aabe04df3fdc9e981fc3',1,'suspendedReadyQueue():&#160;pcb.c'],['../pcb_8c.html#a95c66b02e576aabe04df3fdc9e981fc3',1,'suspendedReadyQueue():&#160;pcb.c']]]
 ];

@@ -10,7 +10,7 @@ digraph "/home/loudish/modustus-cs450/mpx-spring2017-modestus/mpx_core" {
     dir_85050832ce5e39fbdac1710c24253896 [shape=box label="lib" color="black" fillcolor="white" style="filled" URL="dir_85050832ce5e39fbdac1710c24253896.html"];
     dir_a6b7560d91d85e776e1ad77161c04894 [shape=box label="modules" color="red" fillcolor="white" style="filled" URL="dir_a6b7560d91d85e776e1ad77161c04894.html"];
   }
-  dir_4f9ae5e26222695c680b311488e00d67->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="44", labeldistance=1.5 headhref="dir_000004_000001.html"];
+  dir_4f9ae5e26222695c680b311488e00d67->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="46", labeldistance=1.5 headhref="dir_000004_000001.html"];
   dir_85050832ce5e39fbdac1710c24253896->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="3", labeldistance=1.5 headhref="dir_000007_000001.html"];
-  dir_a6b7560d91d85e776e1ad77161c04894->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="17", labeldistance=1.5 headhref="dir_000008_000001.html"];
+  dir_a6b7560d91d85e776e1ad77161c04894->dir_2b2cfc5bbf2f7ab54aab1325e138d170 [headlabel="19", labeldistance=1.5 headhref="dir_000008_000001.html"];
 }

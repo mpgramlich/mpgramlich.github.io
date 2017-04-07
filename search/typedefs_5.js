@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['u16int',['u16int',['../system_8h.html#a863d9497073aad2b991aeab2211d87af',1,'system.h']]],
-  ['u32int',['u32int',['../system_8h.html#a757de76cafbcddaac0d1632902fe4cb8',1,'system.h']]],
-  ['u8int',['u8int',['../system_8h.html#a1026e682ffdadc1701c42cd44ce9efcf',1,'system.h']]],
-  ['uint16_5ft',['uint16_t',['../system_8h.html#a273cf69d639a59973b6019625df33e30',1,'system.h']]],
-  ['uint32_5ft',['uint32_t',['../system_8h.html#a06896e8c53f721507066c079052171f8',1,'system.h']]],
-  ['uint8_5ft',['uint8_t',['../system_8h.html#aba7bc1797add20fe3efdf37ced1182c5',1,'system.h']]]
+  ['pcb_5ft',['pcb_t',['../pcb_8h.html#ad4bc8adcc1ef1caadee5ba952d0473a0',1,'pcb.h']]],
+  ['pcbqueue_5ft',['pcbQueue_t',['../pcb_8h.html#a58ab885c30f079e61039b7480a7dbfed',1,'pcb.h']]],
+  ['pid_5ft',['PID_t',['../pcb_8h.html#a679b474107b599ed5e2597c8863176dc',1,'pcb.h']]],
+  ['processcontext_5ft',['processContext_t',['../system_8h.html#a73ef4b87b3a66697ef5086f2f751eabc',1,'system.h']]],
+  ['processpriority_5ft',['processPriority_t',['../pcb_8h.html#aade1badcda6beffd30258586dcad6550',1,'pcb.h']]],
+  ['processstack_5ft',['processStack_t',['../pcb_8h.html#a39f696168968032d4df0637fad2ad52c',1,'pcb.h']]],
+  ['programdataptr_5ft',['programDataPtr_t',['../pcb_8h.html#a67ba3bd804fb214c80f2615b3dc8bb3a',1,'pcb.h']]],
+  ['programptr_5ft',['programPtr_t',['../pcb_8h.html#aeac19486a8c4d8375298127cee4305b1',1,'pcb.h']]]
 ];

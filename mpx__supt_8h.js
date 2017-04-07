@@ -17,5 +17,6 @@ var mpx__supt_8h =
     [ "sys_free_mem", "mpx__supt_8h.html#a950663d39dbb073c9dff9cf3b5d3392c", null ],
     [ "sys_req", "mpx__supt_8h.html#afb6ff5e2e9bdde9d8971a497b6fe38ae", null ],
     [ "sys_set_free", "mpx__supt_8h.html#a2463d934fa39601c275a3ade8afd18bc", null ],
-    [ "sys_set_malloc", "mpx__supt_8h.html#a4a28bb188c9fed51228c46980b20e605", null ]
+    [ "sys_set_malloc", "mpx__supt_8h.html#a9ffbe4e6d16b71fd2acbfcb27947e784", null ],
+    [ "__attribute__", "mpx__supt_8h.html#aaa4b117a86b9205e66f2cde318c1f01e", null ]
 ];
