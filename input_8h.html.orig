@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Modestus Moon OS
-   &#160;<span id="projectnumber">R3/R4</span>
+   &#160;<span id="projectnumber">R4</span>
    </div>
    <div id="projectbrief">CS 450 project</div>
   </td>
@@ -145,7 +145,7 @@ This graph shows which files directly or indirectly include this file:</div>
 Macros</h2></td></tr>
 <tr class="memitem:a1d5dab30b404fab91608086105afc78c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a1d5dab30b404fab91608086105afc78c">MAX_BUFFER</a>&#160;&#160;&#160;128</td></tr>
 <tr class="separator:a1d5dab30b404fab91608086105afc78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a9a231e30b47bc0345749c8bd1e5077"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a7a9a231e30b47bc0345749c8bd1e5077">MAX_LENGTH</a>&#160;&#160;&#160;128</td></tr>
+<tr class="memitem:a7a9a231e30b47bc0345749c8bd1e5077"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#a7a9a231e30b47bc0345749c8bd1e5077">MAX_LENGTH</a>&#160;&#160;&#160;50</td></tr>
 <tr class="separator:a7a9a231e30b47bc0345749c8bd1e5077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accdbea14ea06c15e271784368bd993e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="input_8h.html#accdbea14ea06c15e271784368bd993e8">PROMPT</a>&#160;&#160;&#160;&quot;&gt; &quot;</td></tr>
 <tr class="separator:accdbea14ea06c15e271784368bd993e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,7 +227,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00024">24</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>.</p>
 
 </div>
 </div>
@@ -243,7 +243,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00023">23</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>.</p>
 
 </div>
 </div>
@@ -259,7 +259,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00031">31</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>, and <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>.</p>
 
 </div>
 </div>
@@ -275,7 +275,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00028">28</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>, and <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>.</p>
 
 </div>
 </div>
@@ -291,8 +291,6 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00033">33</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="afc9149f5de51bd9ac4f5ebbfa153f018"></a>
@@ -307,7 +305,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00027">27</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>, and <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>.</p>
 
 </div>
 </div>
@@ -323,7 +321,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00032">32</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>, and <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>.</p>
 
 </div>
 </div>
@@ -339,7 +337,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00034">34</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>, and <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>.</p>
 
 </div>
 </div>
@@ -355,8 +353,6 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00035">35</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ad86358bf19927183dd7b4ae215a29731"></a>
@@ -371,7 +367,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00026">26</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>, <a class="el" href="comm__list_8c_source.html#l00085">helpGetVersion()</a>, and <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>, and <a class="el" href="comm__list_8c_source.html#l00094">helpGetVersion()</a>.</p>
 
 </div>
 </div>
@@ -387,8 +383,6 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00036">36</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a83d5e2a3a33006800c5da01d47809bb5"></a>
@@ -403,7 +397,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00038">38</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>, <a class="el" href="comm__list_8c_source.html#l00085">helpGetVersion()</a>, and <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>, and <a class="el" href="comm__list_8c_source.html#l00094">helpGetVersion()</a>.</p>
 
 </div>
 </div>
@@ -419,7 +413,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00030">30</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>.</p>
 
 </div>
 </div>
@@ -435,7 +429,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00029">29</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00067">help()</a>, <a class="el" href="comm__list_8c_source.html#l00085">helpGetVersion()</a>, and <a class="el" href="comm__list_8c_source.html#l00126">helpShutdown()</a>.</p>
+<p>Referenced by <a class="el" href="comm__list_8c_source.html#l00069">help()</a>, and <a class="el" href="comm__list_8c_source.html#l00094">helpGetVersion()</a>.</p>
 
 </div>
 </div>
@@ -518,14 +512,14 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_LENGTH&#160;&#160;&#160;128</td>
+          <td class="memname">#define MAX_LENGTH&#160;&#160;&#160;50</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00006">6</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="commhand_8c_source.html#l00036">exec_comm()</a>, <a class="el" href="commhand_8c_source.html#l00203">init_commhand()</a>, and <a class="el" href="comm__list_8c_source.html#l00435">shutdownFunc()</a>.</p>
+<p>Referenced by <a class="el" href="commhand_8c_source.html#l00036">exec_comm()</a>, <a class="el" href="commhand_8c_source.html#l00213">init_commhand()</a>, and <a class="el" href="comm__list_8c_source.html#l00434">shutdownFunc()</a>.</p>
 
 </div>
 </div>
@@ -557,7 +551,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="input_8h_source.html#l00007">7</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p>Referenced by <a class="el" href="commhand_8c_source.html#l00203">init_commhand()</a>.</p>
+<p>Referenced by <a class="el" href="commhand_8c_source.html#l00213">init_commhand()</a>.</p>
 
 </div>
 </div>
