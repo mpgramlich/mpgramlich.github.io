@@ -1,118 +1,410 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.11"/>
-<title>Modestus Moon OS: Main Page</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() { init_search(); });
-</script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matthew Gramlich — Embedded Systems & Software Engineer</title>
+<meta name="description" content="Resume of Matthew Gramlich — computer and electrical engineer working at the seam between hardware and software. FPGA-to-userspace systems, large-scale capture infrastructure, GPU compute.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FCFCFA;
+    --ink: #1A1D1B;
+    --ink-soft: #4A4F4B;
+    --rule: #D8DCD6;
+    --accent: #0E6B4A;      /* soldermask green */
+    --accent-soft: #E7F0EB;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --sans: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.55;
+    font-size: 16px;
+  }
+
+  .sheet {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 32px 80px;
+  }
+
+  /* ---------- header: datasheet title block ---------- */
+  header { margin-bottom: 8px; }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 10px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  .meta-row .tag { color: var(--accent); font-weight: 500; }
+
+  h1 {
+    font-size: clamp(34px, 6vw, 48px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+
+  .role-line {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--accent);
+    margin-top: 10px;
+    letter-spacing: 0.02em;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+    margin-top: 18px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .contact a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .contact a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .contact a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .summary {
+    margin-top: 26px;
+    font-size: 17px;
+    max-width: 64ch;
+  }
+
+  /* ---------- signature: square-wave divider ---------- */
+  .trace {
+    margin: 40px 0 14px;
+    height: 14px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .trace svg { width: 100%; height: 100%; display: block; }
+  .trace path { stroke: var(--accent); stroke-width: 1.5; fill: none; opacity: 0.9; }
+
+  /* ---------- sections ---------- */
+  h2 {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 20px;
+  }
+  h2 .sec-num { color: var(--accent); margin-right: 10px; }
+
+  /* entries */
+  .entry { margin-bottom: 26px; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .entry-head h3 { font-size: 16.5px; font-weight: 600; letter-spacing: -0.01em; }
+  .dates {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .sub {
+    font-size: 13.5px;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 2px 0 8px;
+  }
+  ul { list-style: none; }
+  li {
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 7px;
+    font-size: 15px;
+    max-width: 72ch;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0.62em;
+    width: 7px; height: 2px;
+    background: var(--accent);
+  }
+  li strong { font-weight: 600; }
+
+  /* skills grid */
+  .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 32px; }
+  @media (max-width: 620px) { .skills { grid-template-columns: 1fr; } }
+
+  /* publications */
+  .pub { margin-bottom: 10px; font-size: 15px; max-width: 76ch; padding-left: 18px; position: relative; }
+  .pub::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 7px; height: 2px; background: var(--accent); }
+  .pub em { font-style: italic; }
+  .pub .venue { color: var(--ink-soft); }
+  .pub a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .pub a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* two-up small sections */
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
+  @media (max-width: 620px) { .duo { grid-template-columns: 1fr; } }
+
+  /* ---------- print button ---------- */
+  .print-btn {
+    position: fixed;
+    top: 18px; right: 18px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    letter-spacing: 0.05em;
+    padding: 9px 14px;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .print-btn:hover { background: var(--accent); }
+  .print-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  footer {
+    margin-top: 56px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule);
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* ============ PRINT ============ */
+  @media print {
+    @page { size: letter; margin: 0.55in; }
+    body { font-size: 10pt; background: #fff; color: #000; }
+    .sheet { max-width: none; padding: 0; }
+    .print-btn { display: none; }
+    .trace { display: none; }
+    h1 { font-size: 22pt; }
+    .role-line { color: #000; font-size: 10pt; margin-top: 4pt; }
+    .meta-row { font-size: 7.5pt; margin-bottom: 12pt; padding-bottom: 5pt; }
+    .meta-row .tag { color: #000; }
+    .summary { font-size: 10pt; margin-top: 8pt; max-width: none; }
+    .contact { margin-top: 8pt; font-size: 9pt; }
+    .contact a { border-bottom: none; color: #000; }
+    h2 {
+      font-size: 9pt;
+      margin: 14pt 0 6pt;
+      border-bottom: 0.75pt solid #999;
+      padding-bottom: 2pt;
+    }
+    h2 .sec-num { color: #000; }
+    section { margin: 0; }
+    .entry { margin-bottom: 9pt; break-inside: avoid; }
+    .entry-head h3 { font-size: 10.5pt; }
+    .dates { font-size: 8.5pt; color: #333; }
+    .sub { font-size: 8.5pt; margin: 0 0 3pt; color: #333; }
+    li, .pub { font-size: 9.5pt; margin-bottom: 2.5pt; max-width: none; padding-left: 12pt; }
+    li::before, .pub::before { background: #000; top: 0.55em; }
+    .pub a { border-bottom: none; color: #000; }
+    .skills { gap: 1pt 24pt; }
+    footer { display: none; }
+    a[href]::after { content: none; }
+  }
+</style>
 </head>
 <body>
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-<div id="titlearea">
-<table cellspacing="0" cellpadding="0">
- <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Modestus Moon OS
-   &#160;<span id="projectnumber">R4</span>
-   </div>
-   <div id="projectbrief">CS 450 project</div>
-  </td>
- </tr>
- </tbody>
-</table>
-</div>
-<!-- end header part -->
-<!-- Generated by Doxygen 1.8.11 -->
-<script type="text/javascript">
-var searchBox = new SearchBox("searchBox", "search",false,'Search');
-</script>
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
-      <li>
-        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.png"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
+
+<button class="print-btn" onclick="window.print()" aria-label="Print or save as PDF">PRINT / SAVE PDF</button>
+
+<div class="sheet">
+
+  <header>
+    <div class="meta-row">
+      <span class="tag">CV — REV 2026.06</span>
+      <span>PITTSBURGH, PA</span>
+      <span>HARDWARE ↔ SOFTWARE</span>
     </div>
+    <h1>Matthew Gramlich</h1>
+    <p class="role-line">embedded systems → networked infrastructure → senior software</p>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/mattgramlich" rel="me">linkedin.com/in/mattgramlich</a>
+      <a href="https://github.com/mpgramlich" rel="me">github.com/mpgramlich</a>
+    </div>
+    <p class="summary">
+      Computer and electrical engineer with twelve years at the seam between hardware and the
+      software that drives it — FPGA-to-userspace systems on DoD programs, and the networked
+      infrastructure behind large-scale synchronized camera capture. Formally trained in EE/CE;
+      currently IC5 software engineer at Meta.
+    </p>
+  </header>
+
+  <div class="trace" aria-hidden="true">
+    <svg viewBox="0 0 860 14" preserveAspectRatio="none">
+      <path d="M0 11 H40 V3 H110 V11 H180 V3 H210 V11 H300 V3 H370 V11 H420 V3 H510 V11 H560 V3 H650 V11 H700 V3 H790 V11 H860"/>
+    </svg>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+
+  <section aria-labelledby="sec-exp">
+    <h2 id="sec-exp"><span class="sec-num">01</span>Experience</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Meta — Reality Labs, Pittsburgh, PA</h3>
+        <span class="dates">OCT 2020 – PRESENT</span>
+      </div>
+      <p class="sub">Senior Software Engineer, IC5 (2025–) · Senior Systems Engineer, IC5 (2022–2025) · CW Systems Engineer (2020–2022)</p>
+      <ul>
+        <li><strong>Led end-to-end development of the capture-network platform</strong> behind synchronized, large-scale camera capture for the Codec Avatars program: down-selected network, server, and rack hardware, designed reusable rack-level building blocks, then joined the software team to build the configuration layer and drove vendor-hardware bring-up with networking partners.</li>
+        <li><strong>Cut infrastructure cost by 20%+ at the largest capture sites</strong>; reduced new-configuration time from months to hours; took capture reliability from intermittent to consistent. Researchers now self-serve capture at any scale, with port speeds set in software and no recabling between rigs.</li>
+        <li><strong>Proved scale feasibility of, designed, and implemented lossless runtime data compression</strong> in the live capture path using asynchronous GPU compute — absorbing variable GPU transfer, compression, and copy-back latency while writing to disk at line rate — cutting data-to-disk by 60%, extending session runtimes, and increasing site throughput; supported the operations team through fleet-wide rollout and authored the maintenance documentation.</li>
+        <li>Technical DRI across multiple teams: integrated GPU hardware acceleration into low-latency image pipelines, led resolution of system-stability issues, and built extensive Hardware-in-the-Loop and maintenance tooling.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Lockheed Martin Missiles and Fire Control — Advanced Processors, Orlando, FL</h3>
+        <span class="dates">APR 2019 – OCT 2020</span>
+      </div>
+      <p class="sub">Software Engineer</p>
+      <ul>
+        <li>Integrated new COTS hardware into a DoD program more than twenty years old: debugged FPGA timing and signal-flow issues (including pre-amp tuning identified via eye diagrams), integrated custom FPGA IP onto vendor equipment, and wrote the first hardware drivers for VxWorks 7 on modern superscalar processors.</li>
+        <li>Designed and implemented low-latency, high-throughput imaging systems from hardware to userspace, delivering demonstration software to the program.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Interactive Robotics Laboratory — West Virginia University</h3>
+        <span class="dates">AUG 2014 – DEC 2018</span>
+      </div>
+      <p class="sub">Embedded System Programmer</p>
+      <ul>
+        <li>Embedded firmware designer for the WVU Cataglyphis rover — first place, NASA Centennial Sample Return Robot Challenge, 2015 and 2016.</li>
+        <li>Built embedded and ROS-based control and communication systems for a range of land- and air-based research vehicles.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Lockheed Martin Missiles and Fire Control — Advanced Processors, Orlando, FL</h3>
+        <span class="dates">MAY 2018 – AUG 2018</span>
+      </div>
+      <p class="sub">Software Developer — Intern</p>
+      <ul>
+        <li>Primary developer for new maintenance capabilities on a longstanding DoD defense program.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>West Virginia University — NASA IV&amp;V</h3>
+        <span class="dates">JAN 2017 – AUG 2017</span>
+      </div>
+      <p class="sub">Lead RockSat-X Payload Firmware and FPGA Engineer</p>
+      <ul>
+        <li>Demonstrated viability of solid-state particle detectors in the upper atmosphere on a Xilinx Zynq-7000 FPGA SoM: custom IP cores for noise-floor analysis and particle-event capture, with in-flight data logging and a radio-relay system serving four independent asynchronous serial lines for other experiments.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>West Virginia University</h3>
+        <span class="dates">JAN 2015 – DEC 2015</span>
+      </div>
+      <p class="sub">Lead Flight Software Engineer</p>
+      <ul>
+        <li>Lead embedded firmware designer for the Undergraduate Sounding Rocket Instrumentation Project (USIP); launched aboard the MUSIC sounding rocket from Wallops Flight Facility, VA, March 1, 2016.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="trace" aria-hidden="true">
+    <svg viewBox="0 0 860 14" preserveAspectRatio="none">
+      <path d="M0 3 H60 V11 H130 V3 H220 V11 H260 V3 H350 V11 H430 V3 H480 V11 H570 V3 H640 V11 H690 V3 H780 V11 H860"/>
+    </svg>
   </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('index.html','');});
-</script>
-<div id="doc-content">
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+
+  <section aria-labelledby="sec-skills">
+    <h2 id="sec-skills"><span class="sec-num">02</span>Skills</h2>
+    <ul class="skills">
+      <li>C, C++, Python; Verilog, SystemVerilog, Xilinx Vivado</li>
+      <li>High-bandwidth, low-latency networked systems</li>
+      <li>GPU asynchronous compute; runtime image/data pipelines</li>
+      <li>Real-time embedded firmware (uC/OS, FreeRTOS, VxWorks)</li>
+      <li>OS driver development</li>
+      <li>Buses: I2C, SPI, I2S, UART, CAN, RS485</li>
+      <li>Xilinx Kintex UltraScale &amp; Zynq FPGA SoM development</li>
+      <li>Embedded electrical debugging</li>
+      <li>Hardware-in-the-Loop test systems</li>
+      <li>Infrastructure configuration (IaaS-style) &amp; fleet maintenance tooling</li>
+    </ul>
+  </section>
+
+  <div class="trace" aria-hidden="true">
+    <svg viewBox="0 0 860 14" preserveAspectRatio="none">
+      <path d="M0 11 H50 V3 H140 V11 H190 V3 H280 V11 H360 V3 H410 V11 H500 V3 H590 V11 H630 V3 H720 V11 H800 V3 H860"/>
+    </svg>
+  </div>
+
+  <section aria-labelledby="sec-pubs">
+    <h2 id="sec-pubs"><span class="sec-num">03</span>Publications</h2>
+    <p class="pub"><em><a href="https://dl.acm.org/doi/10.1145/3721238.3730739">Relightable Full-body Gaussian Codec Avatars</a></em>. <span class="venue">ACM SIGGRAPH 2025 Conference Papers.</span></p>
+    <p class="pub"><em>Cataglyphis: An Autonomous Sample Return Rover</em>. <span class="venue">Journal of Field Robotics 35(2), 2018.</span></p>
+    <p class="pub"><em>Robot Foraging: Autonomous Sample Return in a Large Outdoor Environment</em>. <span class="venue">IEEE Robotics &amp; Automation Magazine 25(3), 2018.</span></p>
+  </section>
+
+  <div class="trace" aria-hidden="true">
+    <svg viewBox="0 0 860 14" preserveAspectRatio="none">
+      <path d="M0 3 H70 V11 H120 V3 H210 V11 H290 V3 H340 V11 H430 V3 H520 V11 H560 V3 H650 V11 H730 V3 H780 V11 H860"/>
+    </svg>
+  </div>
+
+  <div class="duo">
+    <section aria-labelledby="sec-edu">
+      <h2 id="sec-edu"><span class="sec-num">04</span>Education</h2>
+      <ul>
+        <li>B.S. Computer Engineering — West Virginia University</li>
+        <li>B.S. Electrical Engineering — West Virginia University</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="sec-awards">
+      <h2 id="sec-awards"><span class="sec-num">05</span>Awards</h2>
+      <ul>
+        <li>2016 NASA Centennial Sample Return Robot Challenge — 1st Place (11 points)</li>
+        <li>2015 NASA Centennial Sample Return Robot Challenge — 1st Place (3 points)</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <span>MATTHEW GRAMLICH — CV</span>
+    <span>PRINTS TO US LETTER VIA BROWSER PRINT → SAVE AS PDF</span>
+  </footer>
+
 </div>
 
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
-<div class="header">
-  <div class="headertitle">
-<div class="title">Modestus Moon OS Documentation</div>  </div>
-</div><!--header-->
-<div class="contents">
-</div><!-- contents -->
-</div><!-- doc-content -->
-<!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
 </body>
 </html>
